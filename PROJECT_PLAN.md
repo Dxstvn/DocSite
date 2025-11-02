@@ -1058,11 +1058,21 @@ export default function ContactPage() {
 - ✅ Created Homepage with hero section, service cards, and privacy section
 - ✅ Created About page with Rocio Jenkins, PMHNP-BC profile (updated with actual practitioner information)
 - ✅ Created Contact page placeholder for Phase 7
+- ✅ Integrated logo image (622x833 PNG) in Header component with Next.js Image optimization
+- ✅ Generated multi-size favicon package (16x16, 32x32, 180x180, 192x192, 512x512)
+- ✅ Added profile image to About page with circular container and teal border
+- ✅ Configured favicon metadata for all devices (iOS, Android, desktop)
+- ✅ Created web manifest (site.webmanifest) for PWA support
+- ✅ Added OpenGraph and Twitter card configuration with logo image
 
 **Implementation Notes:**
 
 1. **Header Component** ([src/components/layout/Header.tsx](bergen-mind-wellness/src/components/layout/Header.tsx))
    - Sticky navigation with Bergen Mind & Wellness branding
+   - **Logo integration**: 622x833 PNG displayed at 48x64px with Next.js Image optimization
+   - Logo paired with text branding (text hidden on mobile, visible on sm+ breakpoints)
+   - Priority loading for above-the-fold logo image
+   - Hover effect: opacity-80 transition for subtle feedback
    - 7 navigation links: Home, About, Education, Screening, Nutrition, Mindfulness, Contact
    - "Schedule Appointment" CTA button prominently displayed
    - Mobile hamburger menu with toggle functionality
@@ -1109,6 +1119,10 @@ export default function ContactPage() {
 5. **About Page** ([src/app/about/page.tsx](bergen-mind-wellness/src/app/about/page.tsx))
    - Practice description emphasizing holistic, mind-body-emotion connection
    - Provider profile card for **Rocio Jenkins, PMHNP-BC**
+   - **Profile image**: Circular container (128px mobile, 160px desktop) with teal border (border-primary-100)
+   - Image styling: `rounded-full object-cover border-4 shadow-md` for professional, approachable appearance
+   - Responsive layout: Centered on mobile, left-aligned on desktop (flex-col md:flex-row)
+   - Lazy loading (priority=false) for below-the-fold image optimization
    - Credentials section: MSN from Chamberlain University, APN license (NJ), PMHNP-BC board certification
    - Languages: English and Spanish (bilingual services)
    - Age groups served: Adolescents, Adults, Seniors
@@ -1133,6 +1147,45 @@ export default function ContactPage() {
    - Business hours display (Monday-Friday, Saturday, closed Sunday)
    - Clean, accessible layout
    - Clickable email and phone links
+
+7. **Visual Branding Assets**
+   - **Logo**: 622x833 PNG with transparency (bergen-mind-wellness/public/logo.png)
+     - Original source: 17e8fffd-4e38-4ce2-9a58-e319645fe1ff.png
+     - Integrated in Header at 48x64px display size
+     - Priority loading for above-the-fold performance
+     - Next.js Image component provides automatic WebP/AVIF conversion
+
+   - **Favicon Package** (generated using macOS sips tool):
+     - favicon-16x16.png: Standard browser tabs
+     - favicon-32x32.png: High-DPI browser tabs
+     - apple-touch-icon.png (180x180): iOS home screen
+     - android-chrome-192x192.png: Android home screen
+     - android-chrome-512x512.png: Android splash screen
+     - Configured in layout.tsx metadata with multi-device support
+
+   - **Profile Image**: 1024x1536 PNG (bergen-mind-wellness/public/images/team/rocio-jenkins.png)
+     - Original source: "ChatGPT Image Oct 30, 2025, 06_00_40 PM.png"
+     - Display: Circular container with teal border (border-primary-100)
+     - Responsive sizing: 128px mobile, 160px desktop
+     - Styling: `rounded-full object-cover border-4 shadow-md`
+     - Lazy loading (priority=false) for performance optimization
+
+   - **Web Manifest** (site.webmanifest):
+     - PWA configuration with app name and theme color (#0d9488)
+     - Icons configured for Android (192x192, 512x512)
+     - Background color: #fafaf9 (neutral-50)
+     - Display mode: standalone
+
+   - **Social Media Integration**:
+     - OpenGraph configuration with logo image (622x833)
+     - Twitter card: summary type with logo
+     - Proper alt text for all images (accessibility)
+
+   - **Accessibility Standards**:
+     - Logo alt text: "Bergen Mind & Wellness logo"
+     - Profile alt text: "Rocio Jenkins, PMHNP-BC, Board-Certified Psychiatric-Mental Health Nurse Practitioner"
+     - Descriptive aria-label on header logo link
+     - Responsive `sizes` attribute for bandwidth optimization
 
 **Design Principles Applied:**
 - **Trauma-Informed Design**: Predictable navigation, stable layouts, no surprise animations

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
@@ -20,8 +21,25 @@ export default function AboutPage() {
 
         <Card className="mb-12">
           <CardHeader>
-            <CardTitle>Rocio Jenkins, PMHNP-BC</CardTitle>
-            <CardDescription>Board-Certified Psychiatric-Mental Health Nurse Practitioner</CardDescription>
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              {/* Profile Image */}
+              <div className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mx-auto md:mx-0">
+                <Image
+                  src="/images/team/rocio-jenkins.png"
+                  alt="Rocio Jenkins, PMHNP-BC, Board-Certified Psychiatric-Mental Health Nurse Practitioner"
+                  fill
+                  sizes="(max-width: 768px) 128px, 160px"
+                  className="rounded-full object-cover border-4 border-primary-100 shadow-md"
+                  priority={false}
+                />
+              </div>
+
+              {/* Name and Title */}
+              <div className="flex-1 text-center md:text-left">
+                <CardTitle>Rocio Jenkins, PMHNP-BC</CardTitle>
+                <CardDescription>Board-Certified Psychiatric-Mental Health Nurse Practitioner</CardDescription>
+              </div>
+            </div>
           </CardHeader>
           <CardContent>
             <div className="space-y-6">

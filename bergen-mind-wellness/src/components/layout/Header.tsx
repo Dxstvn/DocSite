@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
@@ -22,8 +23,22 @@ export default function Header() {
     <header className="bg-white border-b border-neutral-200 sticky top-0 z-40">
       <nav className="container flex items-center justify-between py-4" aria-label="Main navigation">
         <div className="flex lg:flex-1">
-          <Link href="/" className="text-xl font-bold text-primary-700 no-underline hover:text-primary-800 transition-colors">
-            Bergen Mind & Wellness
+          <Link
+            href="/"
+            className="flex items-center gap-3 no-underline hover:opacity-80 transition-opacity"
+            aria-label="Bergen Mind & Wellness - Return to homepage"
+          >
+            <Image
+              src="/logo.png"
+              alt="Bergen Mind & Wellness logo"
+              width={48}
+              height={64}
+              priority
+              className="h-12 w-auto"
+            />
+            <span className="text-xl font-bold text-primary-700 hidden sm:inline">
+              Bergen Mind & Wellness
+            </span>
           </Link>
         </div>
 
