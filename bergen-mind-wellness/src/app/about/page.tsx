@@ -21,23 +21,25 @@ export default function AboutPage() {
 
         <Card className="mb-12">
           <CardHeader>
-            <div className="flex flex-col md:flex-row gap-6 items-start">
+            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
               {/* Profile Image */}
-              <div className="relative w-40 h-40 md:w-52 md:h-52 flex-shrink-0 mx-auto md:mx-0">
+              <div className="relative w-40 h-[213px] md:w-44 md:h-[235px] flex-shrink-0">
                 <Image
                   src="/images/team/rocio-jenkins.png"
                   alt="Rocio Jenkins, PMHNP-BC, Board-Certified Psychiatric-Mental Health Nurse Practitioner"
                   fill
-                  sizes="(max-width: 768px) 160px, 208px"
-                  className="rounded-full object-cover border-4 border-primary-100 shadow-md"
+                  sizes="(max-width: 768px) 160px, 176px"
+                  className="rounded-2xl object-cover border-4 border-primary-100 shadow-md"
                   priority={false}
                 />
               </div>
 
               {/* Name and Title */}
-              <div className="flex-1 text-center md:text-left">
-                <CardTitle>Rocio Jenkins, PMHNP-BC</CardTitle>
-                <CardDescription>Board-Certified Psychiatric-Mental Health Nurse Practitioner</CardDescription>
+              <div className="flex-1 text-center md:text-left md:flex md:flex-col md:justify-center">
+                <CardTitle className="text-2xl mb-2">Rocio Jenkins, PMHNP-BC</CardTitle>
+                <CardDescription className="text-base">
+                  Board-Certified Psychiatric-Mental Health Nurse Practitioner
+                </CardDescription>
               </div>
             </div>
           </CardHeader>

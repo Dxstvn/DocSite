@@ -1119,9 +1119,13 @@ export default function ContactPage() {
 5. **About Page** ([src/app/about/page.tsx](bergen-mind-wellness/src/app/about/page.tsx))
    - Practice description emphasizing holistic, mind-body-emotion connection
    - Provider profile card for **Rocio Jenkins, PMHNP-BC**
-   - **Profile image**: Circular container (160px mobile, 208px desktop) with teal border (border-primary-100)
-   - Image styling: `rounded-full object-cover border-4 shadow-md` for professional, approachable appearance
-   - Responsive layout: Centered on mobile, left-aligned on desktop (flex-col md:flex-row)
+   - **Profile image**: Rounded rectangle container (160×213px mobile, 176×235px desktop) with 3:4 portrait aspect ratio
+   - Changed from circular to rounded rectangle to avoid excessive cropping of portrait-oriented image
+   - Image styling: `rounded-2xl object-cover border-4 border-primary-100 shadow-md` for soft, approachable appearance
+   - Shows complete face and "BERGEN MIND & WELLNESS" logo without cropping
+   - Responsive layout: Centered on mobile (`items-center`), top-aligned on desktop (`md:items-start`)
+   - Name/title text block vertically centered with image on desktop (`md:flex md:flex-col md:justify-center`)
+   - Improved typography: larger title (`text-2xl`) with spacing (`mb-2`) for visual hierarchy
    - Lazy loading (priority=false) for below-the-fold image optimization
    - Credentials section: MSN from Chamberlain University, APN license (NJ), PMHNP-BC board certification
    - Languages: English and Spanish (bilingual services)
@@ -1165,9 +1169,12 @@ export default function ContactPage() {
 
    - **Profile Image**: 1024x1536 PNG (bergen-mind-wellness/public/images/team/rocio-jenkins.png)
      - Original source: "ChatGPT Image Oct 30, 2025, 06_00_40 PM.png"
-     - Display: Circular container with teal border (border-primary-100)
-     - Responsive sizing: 160px mobile, 208px desktop (increased to show more of image and reduce cropping)
-     - Styling: `rounded-full object-cover border-4 shadow-md`
+     - Display: **Rounded rectangle** (not circular) with teal border (border-primary-100)
+     - Responsive sizing: 160×213px mobile, 176×235px desktop (3:4 portrait aspect ratio)
+     - Styling: `rounded-2xl object-cover border-4 shadow-md` (large rounded corners)
+     - **Design rationale**: Changed from circular to rounded rectangle to eliminate excessive cropping of portrait-oriented image
+     - Shows complete face and "BERGEN MIND & WELLNESS" logo in background
+     - Improved layout cohesion: name/title text vertically centered with image
      - Lazy loading (priority=false) for performance optimization
 
    - **Web Manifest** (site.webmanifest):
