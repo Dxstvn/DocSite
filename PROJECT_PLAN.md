@@ -2188,6 +2188,96 @@ Create pages for `/nutrition/depression`, `/nutrition/anxiety`, `/nutrition/focu
 - Research citations
 - Practical meal ideas
 
+### 5.3 Phase 5 Implementation Complete ✅
+
+**Status:** COMPLETED
+
+**Implementation Summary:**
+Phase 5 (Nutrition & Brain Optimization) has been successfully implemented with all planned features. The nutrition section provides evidence-based dietary guidance for mental health conditions with comprehensive research citations and practical meal planning resources.
+
+**Files Created:**
+1. `src/app/nutrition/page.tsx` - Nutrition landing page with 4 topic cards and downloadable resources
+2. `src/app/nutrition/depression/page.tsx` - Foods for Depression with omega-3s, B vitamins, and mood-supporting nutrients
+3. `src/app/nutrition/anxiety/page.tsx` - Foods for Anxiety with magnesium, L-theanine, and calming foods
+4. `src/app/nutrition/focus/page.tsx` - Foods for Focus with DHA, choline, and cognitive-enhancing nutrients
+5. `src/app/nutrition/supplements/page.tsx` - Supplements & Nutrients with evidence levels and safety information
+
+**Key Features:**
+- Medical disclaimers on every nutrition page emphasizing educational nature of content
+- Evidence-based recommendations from credible sources (NIMH, CHADD, ADAA, Harvard, NIH)
+- Accordion organization for progressive disclosure of dense nutritional information
+- Specific food recommendations with serving sizes and frequency guidance
+- Nutrient breakdowns linking foods to brain chemistry and mental health mechanisms
+- Foods to limit sections addressing substances that worsen symptoms
+- Research & Evidence sections with direct links to authoritative sources
+- Practical meal ideas for breakfast, lunch, dinner, and snacks
+- Supplement safety warnings with destructive alert variant for critical information
+- Third-party testing and quality considerations for supplements
+- Medication interaction warnings and medical supervision requirements
+
+**Content Coverage:**
+
+*Depression Nutrition:*
+- Foods: Fatty fish, leafy greens, nuts/seeds, berries, whole grains, fermented foods, dark chocolate
+- Key nutrients: Omega-3 (EPA/DHA), B vitamins (B6, B12, folate), vitamin D, magnesium, zinc, tryptophan
+- Research: SMILES trial (Mediterranean diet), omega-3 meta-analyses, gut-brain axis studies
+
+*Anxiety Nutrition:*
+- Foods: Fatty fish, dark leafy greens, chamomile tea, almonds, avocados, turkey, bananas, complex carbs
+- Key nutrients: Magnesium (relaxation mineral), B vitamins, omega-3s, probiotics, L-theanine, antioxidants
+- Focus on calming neurotransmitters (GABA, serotonin) and stress response regulation
+
+*Focus/ADHD Nutrition:*
+- Foods: Fatty fish, eggs (choline), blueberries, nuts, green tea, beets, dark chocolate, whole grains
+- Key nutrients: DHA (40% of brain cell membranes), B vitamins, iron, zinc, protein/amino acids, choline
+- Research from CHADD on ADHD-specific nutritional interventions
+
+*Supplements:*
+- Strong evidence: Omega-3 fish oil (EPA/DHA 1000-2000mg/day)
+- Moderate-Strong evidence: Vitamin D (2000-4000 IU/day for deficiency)
+- Moderate evidence: B-Complex, Magnesium (200-400mg/day), L-Theanine (100-200mg)
+- Emerging evidence: Probiotics (specific strains for gut-brain axis)
+- Medical supervision required: SAMe (drug interactions with antidepressants)
+- Cautions: St. John's Wort (medication interactions), high-dose vitamins, unregulated herbals
+- Safety emphasis: Third-party testing (USP, NSF, ConsumerLab), FDA regulation limitations
+
+**Research Citations:**
+- National Institute of Mental Health (NIMH) - Depression, Anxiety, ADHD
+- Anxiety & Depression Association of America (ADAA)
+- Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD)
+- Harvard T.H. Chan School of Public Health - Nutrition & Mental Health
+- National Institutes of Health (NIH) Office of Dietary Supplements
+- Cochrane Reviews for supplement efficacy
+- ConsumerLab for supplement quality testing
+
+**User Experience:**
+- Consistent accordion layout across all condition-specific pages:
+  1. Foods to Emphasize
+  2. Key Nutrients for [Condition]
+  3. Foods & Substances to Limit
+  4. Research & Evidence
+  5. Practical Meal Ideas
+- Progressive disclosure reduces cognitive load while maintaining comprehensive content
+- Medical disclaimers use Info icon and neutral alert styling
+- Supplement safety warnings use AlertTriangle icon and destructive variant for urgency
+- Specific serving sizes and frequency recommendations (e.g., "2-3 servings per week," "1 oz handful")
+- Meal ideas organized by meal type (breakfast, lunch, dinner, snacks, beverages)
+- Clear CTAs to "Schedule an Appointment" and "Learn About [Condition]"
+- Downloadable resources section (placeholder PDFs for future content)
+
+**Technical Implementation:**
+- All pages use shadcn/ui components: Card, Accordion, Alert, Button
+- Consistent TypeScript typing throughout
+- Responsive design: single column mobile, appropriate breakpoints for tablets/desktop
+- Lucide-react icons: Leaf for nutrition theme, Info for disclaimers, AlertTriangle for warnings
+- Link components wrapped in Button asChild for proper Next.js navigation
+- External research links use `target="_blank" rel="noopener noreferrer"` for security
+- Prose class for typography in accordion content sections
+- Color coding: text-sm text-neutral-600 for source/serving size annotations
+
+**Next Steps:**
+Phase 5 is complete and ready for content review and user testing. Phase 6 (Mindfulness & Lifestyle) can now begin.
+
 ---
 
 ## Phase 6: Mindfulness & Lifestyle
