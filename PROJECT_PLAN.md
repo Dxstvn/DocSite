@@ -1056,7 +1056,7 @@ export default function ContactPage() {
 - ✅ Created Footer component with 4-column layout and trust badges
 - ✅ Created CrisisButton component with 988 crisis resources dialog
 - ✅ Created Homepage with hero section, service cards, and privacy section
-- ✅ Created About page with provider profile and credentials
+- ✅ Created About page with Rocio Jenkins, PMHNP-BC profile (updated with actual practitioner information)
 - ✅ Created Contact page placeholder for Phase 7
 
 **Implementation Notes:**
@@ -1107,13 +1107,20 @@ export default function ContactPage() {
    - Responsive grid layout (1 column mobile, 2 columns tablet, 4 columns desktop)
 
 5. **About Page** ([src/app/about/page.tsx](bergen-mind-wellness/src/app/about/page.tsx))
-   - Practice description and philosophy
-   - Provider profile card for Dr. Jane Smith (placeholder)
-   - Credentials section (Ph.D., license number, board certification)
-   - Specializations with Badge components: Depression, Anxiety, ADHD, Bipolar, PTSD, CBT
-   - Experience description (15+ years)
-   - Evidence-based care philosophy
-   - Collaborative, client-centered approach
+   - Practice description emphasizing holistic, mind-body-emotion connection
+   - Provider profile card for **Rocio Jenkins, PMHNP-BC**
+   - Credentials section: MSN from Chamberlain University, APN license (NJ), PMHNP-BC board certification
+   - Languages: English and Spanish (bilingual services)
+   - Age groups served: Adolescents, Adults, Seniors
+   - Service format: Virtual sessions with medication management capability
+   - **18 Specialization areas** with Badge components: Depression, Anxiety, ADHD, PTSD & Trauma, Bipolar Disorder, OCD, Panic Disorders, Eating Disorders, Maternal Mental Health, LGBTQIA+, Grief & Loss, Cultural & Ethnic Issues, Sleep Disorders, Stress Management, Anger Management, Chronic Conditions, Family Issues, Physical Health Issues
+   - **7 Treatment modalities**: CBT, Behavioral Activation, MBCT, Psychodynamic, Gestalt, Multi-Systemic Therapy, Behavior Management
+   - **Therapeutic style badges**: Empowering, Open-minded, Holistic
+   - **Approach philosophy**: Holistic, collaborative, compassionate, partnership-based care
+   - **First session expectations**: Safe, welcoming, judgment-free environment with clear goal-setting
+   - **Medication management section**: Licensed to prescribe, integrated with therapy and lifestyle support
+   - **Insurance accepted** (5 plans): Aetna, Carelon Behavioral Health, Cigna, Independence Blue Cross Pennsylvania, Quest Behavioral Health
+   - Icon-enhanced sections for Languages, Age Groups, and Services (using lucide-react icons)
    - Max-width container (max-w-4xl) for optimal readability
 
 6. **Contact Page** ([src/app/contact/page.tsx](bergen-mind-wellness/src/app/contact/page.tsx))
