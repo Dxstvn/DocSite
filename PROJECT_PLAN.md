@@ -1119,7 +1119,7 @@ export default function ContactPage() {
 5. **About Page** ([src/app/about/page.tsx](bergen-mind-wellness/src/app/about/page.tsx))
    - Practice description emphasizing holistic, mind-body-emotion connection
    - Provider profile card for **Rocio Jenkins, PMHNP-BC**
-   - **Profile image**: Circular container (128px mobile, 160px desktop) with teal border (border-primary-100)
+   - **Profile image**: Circular container (160px mobile, 208px desktop) with teal border (border-primary-100)
    - Image styling: `rounded-full object-cover border-4 shadow-md` for professional, approachable appearance
    - Responsive layout: Centered on mobile, left-aligned on desktop (flex-col md:flex-row)
    - Lazy loading (priority=false) for below-the-fold image optimization
@@ -1166,7 +1166,7 @@ export default function ContactPage() {
    - **Profile Image**: 1024x1536 PNG (bergen-mind-wellness/public/images/team/rocio-jenkins.png)
      - Original source: "ChatGPT Image Oct 30, 2025, 06_00_40 PM.png"
      - Display: Circular container with teal border (border-primary-100)
-     - Responsive sizing: 128px mobile, 160px desktop
+     - Responsive sizing: 160px mobile, 208px desktop (increased to show more of image and reduce cropping)
      - Styling: `rounded-full object-cover border-4 shadow-md`
      - Lazy loading (priority=false) for performance optimization
 

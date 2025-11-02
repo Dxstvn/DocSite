@@ -23,12 +23,12 @@ export default function AboutPage() {
           <CardHeader>
             <div className="flex flex-col md:flex-row gap-6 items-start">
               {/* Profile Image */}
-              <div className="relative w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mx-auto md:mx-0">
+              <div className="relative w-40 h-40 md:w-52 md:h-52 flex-shrink-0 mx-auto md:mx-0">
                 <Image
                   src="/images/team/rocio-jenkins.png"
                   alt="Rocio Jenkins, PMHNP-BC, Board-Certified Psychiatric-Mental Health Nurse Practitioner"
                   fill
-                  sizes="(max-width: 768px) 128px, 160px"
+                  sizes="(max-width: 768px) 160px, 208px"
                   className="rounded-full object-cover border-4 border-primary-100 shadow-md"
                   priority={false}
                 />
