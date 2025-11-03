@@ -44,6 +44,7 @@ export default function AboutPage() {
             </div>
           </CardHeader>
           <CardContent>
+            <h2 className="text-2xl font-bold mb-6 text-primary-700">Provider Profile</h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-semibold mb-3">About Rocio</h3>

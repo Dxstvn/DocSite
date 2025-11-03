@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { MotionConfig } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CrisisButton from '@/components/layout/CrisisButton'
+import SkipNavigation from '@/components/layout/SkipNavigation'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -65,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen bg-neutral-50 text-neutral-800 antialiased flex flex-col">
+        <SkipNavigation />
         <MotionConfig reducedMotion="user">
           <Header />
           <main id="main-content" className="flex-1">
@@ -73,6 +77,8 @@ export default function RootLayout({
           <Footer />
           <CrisisButton />
         </MotionConfig>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

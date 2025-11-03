@@ -29,13 +29,13 @@ export default function ContactPage() {
         {/* Appointment Types */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Appointment Types</CardTitle>
+            <h2 className="text-2xl font-semibold tracking-tight">Appointment Types</h2>
             <CardDescription>We offer several types of appointments to meet your needs</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               <div className="border-l-4 border-primary-600 pl-4">
-                <h3 className="font-semibold mb-1">Initial Consultation</h3>
+                <p className="font-semibold mb-1">Initial Consultation</p>
                 <p className="text-sm text-neutral-600 mb-1">60 minutes</p>
                 <p className="text-neutral-700">
                   Comprehensive evaluation to understand your concerns, history, and goals. We'll discuss treatment options and create a personalized plan.
@@ -43,7 +43,7 @@ export default function ContactPage() {
               </div>
 
               <div className="border-l-4 border-primary-600 pl-4">
-                <h3 className="font-semibold mb-1">Follow-Up Session</h3>
+                <p className="font-semibold mb-1">Follow-Up Session</p>
                 <p className="text-sm text-neutral-600 mb-1">45 minutes</p>
                 <p className="text-neutral-700">
                   Ongoing therapy sessions for established patients. We'll monitor your progress and adjust your treatment plan as needed.
@@ -51,7 +51,7 @@ export default function ContactPage() {
               </div>
 
               <div className="border-l-4 border-primary-600 pl-4">
-                <h3 className="font-semibold mb-1">Medication Management</h3>
+                <p className="font-semibold mb-1">Medication Management</p>
                 <p className="text-sm text-neutral-600 mb-1">30 minutes</p>
                 <p className="text-neutral-700">
                   Medication review and adjustment appointments. We'll discuss effectiveness, side effects, and any concerns.
@@ -66,7 +66,7 @@ export default function ContactPage() {
         <Card className="mb-8 border-dashed border-2 border-neutral-300 bg-neutral-50">
           <CardContent className="py-12 text-center">
             <Clock className="h-12 w-12 text-neutral-400 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-3">Online Booking Coming Soon</h3>
+            <h2 className="text-xl font-semibold mb-3">Online Booking Coming Soon</h2>
             <p className="text-lg text-neutral-600 mb-6">
               We're setting up online appointment scheduling to make booking easier for you.
               For now, please call or email to schedule your appointment.
@@ -92,14 +92,14 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
+              <h2 className="text-2xl font-semibold tracking-tight">Contact Information</h2>
               <CardDescription>Reach out to us directly</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary-600 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-sm mb-1">Phone</h4>
+                  <h3 className="font-semibold text-sm mb-1">Phone</h3>
                   <a
                     href="tel:+12015550123"
                     className="text-neutral-700 hover:text-primary-700 transition-colors"
@@ -112,7 +112,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary-600 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-sm mb-1">Email</h4>
+                  <h3 className="font-semibold text-sm mb-1">Email</h3>
                   <a
                     href="mailto:info@bergenmindwellness.com"
                     className="text-neutral-700 hover:text-primary-700 transition-colors break-all"
@@ -125,7 +125,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary-600 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-sm mb-1">Address</h4>
+                  <h3 className="font-semibold text-sm mb-1">Address</h3>
                   <p className="text-neutral-700">
                     123 Main Street, Suite 200<br />
                     Bergen County, NJ 07000
@@ -137,7 +137,7 @@ export default function ContactPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Office Hours</CardTitle>
+              <h2 className="text-2xl font-semibold tracking-tight">Office Hours</h2>
               <CardDescription>When we're available</CardDescription>
             </CardHeader>
             <CardContent>
@@ -167,7 +167,7 @@ export default function ContactPage() {
         {/* What to Expect */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>What to Expect at Your First Visit</CardTitle>
+            <h2 className="text-2xl font-semibold tracking-tight">What to Expect at Your First Visit</h2>
             <CardDescription>We want you to feel prepared and comfortable</CardDescription>
           </CardHeader>
           <CardContent>
@@ -187,7 +187,7 @@ export default function ContactPage() {
         {/* Insurance Information */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Insurance & Payment</CardTitle>
+            <h2 className="text-2xl font-semibold tracking-tight">Insurance & Payment</h2>
             <CardDescription>We accept most major insurance plans</CardDescription>
           </CardHeader>
           <CardContent>
