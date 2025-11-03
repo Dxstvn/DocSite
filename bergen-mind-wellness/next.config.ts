@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
 
   // Enable compression for all responses
   compress: true,
+
+  // Optimize CSS for faster first paint
+  experimental: {
+    optimizeCss: true,
+  },
 };
 
 export default nextConfig;

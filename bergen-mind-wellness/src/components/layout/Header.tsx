@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 
@@ -19,6 +19,26 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  // Handle Escape key to close mobile menu
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && mobileMenuOpen) {
+        setMobileMenuOpen(false)
+      }
+    }
+
+    if (mobileMenuOpen) {
+      document.addEventListener('keydown', handleEscape)
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = 'hidden'
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape)
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
+
   return (
     <header className="bg-white border-b border-neutral-200 sticky top-0 z-40">
       <nav className="container flex items-center justify-between py-4" aria-label="Main navigation">
@@ -29,11 +49,12 @@ export default function Header() {
             aria-label="Bergen Mind & Wellness - Return to homepage"
           >
             <Image
-              src="/logo.png"
+              src="/logo-48.png"
               alt="Bergen Mind & Wellness logo"
               width={48}
               height={64}
               priority
+              sizes="48px"
               className="h-12 w-auto"
             />
             <span className="text-xl font-bold text-primary-700 hidden sm:inline">
@@ -77,7 +98,11 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-neutral-200">
+        <div
+          className="lg:hidden border-t border-neutral-200"
+          role="dialog"
+          aria-label="Mobile navigation menu"
+        >
           <div className="space-y-1 px-4 py-4">
             {navigation.map((item) => (
               <Link

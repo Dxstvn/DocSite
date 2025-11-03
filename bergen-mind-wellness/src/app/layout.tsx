@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { MotionConfig } from 'framer-motion'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
@@ -13,6 +12,9 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
+  preload: true,
+  fallback: ['system-ui', '-apple-system', 'sans-serif'],
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {
@@ -40,9 +42,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/logo.png',
-        width: 622,
-        height: 833,
+        url: '/logo-200.png',
+        width: 200,
+        height: 267,
         alt: 'Bergen Mind & Wellness logo',
       },
     ],
@@ -69,14 +71,12 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen bg-neutral-50 text-neutral-800 antialiased flex flex-col">
         <SkipNavigation />
-        <MotionConfig reducedMotion="user">
-          <Header />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <Footer />
-          <CrisisButton />
-        </MotionConfig>
+        <Header />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
+        <CrisisButton />
         <Analytics />
         <SpeedInsights />
       </body>
