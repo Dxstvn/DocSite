@@ -191,7 +191,7 @@ export default function FocusNutritionPage() {
                   excessive amounts cause jitteriness, anxiety, and sleep disruption—all worsen ADHD symptoms.
                 </p>
                 <p className="text-sm text-neutral-600">
-                  Limit to <200mg/day; avoid caffeine after 2 PM to protect sleep.
+                  Limit to &lt;200mg/day; avoid caffeine after 2 PM to protect sleep.
                 </p>
 
                 <h3>Skipping Meals</h3>

@@ -170,7 +170,7 @@ export default function AnxietyNutritionPage() {
                   with anxiety benefit from reducing or eliminating it.
                 </p>
                 <p className="text-sm text-neutral-600">
-                  Limit to <200mg/day (~2 cups coffee) or switch to green tea for gentler caffeine with L-theanine.
+                  Limit to &lt;200mg/day (~2 cups coffee) or switch to green tea for gentler caffeine with L-theanine.
                 </p>
 
                 <h3>Alcohol</h3>

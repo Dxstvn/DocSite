@@ -64,7 +64,7 @@ export default function SupplementsPage() {
                 </ul>
 
                 <h4>Safety:</h4>
-                <p>Generally safe. May cause fishy aftertaste, upset stomach. High doses (>3g/day) may thin blood—consult doctor if on blood thinners.</p>
+                <p>Generally safe. May cause fishy aftertaste, upset stomach. High doses (&gt;3g/day) may thin blood—consult doctor if on blood thinners.</p>
               </div>
             </AccordionContent>
           </AccordionItem>

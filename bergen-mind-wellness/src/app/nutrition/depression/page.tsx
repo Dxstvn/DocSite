@@ -169,7 +169,7 @@ export default function DepressionNutritionPage() {
 
                 <h3>Excessive Caffeine</h3>
                 <p>
-                  While moderate caffeine can improve alertness, excessive intake (>400mg/day, ~4 cups coffee)
+                  While moderate caffeine can improve alertness, excessive intake (&gt;400mg/day, ~4 cups coffee)
                   can worsen anxiety, disrupt sleep, and cause mood crashes.
                 </p>
                 <p className="text-sm text-neutral-600">
