@@ -2798,6 +2798,140 @@ Message: ${data.message || 'None'}
 }
 ```
 
+### Phase 7A Implementation Status
+
+**Status:** ✅ COMPLETED
+**Implementation Date:** 2025-11-02
+**Approach:** Two-phase implementation (7A now, 7B after client investment)
+
+**Phase 7A: Contact Page with TidyCal Placeholder**
+
+The original Phase 7 plan proposed a basic `mailto:` contact form without real scheduling capabilities. After researching scheduling alternatives, TidyCal ($29 lifetime) was selected for Phase 7B integration. Phase 7A creates the infrastructure with a placeholder.
+
+**Files Created/Modified:**
+- [src/app/contact/page.tsx](bergen-mind-wellness/src/app/contact/page.tsx) - Comprehensive contact page
+
+**Components Implemented:**
+
+1. **Hero Section**
+   - Stethoscope icon (h-16 w-16)
+   - H1: "Schedule an Appointment"
+   - Supportive subtitle about mental health journey
+
+2. **Privacy Assurance Alert**
+   - Info icon
+   - HIPAA compliance messaging
+   - Builds trust for sensitive appointments
+
+3. **Appointment Types Card**
+   - Initial Consultation (60 minutes) - Comprehensive evaluation
+   - Follow-Up Session (45 minutes) - Ongoing therapy
+   - Medication Management (30 minutes) - Med review and adjustment
+   - Each type styled with `border-l-4 border-primary-600` accent
+
+4. **TidyCal Placeholder Card** (Temporary - Phase 7B will replace)
+   - Dashed border styling (`border-dashed border-2 border-neutral-300`)
+   - Light gray background (`bg-neutral-50`)
+   - Clock icon with "Online Booking Coming Soon" message
+   - Clear TODO comment: `{/* TODO: Replace this placeholder with TidyCal embed once client purchases ($29) */}`
+   - Call-to-action buttons for phone/email as functional fallback
+   - Exact sizing/positioning for seamless TidyCal swap in Phase 7B
+
+5. **Contact Information Grid** (2 columns on md+)
+   - Contact Info Card: Phone, Email, Address with icons
+   - Office Hours Card: Mon-Fri 9am-6pm, Sat 10am-2pm, Sun Closed
+
+6. **What to Expect Card**
+   - First visit preparation checklist
+   - Paperwork, insurance, medical history guidance
+   - Reduces anxiety for new patients
+
+7. **Insurance & Payment Card**
+   - Major insurance providers (Aetna, BCBS, Cigna, UHC)
+   - Self-pay options
+   - Payment expectations
+
+8. **Crisis Resources Alert** (destructive variant)
+   - 988 Suicide & Crisis Lifeline (24/7)
+   - Crisis Text Line (HOME to 741741)
+   - Emergency Services (911)
+   - PhoneCall icon for urgency
+
+9. **Navigation Buttons**
+   - "Browse Mental Health Education" (outline variant)
+   - "Take a Self-Assessment" (outline variant)
+
+**Design Adherence:**
+- Follows DESIGN_SYSTEM.md trauma-informed principles
+- Uses ONLY shadcn/ui components (Card, Button, Alert)
+- Lucide-react icons throughout
+- Primary-600 brand color for accents
+- Neutral gray tones for backgrounds
+- Clean, accessible layout
+- Mobile-responsive grid (sm:flex-row, md:grid-cols-2)
+
+**Accessibility Features:**
+- Semantic HTML structure
+- Icon + text labels for all actions
+- High contrast text
+- Keyboard-navigable buttons
+- Clear visual hierarchy
+
+**Phase 7B: TidyCal Integration Plan** (Pending $29 client investment)
+
+Once client approves TidyCal purchase ($29 lifetime):
+
+1. **Practitioner Sets Up TidyCal Account**
+   - Creates event types (Initial, Follow-Up, Medication)
+   - Sets availability schedule
+   - Configures booking buffer times
+   - Adds intake form questions
+
+2. **Replace Placeholder (30-60 min implementation)**
+   - Remove placeholder Card (lines 65-89 in current file)
+   - Add TidyCal iframe embed at exact same location
+   - Example embed code:
+   ```typescript
+   <div className="mb-8">
+     <iframe
+       src="https://tidycal.com/bergenmindwellness"
+       width="100%"
+       height="800"
+       frameBorder="0"
+       title="Schedule an Appointment"
+     />
+   </div>
+   ```
+   - Test all appointment types
+   - Verify mobile responsiveness
+
+3. **Testing Checklist**
+   - All 3 appointment types bookable
+   - Email confirmations sending
+   - Calendar sync working
+   - Mobile/tablet layout correct
+   - HIPAA compliance verified (TidyCal privacy policy)
+
+**Why TidyCal Over Alternatives:**
+- ✅ $29 lifetime (vs Calendly $10/month, SimplyBook $25/month)
+- ✅ Unlimited event types (vs Calendly Free 1 event only)
+- ✅ Custom branding (vs Koalendar Free visible branding)
+- ✅ Automatic time zone detection
+- ✅ Calendar integrations (Google, Outlook)
+- ✅ Email reminders
+- ✅ No recurring fees
+
+**Current Functionality:**
+The contact page is **fully functional** for Phase 7A launch:
+- Patients can call or email to schedule (clear CTAs)
+- All appointment types clearly described
+- Office hours and contact info prominently displayed
+- Crisis resources readily available
+- Professional appearance builds trust
+
+**Next Steps:**
+Phase 7A complete. Phase 7B blocked until client approves TidyCal purchase.
+
 ---
 
 ## Phase 8: Accessibility & Performance
