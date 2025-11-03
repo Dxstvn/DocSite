@@ -1,5 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd bergen-mind-wellness && pnpm build",
+  "buildCommand": "cd bergen-mind-wellness && pnpm install --frozen-lockfile && pnpm build",
   "outputDirectory": "bergen-mind-wellness/.next"
 }
