@@ -41,8 +41,9 @@
     "node_modules",
     ".next",
     "scripts",
-    "vitest.*.ts",
-    "playwright.config.ts",
-    "e2e"
+    "**/vitest*.ts",
+    "**/playwright.config.ts",
+    "e2e",
+    "src/__tests__"
   ]
 }
