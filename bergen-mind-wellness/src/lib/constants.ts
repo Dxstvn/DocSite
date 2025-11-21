@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   description: 'Compassionate mental health care in New Jersey. Evidence-based treatment for depression, anxiety, ADHD, bipolar disorder, and PTSD.',
   contact: {
     email: 'info@bergenmindwellness.com',
-    phone: '(201) 555-0123',
+    phone: '(201) 690-2182',
     address: '123 Main Street, Suite 200, Bergen County, NJ 07000',
   },
   hours: 'Monday-Friday, 9:00 AM - 6:00 PM',

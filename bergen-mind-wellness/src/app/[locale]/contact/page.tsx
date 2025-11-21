@@ -133,10 +133,10 @@ export default async function ContactPage({ params }: PageProps) {
                 <div>
                   <h3 className="font-semibold text-sm mb-1">Phone</h3>
                   <a
-                    href="tel:+12015550123"
+                    href="tel:+12016902182"
                     className="text-neutral-700 hover:text-primary-700 transition-colors"
                   >
-                    (201) 555-0123
+                    (201) 690-2182
                   </a>
                 </div>
               </div>

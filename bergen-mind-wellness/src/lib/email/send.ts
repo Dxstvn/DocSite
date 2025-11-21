@@ -1,50 +1,15 @@
-import { render } from '@react-email/components'
-import nodemailer from 'nodemailer'
-import type { Transporter } from 'nodemailer'
+import { Resend } from 'resend'
 import AppointmentCancellationEmail from '@/emails/appointment-cancellation'
 import AppointmentConfirmationEmail from '@/emails/appointment-confirmation'
 import AppointmentReminderEmail from '@/emails/appointment-reminder'
 import AppointmentRescheduledEmail from '@/emails/appointment-rescheduled'
 import type { Locale } from '@/types/database'
 
-// SMTP Configuration from environment variables
-const SMTP_CONFIG = {
-  host: process.env.SMTP_HOST || 'smtp.gmail.com',
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
-  },
-}
+// Initialize Resend client
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-const FROM_EMAIL = process.env.SMTP_FROM_EMAIL || 'appointments@bergenmindwellness.com'
-const FROM_NAME = process.env.SMTP_FROM_NAME || 'Bergen Mind & Wellness'
-
-// Create reusable transporter
-let transporter: Transporter | null = null
-
-function getTransporter(): Transporter {
-  if (!transporter) {
-    // Validate required environment variables
-    if (!SMTP_CONFIG.auth.user || !SMTP_CONFIG.auth.pass) {
-      throw new Error('SMTP credentials not configured. Please set SMTP_USER and SMTP_PASSWORD environment variables.')
-    }
-
-    transporter = nodemailer.createTransport(SMTP_CONFIG)
-
-    // Verify connection configuration
-    transporter.verify((error) => {
-      if (error) {
-        console.error('SMTP connection error:', error)
-      } else {
-        console.log('SMTP server is ready to send emails')
-      }
-    })
-  }
-
-  return transporter
-}
+const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'rocio@bergenmindwellness.com'
+const FROM_NAME = process.env.RESEND_FROM_NAME || 'Bergen Mind & Wellness'
 
 interface AppointmentEmailData {
   patientName: string
@@ -102,35 +67,37 @@ export async function sendAppointmentConfirmation(
 
   const manageUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/appointments/manage?token=${bookingToken}`
 
-  const emailHtml = await render(
-    AppointmentConfirmationEmail({
-      patientName,
-      appointmentType,
-      appointmentDate,
-      appointmentTime,
-      timezone,
-      manageUrl,
-      locale,
-    })
-  )
-
   const subject =
     locale === 'en'
       ? 'Appointment Confirmed - Bergen Mind & Wellness'
       : 'Cita Confirmada - Bergen Mind & Wellness'
 
   try {
-    const transport = getTransporter()
-
-    const info = await transport.sendMail({
-      from: `"${FROM_NAME}" <${FROM_EMAIL}>`,
+    const { data: emailData, error } = await resend.emails.send({
+      from: `${FROM_NAME} <${FROM_EMAIL}>`,
       to: patientEmail,
       subject,
-      html: emailHtml,
+      react: AppointmentConfirmationEmail({
+        patientName,
+        appointmentType,
+        appointmentDate,
+        appointmentTime,
+        timezone,
+        manageUrl,
+        locale,
+      }),
     })
 
-    console.log('Confirmation email sent successfully:', info.messageId)
-    return { success: true, id: info.messageId }
+    if (error) {
+      console.error('Error sending confirmation email:', error)
+      return {
+        success: false,
+        error: error.message || 'Unknown error'
+      }
+    }
+
+    console.log('Confirmation email sent successfully:', emailData?.id)
+    return { success: true, id: emailData?.id }
   } catch (error) {
     console.error('Error sending confirmation email:', error)
     // Return error result instead of throwing - don't fail booking if email fails
@@ -160,36 +127,35 @@ export async function sendAppointmentReminder(data: ReminderEmailData) {
 
   const manageUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/appointments/manage?token=${bookingToken}`
 
-  const emailHtml = await render(
-    AppointmentReminderEmail({
-      patientName,
-      appointmentType,
-      appointmentDate,
-      appointmentTime,
-      timezone,
-      manageUrl,
-      locale,
-      isTelehealth,
-    })
-  )
-
   const subject =
     locale === 'en'
       ? 'Reminder: Your appointment is tomorrow - Bergen Mind & Wellness'
       : 'Recordatorio: Su cita es mañana - Bergen Mind & Wellness'
 
   try {
-    const transport = getTransporter()
-
-    const info = await transport.sendMail({
-      from: `"${FROM_NAME}" <${FROM_EMAIL}>`,
+    const { data: emailData, error } = await resend.emails.send({
+      from: `${FROM_NAME} <${FROM_EMAIL}>`,
       to: patientEmail,
       subject,
-      html: emailHtml,
+      react: AppointmentReminderEmail({
+        patientName,
+        appointmentType,
+        appointmentDate,
+        appointmentTime,
+        timezone,
+        manageUrl,
+        locale,
+        isTelehealth,
+      }),
     })
 
-    console.log('Reminder email sent successfully:', info.messageId)
-    return { success: true, id: info.messageId }
+    if (error) {
+      console.error('Error sending reminder email:', error)
+      throw new Error(`Failed to send reminder email: ${error.message}`)
+    }
+
+    console.log('Reminder email sent successfully:', emailData?.id)
+    return { success: true, id: emailData?.id }
   } catch (error) {
     console.error('Error sending reminder email:', error)
     throw new Error(`Failed to send reminder email: ${error instanceof Error ? error.message : 'Unknown error'}`)
@@ -217,37 +183,36 @@ export async function sendAppointmentCancellation(
 
   const bookNewUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/appointments`
 
-  const emailHtml = await render(
-    AppointmentCancellationEmail({
-      patientName,
-      appointmentType,
-      appointmentDate,
-      appointmentTime,
-      timezone,
-      cancelledBy,
-      cancellationReason,
-      bookNewUrl,
-      locale,
-    })
-  )
-
   const subject =
     locale === 'en'
       ? 'Appointment Cancelled - Bergen Mind & Wellness'
       : 'Cita Cancelada - Bergen Mind & Wellness'
 
   try {
-    const transport = getTransporter()
-
-    const info = await transport.sendMail({
-      from: `"${FROM_NAME}" <${FROM_EMAIL}>`,
+    const { data: emailData, error } = await resend.emails.send({
+      from: `${FROM_NAME} <${FROM_EMAIL}>`,
       to: patientEmail,
       subject,
-      html: emailHtml,
+      react: AppointmentCancellationEmail({
+        patientName,
+        appointmentType,
+        appointmentDate,
+        appointmentTime,
+        timezone,
+        cancelledBy,
+        cancellationReason,
+        bookNewUrl,
+        locale,
+      }),
     })
 
-    console.log('Cancellation email sent successfully:', info.messageId)
-    return { success: true, id: info.messageId }
+    if (error) {
+      console.error('Error sending cancellation email:', error)
+      throw new Error(`Failed to send cancellation email: ${error.message}`)
+    }
+
+    console.log('Cancellation email sent successfully:', emailData?.id)
+    return { success: true, id: emailData?.id }
   } catch (error) {
     console.error('Error sending cancellation email:', error)
     throw new Error(`Failed to send cancellation email: ${error instanceof Error ? error.message : 'Unknown error'}`)
@@ -275,37 +240,39 @@ export async function sendAppointmentReschedule(
 
   const manageUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/appointments`
 
-  const emailHtml = await render(
-    AppointmentRescheduledEmail({
-      patientName,
-      appointmentType,
-      oldAppointmentDate,
-      oldAppointmentTime,
-      newAppointmentDate,
-      newAppointmentTime,
-      timezone,
-      manageUrl,
-      locale,
-    })
-  )
-
   const subject =
     locale === 'en'
       ? 'Your Appointment Has Been Rescheduled - Bergen Mind & Wellness'
       : 'Su Cita Ha Sido Reprogramada - Bergen Mind & Wellness'
 
   try {
-    const transport = getTransporter()
-
-    const info = await transport.sendMail({
-      from: `"${FROM_NAME}" <${FROM_EMAIL}>`,
+    const { data: emailData, error } = await resend.emails.send({
+      from: `${FROM_NAME} <${FROM_EMAIL}>`,
       to: patientEmail,
       subject,
-      html: emailHtml,
+      react: AppointmentRescheduledEmail({
+        patientName,
+        appointmentType,
+        oldAppointmentDate,
+        oldAppointmentTime,
+        newAppointmentDate,
+        newAppointmentTime,
+        timezone,
+        manageUrl,
+        locale,
+      }),
     })
 
-    console.log('Reschedule email sent successfully:', info.messageId)
-    return { success: true, id: info.messageId }
+    if (error) {
+      console.error('Error sending reschedule email:', error)
+      return {
+        success: false,
+        error: error.message || 'Unknown error'
+      }
+    }
+
+    console.log('Reschedule email sent successfully:', emailData?.id)
+    return { success: true, id: emailData?.id }
   } catch (error) {
     console.error('Error sending reschedule email:', error)
     // Return error result instead of throwing - don't fail reschedule if email fails
@@ -341,15 +308,4 @@ export async function batchSendReminders(reminders: ReminderEmailData[]) {
   }
 
   return results
-}
-
-/**
- * Close the transporter connection (for graceful shutdown)
- */
-export async function closeTransporter() {
-  if (transporter) {
-    transporter.close()
-    transporter = null
-    console.log('SMTP transporter closed')
-  }
 }
