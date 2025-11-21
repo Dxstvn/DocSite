@@ -1,0 +1,28 @@
+{
+  "button": {
+    "text": "Crisis Help: 988",
+    "ariaLabel": "Access crisis resources"
+  },
+  "dialog": {
+    "title": "Immediate Crisis Resources",
+    "description": "If you are experiencing a mental health emergency, please use one of these resources immediately."
+  },
+  "resources": {
+    "988": {
+      "title": "988 Suicide & Crisis Lifeline",
+      "description": "24/7 free and confidential support",
+      "action": "Call 988"
+    },
+    "text": {
+      "title": "Crisis Text Line",
+      "description": "Text HOME to 741741",
+      "action": "Send Text"
+    },
+    "emergency": {
+      "title": "Emergency Services",
+      "description": "For life-threatening emergencies",
+      "action": "Call 911"
+    }
+  },
+  "close": "Close"
+}

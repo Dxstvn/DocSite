@@ -1,0 +1,40 @@
+{
+  "header": {
+    "logoAlt": "Logotipo de Bergen Mind & Wellness",
+    "logoAriaLabel": "Bergen Mind & Wellness - Volver a la página principal",
+    "siteName": "Bergen Mind & Wellness",
+    "mainNavAriaLabel": "Navegación principal",
+    "toggleMenuAriaLabel": "Alternar menú",
+    "mobileMenuAriaLabel": "Menú de navegación móvil",
+    "scheduleAppointment": "Programar Cita"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "resources": "Recursos",
+    "mentalHealthEducation": "Educación en Salud Mental",
+    "screeningTools": "Herramientas de Evaluación",
+    "nutrition": "Nutrición",
+    "mindfulness": "Atención Plena",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "siteName": "Bergen Mind & Wellness",
+    "description": "Atención de salud mental compasiva y basada en evidencia para Nueva Jersey.",
+    "quickLinks": "Enlaces Rápidos",
+    "aboutUs": "Acerca de Nosotros",
+    "education": "Educación",
+    "screeningTools": "Herramientas de Evaluación",
+    "contact": "Contacto",
+    "resources": "Recursos",
+    "nutritionBrainHealth": "Nutrición y Salud Cerebral",
+    "mindfulnessPractices": "Prácticas de Atención Plena",
+    "988Lifeline": "988 Línea de Vida para Crisis y Suicidio",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "hipaaCompliant": "Cumple con HIPAA",
+    "secureSSL": "SSL Seguro",
+    "licenseNotice": "Licenciado en el Estado de Nueva Jersey. Para emergencias, llame al 911 o visite la sala de emergencias más cercana."
+  }
+}

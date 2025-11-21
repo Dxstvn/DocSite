@@ -1,0 +1,36 @@
+-- =====================================================
+-- Bergen Mind & Wellness - Fix Appointment SELECT Policy
+-- =====================================================
+-- This migration fixes an overly permissive SELECT policy that allowed
+-- anonymous users to view all appointments.
+--
+-- ISSUE:
+-- Migration 004 added a SELECT policy for anonymous users to support
+-- PostgREST INSERT...RETURNING, but it allowed viewing ALL appointments.
+--
+-- SOLUTION:
+-- Remove the overly permissive policy. In production, the public booking
+-- flow will use API routes with service role, not direct database access.
+-- For testing, we'll insert without .select() or use service role.
+--
+-- Created: 2025-11-13
+-- =====================================================
+
+-- Remove the overly permissive SELECT policy
+DROP POLICY IF EXISTS "Allow immediate SELECT after INSERT for PostgREST" ON appointments;
+
+-- =====================================================
+-- SECURITY MODEL CLARIFICATION
+-- =====================================================
+--
+-- Public Booking Flow (Production):
+-- 1. Frontend calls API route (/api/appointments/book)
+-- 2. API route uses service role client to:
+--    - Validate availability using check_appointment_availability()
+--    - Insert appointment
+--    - Return appointment data with booking_token
+-- 3. Service role bypasses RLS, so no SELECT policy needed
+--
+-- Anonymous users should NOT have direct database access to appointments.
+-- All appointment creation goes through API routes with business logic.
+-- =====================================================

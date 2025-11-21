@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Prácticas de Atención Plena y Estilo de Vida",
+    "description": "Técnicas basadas en evidencia para reducir el estrés, mejorar el enfoque y apoyar el bienestar mental."
+  },
+  "tabs": {
+    "meditation": "Meditación",
+    "breathing": "Respiración",
+    "journaling": "Diario",
+    "sleep": "Sueño"
+  },
+  "meditation": {
+    "title": "Meditaciones Guiadas",
+    "description": "Prácticas de meditación guiada gratuitas",
+    "videoTitle": "Meditación de 5 minutos para principiantes",
+    "content": "Se ha demostrado que la meditación reduce el estrés, mejora el enfoque y apoya la salud mental en general. Comience con solo 5 minutos por día."
+  },
+  "breathing": {
+    "title": "Ejercicios de Respiración",
+    "description": "Técnicas simples para activar el sistema nervioso parasimpático",
+    "exercise478": {
+      "title": "Respiración 4-7-8",
+      "steps": {
+        "step1": "Inhale por la nariz durante 4 conteos",
+        "step2": "Mantenga la respiración durante 7 conteos",
+        "step3": "Exhale por la boca durante 8 conteos",
+        "step4": "Repita 3-4 veces"
+      }
+    },
+    "boxBreathing": {
+      "title": "Respiración en Caja",
+      "steps": {
+        "step1": "Inhale durante 4 conteos",
+        "step2": "Mantenga durante 4 conteos",
+        "step3": "Exhale durante 4 conteos",
+        "step4": "Mantenga durante 4 conteos",
+        "step5": "Repita 5-10 veces"
+      }
+    }
+  },
+  "journaling": {
+    "title": "Plantillas de Diario",
+    "description": "Indicaciones estructuradas para reflexión y crecimiento",
+    "gratitude": {
+      "title": "Plantilla de Diario de Gratitud",
+      "description": "Práctica diaria de gratitud",
+      "button": "Descargar PDF"
+    },
+    "thoughtRecord": {
+      "title": "Hoja de Trabajo de Registro de Pensamientos",
+      "description": "Desafío de pensamientos basado en TCC",
+      "button": "Descargar PDF"
+    }
+  },
+  "sleep": {
+    "title": "Consejos de Higiene del Sueño",
+    "description": "Estrategias basadas en evidencia para dormir mejor",
+    "tips": {
+      "tip1": "Mantenga un horario de sueño constante (misma hora de acostarse/despertar)",
+      "tip2": "Cree una rutina relajante antes de acostarse",
+      "tip3": "Mantenga el dormitorio fresco, oscuro y silencioso",
+      "tip4": "Limite el tiempo frente a pantallas 1 hora antes de acostarse",
+      "tip5": "Evite la cafeína después de las 2 p.m.",
+      "tip6": "Haga ejercicio regularmente (pero no cerca de la hora de acostarse)",
+      "tip7": "Reserve la cama solo para dormir e intimidad",
+      "tip8": "Si no puede dormir después de 20 minutos, levántese y realice una actividad tranquila"
+    }
+  }
+}

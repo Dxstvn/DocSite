@@ -1,0 +1,824 @@
+{
+  "hub": {
+    "title": "Nutrición y Optimización Cerebral",
+    "description": "Lo que comes afecta cómo te sientes. Descubre estrategias nutricionales basadas en evidencia para apoyar tu salud mental y optimizar la función cerebral.",
+    "disclaimer": {
+      "title": "Aviso Médico",
+      "text": "La información nutricional es educativa y no sustituye el consejo médico. Siempre consulte con su proveedor de atención médica antes de hacer cambios significativos en la dieta o comenzar suplementos, especialmente si toma medicamentos."
+    },
+    "topics": {
+      "depression": {
+        "title": "Alimentos para la Depresión",
+        "description": "Estrategias nutricionales para apoyar el estado de ánimo y la recuperación de la salud mental"
+      },
+      "anxiety": {
+        "title": "Alimentos para la Ansiedad",
+        "description": "Enfoques dietéticos para reducir la ansiedad y promover la calma"
+      },
+      "focus": {
+        "title": "Alimentos para la Concentración",
+        "description": "Alimentos saludables para el cerebro que apoyan la concentración y la función cognitiva"
+      },
+      "supplements": {
+        "title": "Guía de Suplementos",
+        "description": "Suplementos basados en evidencia para el apoyo de la salud mental"
+      }
+    },
+    "explore": "Explorar",
+    "downloadPDF": "Descargar PDF",
+    "resources": {
+      "title": "Recursos Descargables",
+      "description": "Guías gratuitas para apoyar su viaje nutricional",
+      "mealPlan": {
+        "title": "Plan de Comidas Saludables para el Cerebro",
+        "description": "Plan de comidas de 7 días para el bienestar mental"
+      },
+      "groceryList": {
+        "title": "Lista de Compras para Mejorar el Estado de Ánimo",
+        "description": "Alimentos para almacenar para el apoyo de la salud mental"
+      }
+    }
+  },
+  "common": {
+    "medicalDisclaimer": "Aviso Médico",
+    "medicalDisclaimerText": "Esta información es educativa y no sustituye el consejo médico profesional. Siempre consulte con su proveedor de atención médica antes de hacer cambios significativos en la dieta, especialmente si está tomando medicamentos.",
+    "scheduleAppointment": "Programar una Cita",
+    "learnMore": "Aprender Sobre",
+    "backToNutrition": "Volver a Nutrición"
+  },
+  "depression": {
+    "title": "Alimentos para la Depresión",
+    "metaDescription": "Estrategias nutricionales basadas en evidencia para la depresión. Aprenda qué alimentos apoyan el estado de ánimo, beneficios del omega-3, conexión intestino-cerebro y planes de comidas prácticos para la salud mental.",
+    "intro": {
+      "p1": "La investigación muestra cada vez más que la nutrición juega un papel significativo en la salud mental. Si bien la comida por sí sola no puede curar la depresión, una dieta rica en nutrientes puede apoyar la función cerebral, estabilizar el estado de ánimo y complementar otros tratamientos como la terapia y la medicación.",
+      "p2": "El eje intestino-cerebro—la comunicación bidireccional entre su sistema digestivo y el cerebro—significa que lo que come afecta directamente la producción de neurotransmisores, los niveles de inflamación y la salud cerebral general."
+    },
+    "sections": {
+      "foods": {
+        "title": "Alimentos a Enfatizar",
+        "fattyFish": {
+          "title": "Pescado Graso",
+          "description": "El salmón, las sardinas, la caballa y las anchoas son ricos en ácidos grasos omega-3 (EPA y DHA), que reducen la inflamación cerebral y apoyan la función de los neurotransmisores. La investigación muestra que los omega-3 pueden reducir los síntomas de la depresión.",
+          "serving": "Apunte a 2-3 porciones por semana."
+        },
+        "leafyGreens": {
+          "title": "Verduras de Hoja Verde",
+          "description": "La espinaca, la col rizada, la acelga y las hojas de col proporcionan folato (vitamina B9), que es esencial para producir serotonina y dopamina. Los niveles bajos de folato están asociados con un mayor riesgo de depresión.",
+          "serving": "Incluya 1-2 tazas diarias en ensaladas, batidos o platos cocidos."
+        },
+        "nutsSeeds": {
+          "title": "Nueces y Semillas",
+          "description": "Las nueces, las semillas de lino, las semillas de chía y las almendras contienen omega-3, zinc y magnesio. Las nueces son particularmente beneficiosas para la salud cerebral y la regulación del estado de ánimo.",
+          "serving": "Un puñado (1 oz) diario como refrigerio o agregado a las comidas."
+        },
+        "berries": {
+          "title": "Bayas",
+          "description": "Los arándanos, las fresas y las moras son ricos en antioxidantes que protegen el cerebro del estrés oxidativo y la inflamación, ambos vinculados a la depresión.",
+          "serving": "½-1 taza diaria, fresca o congelada."
+        },
+        "wholeGrains": {
+          "title": "Granos Integrales",
+          "description": "La quinua, la avena, el arroz integral y el trigo integral proporcionan vitaminas B y carbohidratos complejos que estabilizan el azúcar en la sangre y apoyan la producción de serotonina.",
+          "serving": "Elija granos integrales sobre granos refinados para energía sostenida."
+        },
+        "fermentedFoods": {
+          "title": "Alimentos Fermentados",
+          "description": "El yogur, el kéfir, el kimchi, el chucrut y la kombucha contienen probióticos que apoyan la salud intestinal. Un microbioma intestinal saludable es crucial para la producción de neurotransmisores: el 90% de la serotonina se produce en el intestino.",
+          "serving": "Incluya alimentos ricos en probióticos diariamente."
+        },
+        "darkChocolate": {
+          "title": "Chocolate Oscuro",
+          "description": "El chocolate con 70%+ de cacao contiene flavonoides y compuestos que pueden mejorar el estado de ánimo y reducir las hormonas del estrés. El chocolate oscuro también proporciona magnesio.",
+          "serving": "1-2 cuadrados pequeños (aproximadamente 1 oz) como un regalo ocasional."
+        }
+      },
+      "nutrients": {
+        "title": "Nutrientes Clave para la Depresión",
+        "omega3": {
+          "title": "Ácidos Grasos Omega-3 (EPA/DHA)",
+          "description": "Reducen la inflamación, apoyan la función de los neurotransmisores y mejoran la fluidez de la membrana de las células cerebrales. Múltiples estudios muestran que la suplementación con EPA reduce los síntomas de la depresión.",
+          "sources": "Fuentes: Pescado graso, nueces, semillas de lino, semillas de chía"
+        },
+        "bVitamins": {
+          "title": "Vitaminas B (B6, B12, Folato)",
+          "description": "Esenciales para producir serotonina, dopamina y norepinefrina. Las deficiencias de vitaminas B son comunes en la depresión.",
+          "sources": "Fuentes: Verduras de hoja verde, legumbres, granos integrales, huevos, pescado, aves"
+        },
+        "vitaminD": {
+          "title": "Vitamina D",
+          "description": "Los receptores de vitamina D se encuentran en todo el cerebro. La deficiencia está vinculada al trastorno afectivo estacional (TAE) y la depresión mayor.",
+          "sources": "Fuentes: Exposición al sol, pescado graso, lácteos fortificados, yemas de huevo, hongos"
+        },
+        "magnesium": {
+          "title": "Magnesio",
+          "description": "Calma el sistema nervioso, regula la respuesta al estrés y apoya la función de los neurotransmisores. El magnesio bajo está asociado con un aumento de la depresión y la ansiedad.",
+          "sources": "Fuentes: Verduras de hoja verde, nueces, semillas, granos integrales, chocolate oscuro, legumbres"
+        },
+        "zinc": {
+          "title": "Zinc",
+          "description": "Modula la respuesta del cerebro y el cuerpo al estrés. Se observa deficiencia de zinc en la depresión, y la suplementación puede mejorar los efectos antidepresivos.",
+          "sources": "Fuentes: Ostras, carne de res, semillas de calabaza, lentejas, anacardos"
+        },
+        "tryptophan": {
+          "title": "Triptófano",
+          "description": "Un aminoácido que es el precursor de la serotonina, el neurotransmisor del \"bienestar\".",
+          "sources": "Fuentes: Pavo, pollo, huevos, queso, tofu, semillas de calabaza, avena"
+        }
+      },
+      "limit": {
+        "title": "Alimentos y Sustancias a Limitar",
+        "processedSugar": {
+          "title": "Alimentos Procesados Altos en Azúcar",
+          "description": "Causa picos y caídas de azúcar en la sangre que empeoran la inestabilidad del estado de ánimo. La alta ingesta de azúcar está asociada con un mayor riesgo de depresión e inflamación.",
+          "advice": "Limite los dulces, los refrescos, los productos horneados y los bocadillos procesados."
+        },
+        "caffeine": {
+          "title": "Cafeína Excesiva",
+          "description": "Si bien la cafeína moderada puede mejorar el estado de alerta, la ingesta excesiva (>400 mg/día, ~4 tazas de café) puede empeorar la ansiedad, interrumpir el sueño y causar caídas del estado de ánimo.",
+          "advice": "Controle su tolerancia; algunas personas con depresión son más sensibles a la cafeína."
+        },
+        "alcohol": {
+          "title": "Alcohol",
+          "description": "Un depresor del sistema nervioso central que interrumpe el sueño, agota las vitaminas B e interfiere con los medicamentos antidepresivos. El uso crónico empeora la depresión.",
+          "advice": "Limite o evite el alcohol, especialmente cuando experimente episodios depresivos."
+        },
+        "transFats": {
+          "title": "Grasas Trans y Aceites Altamente Procesados",
+          "description": "Se encuentran en alimentos fritos, margarina y muchos bocadillos empaquetados. Las grasas trans aumentan la inflamación y están vinculadas a tasas más altas de depresión.",
+          "advice": "Elija aceite de oliva, aceite de aguacate o aceite de coco en su lugar."
+        }
+      },
+      "research": {
+        "title": "Investigación y Evidencia",
+        "keyStudies": "Estudios Clave:",
+        "studies": {
+          "mediterranean": "Dieta mediterránea y depresión (ensayo SMILES, 2017)",
+          "omega3": "Ácidos grasos omega-3 para la depresión (metanálisis)",
+          "gutBrain": "Eje intestino-cerebro y salud mental (investigación emergente)"
+        }
+      },
+      "meals": {
+        "title": "Ideas Prácticas de Comidas",
+        "breakfast": {
+          "title": "Opciones de Desayuno",
+          "items": {
+            "oatmeal": "Avena con arándanos, nueces y un chorrito de miel",
+            "yogurt": "Yogur griego con fresas, semillas de chía y almendras en rodajas",
+            "omelet": "Tortilla de espinacas y champiñones con pan integral",
+            "smoothie": "Batido con col rizada, plátano, bayas, semillas de lino y leche de almendras"
+          }
+        },
+        "lunch": {
+          "title": "Opciones de Almuerzo",
+          "items": {
+            "salmon": "Ensalada de salmón a la parrilla con verduras mixtas, aguacate y aderezo de aceite de oliva",
+            "quinoa": "Bowl de quinua con verduras asadas, garbanzos y salsa de tahini",
+            "wrap": "Wrap de pavo y aguacate con tortilla de trigo integral y verduras",
+            "soup": "Sopa de lentejas con col rizada y pan integral"
+          }
+        },
+        "dinner": {
+          "title": "Opciones de Cena",
+          "items": {
+            "bakedSalmon": "Salmón al horno con batata asada y brócoli al vapor",
+            "chicken": "Pollo a la parrilla con quinua y espinacas salteadas",
+            "sardines": "Sardinas sobre verduras mixtas con tomates cherry y aceite de oliva",
+            "tofu": "Salteado de tofu con arroz integral y verduras coloridas"
+          }
+        },
+        "snacks": {
+          "title": "Ideas de Refrigerios",
+          "items": {
+            "nuts": "Puñado de nueces o almendras",
+            "yogurt": "Yogur griego con bayas",
+            "chocolate": "Cuadrado de chocolate oscuro (70%+ cacao)",
+            "apple": "Rodajas de manzana con mantequilla de almendras",
+            "carrots": "Palitos de zanahoria con hummus"
+          }
+        }
+      }
+    },
+    "learnAboutDepression": "Aprender Sobre la Depresión"
+  },
+  "anxiety": {
+    "title": "Alimentos para la Ansiedad",
+    "metaDescription": "Alimentos que reducen la ansiedad de forma natural. Aprenda sobre alimentos ricos en magnesio, nutrientes calmantes, conexión intestino-cerebro y planes de comidas para manejar los síntomas de ansiedad.",
+    "intro": {
+      "p1": "La nutrición juega un papel crucial en el manejo de la ansiedad. Ciertos alimentos pueden ayudar a calmar el sistema nervioso, estabilizar los niveles de azúcar en la sangre y apoyar el equilibrio de neurotransmisores, todo lo cual influye en los niveles de ansiedad.",
+      "p2": "Si bien los cambios dietéticos por sí solos pueden no eliminar la ansiedad, pueden reducir significativamente los síntomas y complementar otros tratamientos como la terapia, la medicación y las técnicas de manejo del estrés."
+    },
+    "sections": {
+      "foods": {
+        "title": "Alimentos a Enfatizar",
+        "fattyFish": {
+          "title": "Pescado Graso",
+          "description": "El salmón, las sardinas y la caballa son ricos en ácidos grasos omega-3, que reducen la inflamación y se ha demostrado que disminuyen los síntomas de ansiedad en múltiples estudios.",
+          "serving": "Apunte a 2-3 porciones por semana."
+        },
+        "leafyGreens": {
+          "title": "Verduras de Hoja Verde Oscura",
+          "description": "La espinaca, la col rizada y la acelga son ricas en magnesio, un relajante muscular natural que calma el sistema nervioso. La deficiencia de magnesio está vinculada a un aumento de la ansiedad.",
+          "serving": "Incluya 1-2 tazas diarias en ensaladas, batidos o salteadas."
+        },
+        "chamomile": {
+          "title": "Té de Manzanilla",
+          "description": "Contiene apigenina, un antioxidante que se une a los receptores cerebrales promoviendo la relajación y reduciendo la ansiedad. La manzanilla se ha utilizado durante siglos como un agente calmante natural.",
+          "serving": "1-2 tazas diarias, especialmente por la noche."
+        },
+        "almonds": {
+          "title": "Almendras",
+          "description": "Ricas en magnesio y vitamina E, ambos apoyan la reducción del estrés. Las almendras también proporcionan grasas saludables que estabilizan el azúcar en la sangre y el estado de ánimo.",
+          "serving": "Un puñado (1 oz) como refrigerio o agregado a las comidas."
+        },
+        "avocados": {
+          "title": "Aguacates",
+          "description": "Cargados de vitaminas B (especialmente B6) que apoyan la producción de neurotransmisores y la respuesta al estrés. Las grasas saludables promueven la salud cerebral y estabilizan el estado de ánimo.",
+          "serving": "½ aguacate diario en ensaladas, sándwiches o batidos."
+        },
+        "turkey": {
+          "title": "Pavo",
+          "description": "Contiene triptófano, un aminoácido que produce serotonina, un neurotransmisor que promueve la calma y el bienestar.",
+          "serving": "Proteína magra en el almuerzo o la cena."
+        },
+        "bananas": {
+          "title": "Plátanos",
+          "description": "Proporcionan vitamina B6, que ayuda a producir serotonina, y potasio, que regula la presión arterial durante el estrés. Los azúcares naturales ofrecen energía rápida sin caídas.",
+          "serving": "1-2 plátanos diarios como refrigerio o en batidos."
+        },
+        "complexCarbs": {
+          "title": "Carbohidratos Complejos",
+          "description": "La avena, la quinua, las batatas y el arroz integral promueven la liberación constante de serotonina y estabilizan el azúcar en la sangre, previniendo los cambios de humor asociados con la ansiedad.",
+          "serving": "Elija granos integrales sobre carbohidratos refinados para una calma sostenida."
+        }
+      },
+      "nutrients": {
+        "title": "Nutrientes Clave para la Ansiedad",
+        "magnesium": {
+          "title": "Magnesio",
+          "description": "El \"mineral de la relajación\" que calma el sistema nervioso, relaja los músculos y apoya la producción de GABA (el neurotransmisor calmante del cerebro). La deficiencia de magnesio es común en los trastornos de ansiedad.",
+          "sources": "Fuentes: Verduras de hoja verde, almendras, anacardos, frijoles negros, chocolate oscuro, aguacates"
+        },
+        "bVitamins": {
+          "title": "Vitaminas B (B6, B12, Folato)",
+          "description": "Esenciales para producir neurotransmisores que regulan el estado de ánimo y la respuesta al estrés. Las vitaminas B se agotan durante el estrés crónico, creando un ciclo de aumento de la ansiedad.",
+          "sources": "Fuentes: Pavo, pollo, pescado, huevos, verduras de hoja verde, legumbres, granos integrales"
+        },
+        "omega3": {
+          "title": "Ácidos Grasos Omega-3",
+          "description": "Reducen la inflamación y apoyan la función de la membrana celular cerebral. La investigación muestra que la suplementación con omega-3 reduce los síntomas de ansiedad, particularmente en aquellos con alta inflamación.",
+          "sources": "Fuentes: Pescado graso, nueces, semillas de lino, semillas de chía, semillas de cáñamo"
+        },
+        "probiotics": {
+          "title": "Probióticos",
+          "description": "Apoyan el eje intestino-cerebro. Los estudios muestran que cepas probióticas específicas reducen la ansiedad al producir GABA y regular la respuesta al estrés a través del nervio vago.",
+          "sources": "Fuentes: Yogur, kéfir, kimchi, chucrut, kombucha, miso"
+        },
+        "lTheanine": {
+          "title": "L-Teanina",
+          "description": "Un aminoácido que se encuentra en el té verde que promueve la relajación sin sedación. La L-teanina aumenta las ondas cerebrales alfa asociadas con el estado de alerta tranquilo.",
+          "sources": "Fuentes: Té verde, té negro, ciertos hongos"
+        },
+        "antioxidants": {
+          "title": "Antioxidantes",
+          "description": "Protegen el cerebro del estrés oxidativo causado por la ansiedad crónica. Las dietas ricas en antioxidantes están asociadas con niveles más bajos de ansiedad.",
+          "sources": "Fuentes: Bayas, chocolate oscuro, té verde, verduras coloridas"
+        }
+      },
+      "limit": {
+        "title": "Alimentos y Sustancias a Limitar",
+        "caffeine": {
+          "title": "Cafeína",
+          "description": "Un estimulante que aumenta la frecuencia cardíaca, desencadena la liberación de hormonas del estrés (cortisol, adrenalina) y puede empeorar los síntomas de ansiedad. La sensibilidad a la cafeína varía, pero muchos con ansiedad se benefician de reducirla o eliminarla.",
+          "advice": "Limite a <200 mg/día (~2 tazas de café) o cambie al té verde para cafeína más suave con L-teanina."
+        },
+        "alcohol": {
+          "title": "Alcohol",
+          "description": "Si bien puede reducir temporalmente la ansiedad, el alcohol interrumpe el sueño, agota las vitaminas B y causa ansiedad de rebote a medida que desaparece. El uso crónico empeora la ansiedad a largo plazo.",
+          "advice": "Minimice o evite el alcohol, especialmente durante períodos de alta ansiedad."
+        },
+        "highSugar": {
+          "title": "Alimentos Altos en Azúcar",
+          "description": "Causan picos rápidos de azúcar en la sangre seguidos de caídas, que desencadenan síntomas similares a la ansiedad (temblores, irritabilidad, ritmo cardíaco rápido). La alta ingesta de azúcar está vinculada a un aumento de la ansiedad.",
+          "advice": "Evite dulces, refrescos, productos horneados; elija frutas enteras en su lugar."
+        },
+        "processed": {
+          "title": "Alimentos Procesados",
+          "description": "Altos en grasas trans, aditivos artificiales y carbohidratos refinados que promueven la inflamación y la inestabilidad del azúcar en la sangre, ambos empeoran la ansiedad.",
+          "advice": "Elija alimentos enteros y no procesados siempre que sea posible."
+        },
+        "sodium": {
+          "title": "Alimentos Altos en Sodio",
+          "description": "El exceso de sal puede aumentar la presión arterial y exacerbar los síntomas físicos de la ansiedad. Muchos alimentos procesados contienen sodio oculto.",
+          "advice": "Limite las carnes procesadas, sopas enlatadas, comida rápida; use hierbas y especias para dar sabor en su lugar."
+        }
+      },
+      "research": {
+        "title": "Investigación y Evidencia",
+        "keyFindings": "Hallazgos Clave de Investigación:",
+        "findings": {
+          "magnesium": "La suplementación con magnesio reduce la ansiedad subjetiva (múltiples ensayos controlados aleatorios)",
+          "omega3": "Los ácidos grasos omega-3 disminuyen los síntomas de ansiedad (metanálisis, 2018)",
+          "probiotics": "Los probióticos reducen la ansiedad a través del eje intestino-cerebro (evidencia emergente)",
+          "mediterranean": "La dieta mediterránea está asociada con tasas más bajas de ansiedad"
+        }
+      },
+      "meals": {
+        "title": "Ideas Prácticas de Comidas",
+        "breakfast": {
+          "title": "Opciones de Desayuno",
+          "items": {
+            "parfait": "Parfait de yogur griego con plátano, almendras y miel",
+            "oatmeal": "Avena con bayas, semillas de lino y mantequilla de almendras",
+            "eggs": "Huevos revueltos con espinacas y aguacate en pan integral",
+            "smoothie": "Batido verde con col rizada, plátano, semillas de chía y leche de almendras"
+          }
+        },
+        "lunch": {
+          "title": "Opciones de Almuerzo",
+          "items": {
+            "wrap": "Wrap de pavo y aguacate con verduras mixtas y hummus",
+            "salad": "Ensalada de salmón con espinacas, nueces y aderezo de aceite de oliva",
+            "bowl": "Bowl de quinua con verduras asadas y salsa de tahini",
+            "soup": "Sopa de lentejas con col rizada y galletas integrales"
+          }
+        },
+        "dinner": {
+          "title": "Opciones de Cena",
+          "items": {
+            "salmon": "Salmón al horno con batata y brócoli al vapor",
+            "chicken": "Pollo a la parrilla con arroz integral y espinacas salteadas",
+            "meatballs": "Albóndigas de pavo con pasta integral y salsa marinara",
+            "stirfry": "Tofu salteado con verduras sobre quinua"
+          }
+        },
+        "snacks": {
+          "title": "Ideas de Refrigerios",
+          "items": {
+            "nuts": "Puñado de almendras o anacardos",
+            "banana": "Plátano con mantequilla de almendras",
+            "chocolate": "Cuadrado de chocolate oscuro (70%+ cacao)",
+            "tea": "Té de manzanilla con miel",
+            "avocado": "Aguacate en galletas integrales"
+          }
+        },
+        "beverages": {
+          "title": "Bebidas Calmantes",
+          "items": {
+            "chamomile": "Té de manzanilla (en cualquier momento, especialmente por la noche)",
+            "green": "Té verde (mañana/tarde para enfoque tranquilo)",
+            "golden": "Leche dorada caliente (cúrcuma, jengibre, leche de almendras, miel)",
+            "smoothie": "Batidos ricos en magnesio"
+          }
+        }
+      }
+    },
+    "learnAboutAnxiety": "Aprender Sobre la Ansiedad"
+  },
+  "focus": {
+    "title": "Alimentos para la Concentración y Función Cognitiva",
+    "metaDescription": "Alimentos que mejoran la concentración y el enfoque. Aprenda sobre nutrientes para el TDAH, comidas saludables para el cerebro, desayunos ricos en proteínas y rendimiento cognitivo.",
+    "disclaimer": "Esta información es educativa y no sustituye el consejo médico profesional. Las estrategias nutricionales pueden apoyar el enfoque y la función cognitiva, pero el TDAH y las dificultades de atención requieren tratamiento integral. Consulte a su proveedor de atención médica.",
+    "intro": {
+      "p1": "La nutrición saludable para el cerebro es esencial para un enfoque, concentración y rendimiento cognitivo óptimos. Ciertos alimentos apoyan la producción de neurotransmisores, mejoran el flujo sanguíneo al cerebro y proporcionan energía sostenida sin caídas, todo crítico para la atención y la función ejecutiva.",
+      "p2": "Para aquellos con TDAH, la nutrición no puede reemplazar la medicación o la terapia conductual, pero puede mejorar significativamente la efectividad del tratamiento y reducir los síntomas."
+    },
+    "sections": {
+      "foods": {
+        "title": "Alimentos a Enfatizar",
+        "fattyFish": {
+          "title": "Pescado Graso",
+          "description": "El salmón, las sardinas, las anchoas y la caballa son la fuente más rica de DHA, un ácido graso omega-3 que constituye el 40% de las membranas de las células cerebrales. El DHA es crítico para la función cognitiva, y los niveles bajos están vinculados a síntomas de TDAH.",
+          "serving": "Apunte a 2-3 porciones por semana."
+        },
+        "eggs": {
+          "title": "Huevos",
+          "description": "Contienen colina, un nutriente esencial para producir acetilcolina, un neurotransmisor crucial para la memoria y el enfoque. Los huevos también proporcionan proteína de alta calidad para energía sostenida.",
+          "serving": "1-2 huevos diarios, especialmente en el desayuno."
+        },
+        "blueberries": {
+          "title": "Arándanos",
+          "description": "Repletos de antioxidantes (flavonoides) que atraviesan la barrera hematoencefálica, mejorando la comunicación entre las células cerebrales y mejorando la memoria y el procesamiento cognitivo.",
+          "serving": "½-1 taza diaria, fresca o congelada."
+        },
+        "nuts": {
+          "title": "Nueces (Nueces, Almendras)",
+          "description": "Ricas en vitamina E, omega-3 y magnesio, todas apoyan la salud cerebral y protegen contra el deterioro cognitivo. Las nueces específicamente mejoran la memoria de trabajo.",
+          "serving": "Un puñado (1 oz) como refrigerio o agregado a las comidas."
+        },
+        "greenTea": {
+          "title": "Té Verde",
+          "description": "Contiene L-teanina más cafeína moderada, una combinación que promueve el estado de alerta enfocado y tranquilo sin nerviosismo. La L-teanina aumenta las ondas cerebrales alfa asociadas con la concentración relajada.",
+          "serving": "1-2 tazas diarias, especialmente a media mañana o tarde."
+        },
+        "beets": {
+          "title": "Remolachas",
+          "description": "Altas en nitratos que mejoran el flujo sanguíneo al cerebro, mejorando el suministro de oxígeno y el rendimiento cognitivo. Los estudios muestran que las remolachas mejoran el tiempo de reacción y la toma de decisiones.",
+          "serving": "Incluya en ensaladas, jugos o asadas como guarnición."
+        },
+        "darkChocolate": {
+          "title": "Chocolate Oscuro",
+          "description": "Contiene flavonoides, cafeína y teobromina que mejoran el enfoque, el estado de ánimo y el estado de alerta. Elija 70%+ de cacao para máximos beneficios cerebrales y azúcar mínimo.",
+          "serving": "1-2 cuadrados pequeños (aproximadamente 1 oz) diarios."
+        },
+        "wholeGrains": {
+          "title": "Granos Integrales",
+          "description": "La avena, la quinua y el arroz integral proporcionan glucosa constante al cerebro (la fuente principal de combustible del cerebro). Los carbohidratos complejos previenen las caídas de azúcar en la sangre que deterioran la concentración.",
+          "serving": "Elija granos integrales sobre granos refinados para un enfoque sostenido."
+        }
+      },
+      "nutrients": {
+        "title": "Nutrientes Clave para la Concentración",
+        "omega3": {
+          "title": "Ácidos Grasos Omega-3 (DHA y EPA)",
+          "description": "El DHA es esencial para la estructura y función cerebral. La investigación muestra que la suplementación con omega-3 mejora la atención, reduce la hiperactividad y mejora el rendimiento cognitivo en el TDAH.",
+          "sources": "Fuentes: Pescado graso, nueces, semillas de lino, semillas de chía, aceite de algas (vegano)"
+        },
+        "bVitamins": {
+          "title": "Vitaminas B (B6, B12, Folato)",
+          "description": "Críticas para producir dopamina y norepinefrina, neurotransmisores que regulan la atención, la motivación y la función ejecutiva. Las deficiencias empeoran los síntomas del TDAH.",
+          "sources": "Fuentes: Huevos, aves, pescado, verduras de hoja verde, legumbres, granos fortificados"
+        },
+        "iron": {
+          "title": "Hierro",
+          "description": "Transporta oxígeno al cerebro y está involucrado en la producción de dopamina. El hierro bajo (incluso sin anemia) está vinculado a síntomas de TDAH, especialmente falta de atención y fatiga.",
+          "sources": "Fuentes: Carne roja, aves, pescado, lentejas, espinacas, cereales fortificados"
+        },
+        "zinc": {
+          "title": "Zinc",
+          "description": "Regula la función de la dopamina y a menudo es bajo en individuos con TDAH. La suplementación con zinc puede mejorar la efectividad de los medicamentos estimulantes.",
+          "sources": "Fuentes: Ostras, carne de res, semillas de calabaza, anacardos, garbanzos"
+        },
+        "protein": {
+          "title": "Proteína (Aminoácidos)",
+          "description": "Aminoácidos como la tirosina y el triptófano son precursores de dopamina, norepinefrina y serotonina. La proteína en el desayuno es especialmente importante para un enfoque sostenido y reducir la impulsividad.",
+          "sources": "Fuentes: Huevos, yogur griego, carnes magras, pescado, tofu, legumbres, nueces"
+        },
+        "choline": {
+          "title": "Colina",
+          "description": "Esencial para producir acetilcolina, que apoya la memoria, el aprendizaje y la atención. La colina es particularmente importante durante el desarrollo cerebral pero beneficia a los adultos también.",
+          "sources": "Fuentes: Huevos (especialmente yemas), hígado, salmón, brócoli, coles de Bruselas"
+        }
+      },
+      "limit": {
+        "title": "Alimentos y Sustancias a Limitar",
+        "simpleSugars": {
+          "title": "Azúcares Simples y Carbohidratos Refinados",
+          "description": "Causan picos rápidos de azúcar en la sangre seguidos de caídas, que deterioran la concentración, aumentan la hiperactividad y empeoran la impulsividad. El azúcar en la sangre constante es esencial para el enfoque.",
+          "advice": "Evite dulces, refrescos, pan blanco, pasteles; elija granos integrales y combine carbohidratos con proteínas."
+        },
+        "additives": {
+          "title": "Aditivos Artificiales y Colorantes Alimentarios",
+          "description": "Algunos estudios sugieren que los colores artificiales (Rojo 40, Amarillo 5, Amarillo 6) y los conservantes pueden empeorar la hiperactividad en niños sensibles, aunque la investigación es mixta. La dieta Feingold elimina estos aditivos.",
+          "advice": "Considere eliminar durante 2-4 semanas para ver si los síntomas mejoran; elija alimentos enteros y no procesados."
+        },
+        "caffeine": {
+          "title": "Cafeína Excesiva",
+          "description": "Si bien la cafeína moderada puede mejorar el enfoque (especialmente combinada con L-teanina en té verde), las cantidades excesivas causan nerviosismo, ansiedad e interrupción del sueño, todo empeora los síntomas del TDAH.",
+          "advice": "Limite a <200 mg/día; evite la cafeína después de las 2 PM para proteger el sueño."
+        },
+        "skippingMeals": {
+          "title": "Omitir Comidas",
+          "description": "Omitir comidas causa caídas de azúcar en la sangre que deterioran significativamente la concentración, la memoria de trabajo y el control de impulsos. El desayuno es especialmente crítico para el enfoque matutino.",
+          "advice": "Coma comidas regulares cada 3-4 horas; incluya proteínas y carbohidratos complejos."
+        },
+        "allergens": {
+          "title": "Alimentos Altamente Alergénicos (Si Es Sensible)",
+          "description": "Algunos individuos con TDAH tienen sensibilidades alimentarias no diagnosticadas (lácteos, gluten, soja) que empeoran los síntomas. Esto no es cierto para todos, pero vale la pena explorar si los síntomas persisten.",
+          "advice": "Trabaje con un proveedor de atención médica para identificar posibles sensibilidades a través de una dieta de eliminación."
+        }
+      },
+      "research": {
+        "title": "Investigación y Evidencia",
+        "keyFindings": "Hallazgos Clave de Investigación:",
+        "findings": {
+          "omega3": "La suplementación con omega-3 mejora los síntomas del TDAH (múltiples metanálisis)",
+          "protein": "El desayuno rico en proteínas mejora la atención y reduce la hiperactividad",
+          "minerals": "Las deficiencias de hierro y zinc están asociadas con la gravedad del TDAH",
+          "mediterranean": "La dieta mediterránea está vinculada a una mejor función cognitiva",
+          "elimination": "Las dietas de eliminación pueden ayudar a un subconjunto de individuos con sensibilidades alimentarias"
+        }
+      },
+      "meals": {
+        "title": "Ideas Prácticas de Comidas",
+        "breakfast": {
+          "title": "Opciones de Desayuno (Rico en Proteínas para Enfoque)",
+          "items": {
+            "eggs": "Huevos revueltos con espinacas, pan integral y bayas",
+            "parfait": "Parfait de yogur griego con nueces, arándanos y semillas de chía",
+            "salmon": "Salmón ahumado y aguacate en bagel integral",
+            "smoothie": "Batido de proteínas con plátano, mantequilla de almendras, avena y semillas de lino"
+          }
+        },
+        "lunch": {
+          "title": "Opciones de Almuerzo",
+          "items": {
+            "tuna": "Ensalada de atún con remolachas, verduras mixtas y aderezo de aceite de oliva",
+            "wrap": "Wrap de pavo y aguacate con tortilla de trigo integral",
+            "bowl": "Bowl de quinua con pollo a la parrilla, brócoli y salsa de tahini",
+            "soup": "Sopa de lentejas con col rizada y galletas integrales"
+          }
+        },
+        "dinner": {
+          "title": "Opciones de Cena",
+          "items": {
+            "salmon": "Salmón a la parrilla con arroz integral y coles de Bruselas asadas",
+            "chicken": "Pollo al horno con batata y espinacas salteadas",
+            "sardines": "Sardinas sobre pasta integral con tomates cherry",
+            "beef": "Salteado de carne de res con verduras coloridas sobre quinua"
+          }
+        },
+        "snacks": {
+          "title": "Ideas de Refrigerios (Energía Sostenida)",
+          "items": {
+            "eggs": "Huevos duros con tomates cherry",
+            "walnuts": "Nueces y chocolate oscuro",
+            "apple": "Rodajas de manzana con mantequilla de almendras",
+            "tea": "Té verde con un pequeño trozo de chocolate oscuro",
+            "hummus": "Hummus con palitos de zanahoria y pimiento"
+          }
+        },
+        "beverages": {
+          "title": "Bebidas que Mejoran el Enfoque",
+          "items": {
+            "green": "Té verde (L-teanina + cafeína moderada)",
+            "beet": "Jugo de remolacha (mejora el flujo sanguíneo al cerebro)",
+            "smoothie": "Batido de arándanos con proteína en polvo",
+            "water": "Agua (la deshidratación deteriora significativamente la concentración)"
+          }
+        }
+      }
+    },
+    "learnAboutADHD": "Aprender Sobre el TDAH"
+  },
+  "supplements": {
+    "title": "Suplementos y Nutrientes para la Salud Mental",
+    "metaDescription": "Guía completa de suplementos para la salud mental: omega-3, vitamina D, magnesio, probióticos. Niveles de evidencia, dosis, seguridad y consideraciones de calidad.",
+    "safetyAlert": {
+      "title": "Información de Seguridad Importante",
+      "text": "Siempre consulte a su proveedor de atención médica antes de comenzar cualquier suplemento. Los suplementos pueden interactuar con medicamentos, causar efectos secundarios y pueden no ser apropiados para todos. Esta información es solo educativa y no es consejo médico."
+    },
+    "intro": {
+      "p1": "Los suplementos pueden desempeñar un papel de apoyo en el tratamiento de la salud mental, pero deben complementar, no reemplazar, una dieta saludable, terapia y medicamentos recetados. Si bien algunos suplementos tienen un fuerte apoyo de investigación, la industria está en gran medida no regulada, lo que hace que la calidad y la seguridad sean consideraciones críticas.",
+      "p2": "Trabaje con su proveedor de atención médica para determinar qué suplementos, si los hay, son apropiados para sus necesidades individuales, medicamentos y condiciones de salud."
+    },
+    "supplements": {
+      "omega3": {
+        "title": "Aceite de Pescado Omega-3 (EPA y DHA)",
+        "trigger": "Aceite de Pescado Omega-3 (EPA y DHA)",
+        "evidenceLevel": "Fuerte",
+        "intro": "Los ácidos grasos omega-3, particularmente EPA (ácido eicosapentaenoico) y DHA (ácido docosahexaenoico), tienen el apoyo de investigación más robusto para la salud mental.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "depression": "Depresión: Múltiples metanálisis muestran que las fórmulas ricas en EPA reducen los síntomas de depresión",
+          "adhd": "TDAH: Mejora la atención y reduce la hiperactividad en niños y adultos",
+          "anxiety": "Ansiedad: Puede reducir los síntomas de ansiedad, especialmente en aquellos con alta inflamación"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "1000-2000 mg combinados de EPA+DHA diariamente. Para la depresión, las proporciones más altas de EPA (EPA:DHA 2:1 o más) pueden ser más efectivas."
+        },
+        "quality": {
+          "title": "Consideraciones de Calidad:",
+          "items": {
+            "tested": "Probado por terceros para pureza (mercurio, PCBs)",
+            "distilled": "Molecularmente destilado",
+            "certified": "Verifique la certificación IFOS (Estándares Internacionales de Aceite de Pescado) o USP",
+            "storage": "Refrigere después de abrir para prevenir la oxidación"
+          }
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Generalmente seguro. Puede causar sabor a pescado, malestar estomacal. Las dosis altas (>3g/día) pueden diluir la sangre: consulte al médico si toma anticoagulantes."
+        }
+      },
+      "vitaminD": {
+        "title": "Vitamina D",
+        "trigger": "Vitamina D",
+        "evidenceLevel": "Moderado a Fuerte",
+        "intro": "La deficiencia de vitamina D es extremadamente común y está fuertemente vinculada a la depresión, el trastorno afectivo estacional (TAE) y el deterioro cognitivo.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "depression": "Depresión: La deficiencia está asociada con la depresión; la suplementación mejora los síntomas en individuos deficientes",
+          "sad": "Trastorno Afectivo Estacional (TAE): Puede reducir los síntomas de depresión invernal",
+          "cognitive": "Función Cognitiva: Apoya la salud cerebral y puede reducir el riesgo de demencia"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "1000-2000 UI diarias para mantenimiento. Pruebe sus niveles sanguíneos primero: el rango óptimo es 30-50 ng/mL. Pueden ser necesarias dosis más altas para corregir la deficiencia."
+        },
+        "quality": {
+          "title": "Consideraciones de Calidad:",
+          "items": {
+            "type": "La vitamina D3 (colecalciferol) es más efectiva que la D2",
+            "absorption": "Tome con una comida que contenga grasa para una mejor absorción",
+            "combine": "Combine con magnesio y vitamina K2 para un metabolismo óptimo"
+          }
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Seguro hasta 4000 UI/día para la mayoría de los adultos. Las dosis excesivas pueden causar toxicidad. Se recomienda análisis de sangre regular."
+        }
+      },
+      "bComplex": {
+        "title": "Vitaminas del Complejo B",
+        "trigger": "Vitaminas del Complejo B",
+        "evidenceLevel": "Moderado",
+        "intro": "Las vitaminas B (B6, B12, folato) son esenciales para la producción de neurotransmisores y a menudo se agotan en la depresión y el estrés crónico.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "general": "B6, B12, Folato: Apoyan la producción de serotonina, dopamina y norepinefrina",
+          "b12": "Deficiencia de B12: Causa depresión, fatiga y deterioro cognitivo (común en veganos/vegetarianos)",
+          "folate": "Folato (L-metilfolato): Puede mejorar la efectividad antidepresiva"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "Complejo B que contenga 100% del RDA de cada vitamina B. Para deficiencia, dosis terapéuticas más altas bajo supervisión médica."
+        },
+        "whoBenefits": {
+          "title": "Quién Se Beneficia Más:",
+          "items": {
+            "vegans": "Veganos y vegetarianos (riesgo de deficiencia de B12)",
+            "older": "Adultos mayores (absorción reducida)",
+            "medications": "Aquellos que toman metformina o medicamentos que reducen el ácido (interfieren con la absorción de B12)",
+            "alcohol": "Usuarios fuertes de alcohol (agotamiento de vitaminas B)"
+          }
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Las vitaminas B son solubles en agua y generalmente seguras. Las cantidades excesivas se excretan en la orina."
+        }
+      },
+      "magnesium": {
+        "title": "Magnesio",
+        "trigger": "Magnesio",
+        "evidenceLevel": "Moderado",
+        "intro": "El magnesio está involucrado en más de 300 reacciones bioquímicas, incluidas las que regulan el estado de ánimo y la respuesta al estrés. La deficiencia es común y está vinculada a la ansiedad y la depresión.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "anxiety": "Ansiedad: Relajante muscular natural; calma el sistema nervioso",
+          "depression": "Depresión: Algunos estudios muestran que el magnesio reduce los síntomas depresivos",
+          "sleep": "Sueño: Mejora la calidad del sueño (especialmente glicinato de magnesio)"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "200-400 mg diarios. Mejor tomado en dosis divididas con alimentos."
+        },
+        "forms": {
+          "title": "Formas de Magnesio:",
+          "items": {
+            "glycinate": "Glicinato de Magnesio: Mejor para ansiedad, sueño, suave para el estómago",
+            "citrate": "Citrato de Magnesio: Buena absorción, puede tener efecto laxante",
+            "threonate": "L-Treonato de Magnesio: Cruza la barrera hematoencefálica, apoya la cognición",
+            "avoid": "Evite el Óxido de Magnesio: Mala absorción"
+          }
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Generalmente seguro. Las dosis altas pueden causar diarrea. Evite si tiene enfermedad renal. Puede interactuar con ciertos medicamentos."
+        }
+      },
+      "probiotics": {
+        "title": "Probióticos",
+        "trigger": "Probióticos",
+        "evidenceLevel": "Emergente",
+        "intro": "El eje intestino-cerebro es un área importante de investigación en salud mental. Cepas probióticas específicas producen neurotransmisores y regulan la respuesta al estrés a través del nervio vago.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "anxietyDepression": "Ansiedad y Depresión: Ciertas cepas (Lactobacillus, Bifidobacterium) pueden reducir los síntomas",
+          "stress": "Resiliencia al Estrés: Puede reducir el cortisol y mejorar la respuesta al estrés",
+          "gut": "Salud Intestinal: Apoya la salud digestiva general"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "10-50 mil millones de UFC diarias de una fórmula de múltiples cepas. Los probióticos refrigerados tienden a tener mayor viabilidad."
+        },
+        "strains": {
+          "title": "Cepas Beneficiosas para la Salud Mental:",
+          "items": {
+            "helveticus": "Lactobacillus helveticus",
+            "longum": "Bifidobacterium longum",
+            "rhamnosus": "Lactobacillus rhamnosus"
+          }
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Generalmente seguro. Puede causar gases o hinchazón inicialmente. Aquellos con sistemas inmunológicos comprometidos deben consultar primero a un médico."
+        }
+      },
+      "same": {
+        "title": "SAMe (S-Adenosil Metionina)",
+        "trigger": "SAMe (S-Adenosil Metionina)",
+        "evidenceLevel": "Moderado",
+        "intro": "SAMe es un compuesto producido naturalmente en el cuerpo que apoya la función de neurotransmisores y tiene propiedades antidepresivas.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "depression": "Depresión: Múltiples estudios muestran que SAMe es tan efectivo como algunos antidepresivos",
+          "onset": "Inicio: Puede funcionar más rápido que los ISRS (1-2 semanas vs 4-6 semanas)"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "400-1600 mg diarios en dosis divididas. Comience bajo y aumente gradualmente."
+        },
+        "considerations": {
+          "title": "Consideraciones Importantes:",
+          "items": {
+            "supervision": "Se Requiere Supervisión Médica: Puede interactuar con antidepresivos",
+            "bipolar": "No para Trastorno Bipolar: Puede desencadenar manía en el trastorno bipolar",
+            "quality": "La Calidad Importa: Las fórmulas con recubrimiento entérico son más estables",
+            "expensive": "Costoso en comparación con otros suplementos"
+          }
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Generalmente bien tolerado pero puede causar malestar gastrointestinal, ansiedad o insomnio. No combine con antidepresivos sin supervisión médica."
+        }
+      },
+      "lTheanine": {
+        "title": "L-Teanina",
+        "trigger": "L-Teanina",
+        "evidenceLevel": "Moderado",
+        "intro": "Un aminoácido que se encuentra en el té verde que promueve la relajación sin sedación al aumentar las ondas cerebrales alfa.",
+        "benefits": {
+          "title": "Beneficios para la Salud Mental:",
+          "anxiety": "Ansiedad: Reduce la ansiedad aguda y promueve el enfoque tranquilo",
+          "focus": "Enfoque: Combinado con cafeína, mejora la atención y reduce el nerviosismo",
+          "sleep": "Calidad del Sueño: Puede mejorar el sueño sin causar somnolencia durante el día"
+        },
+        "dosage": {
+          "title": "Dosis Recomendada:",
+          "text": "100-200 mg según sea necesario, 1-3 veces al día. A menudo se combina con cafeína (proporción 1:2) para energía enfocada."
+        },
+        "safety": {
+          "title": "Seguridad:",
+          "text": "Extremadamente seguro con efectos secundarios mínimos. No se conocen interacciones farmacológicas. No crea hábito."
+        }
+      },
+      "caution": {
+        "title": "Suplementos a Abordar con Precaución",
+        "trigger": "Suplementos a Abordar con Precaución",
+        "stJohnsWort": {
+          "title": "Hierba de San Juan",
+          "description": "Evidencia para la depresión pero interacciones farmacológicas graves. La Hierba de San Juan reduce la efectividad de muchos medicamentos, incluidos los anticonceptivos, los anticoagulantes y los antidepresivos. Puede causar síndrome serotoninérgico si se combina con ISRS.",
+          "warning": "Use solo bajo supervisión médica. Nunca combine con antidepresivos recetados."
+        },
+        "highDoseVitamins": {
+          "title": "Vitaminas de Alta Dosis",
+          "description": "Las megadosis de vitaminas liposolubles (A, D, E, K) pueden acumularse y causar toxicidad. Más no es mejor: siga las dosis recomendadas."
+        },
+        "herbal": {
+          "title": "Suplementos Herbales No Regulados",
+          "description": "Muchos suplementos herbales carecen de control de calidad, pueden estar contaminados con metales pesados y tener potencia inconsistente. Use marcas probadas por terceros."
+        },
+        "kava": {
+          "title": "Kava",
+          "description": "Si bien es efectivo para la ansiedad, la kava se ha relacionado con daño hepático en algunos individuos. Evite si tiene enfermedad hepática o toma medicamentos que afectan el hígado."
+        }
+      },
+      "safety": {
+        "title": "Consideraciones de Seguridad y Calidad",
+        "trigger": "Consideraciones de Seguridad y Calidad",
+        "fdaRegulation": {
+          "title": "Regulación de la FDA",
+          "text": "Los suplementos NO están regulados por la FDA como los medicamentos. Los fabricantes no están obligados a demostrar seguridad o efectividad antes de vender. Esto hace que el control de calidad sea crítico."
+        },
+        "thirdParty": {
+          "title": "Pruebas de Terceros",
+          "intro": "Busque estas certificaciones en las etiquetas de suplementos:",
+          "items": {
+            "usp": "USP Verificado: Pureza, potencia y calidad probadas",
+            "nsf": "NSF Certificado: Pruebas independientes de contaminantes",
+            "consumerlab": "ConsumerLab: Verificación de terceros",
+            "ifos": "IFOS (Aceite de Pescado): Estándares Internacionales de Aceite de Pescado"
+          }
+        },
+        "interactions": {
+          "title": "Interacciones de Medicamentos",
+          "intro": "Siempre informe a su proveedor de atención médica sobre todos los suplementos que toma. Las interacciones comunes incluyen:",
+          "items": {
+            "omega3": "Omega-3 + anticoagulantes (aumento del riesgo de sangrado)",
+            "stJohns": "Hierba de San Juan + ISRS (síndrome serotoninérgico)",
+            "vitaminK": "Vitamina K + warfarina (efectividad reducida del medicamento)",
+            "magnesium": "Magnesio + ciertos antibióticos (absorción reducida)"
+          }
+        },
+        "whenToAvoid": {
+          "title": "Cuándo Evitar los Suplementos",
+          "items": {
+            "pregnancy": "Embarazo/lactancia (a menos que lo apruebe el médico)",
+            "surgery": "Antes de la cirugía (algunos aumentan el riesgo de sangrado)",
+            "kidneyLiver": "Enfermedad hepática o renal (ciertos suplementos están contraindicados)",
+            "bipolar": "Trastorno bipolar (algunos suplementos pueden desencadenar manía)"
+          }
+        }
+      },
+      "research": {
+        "title": "Investigación y Evidencia"
+      }
+    },
+    "bottomLine": {
+      "title": "La Conclusión",
+      "text": "Los suplementos pueden ser herramientas valiosas en el tratamiento de la salud mental, pero funcionan mejor como parte de un enfoque integral que incluye terapia, cambios en el estilo de vida y, cuando sea apropiado, medicación. Siempre priorice la calidad, trabaje con su proveedor de atención médica y recuerde que ningún suplemento puede reemplazar el tratamiento profesional para las condiciones de salud mental."
+    },
+    "discussWithProvider": "Discutir Suplementos con un Proveedor"
+  }
+}

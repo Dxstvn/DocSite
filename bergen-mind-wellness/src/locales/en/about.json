@@ -1,0 +1,99 @@
+{
+  "title": "About Bergen Mind & Wellness",
+  "intro": "Bergen Mind & Wellness, LLC provides compassionate, evidence-based mental health care to individuals in New Jersey. Our approach combines clinical expertise with a holistic understanding of mental wellness, focusing on the connection between mind, body, and emotions.",
+  "provider": {
+    "name": "Rocio Jenkins, PMHNP-BC",
+    "title": "Board-Certified Psychiatric-Mental Health Nurse Practitioner",
+    "profileTitle": "Provider Profile",
+    "aboutTitle": "About Rocio",
+    "bio1": "I'm Rocio Jenkins, PMHNP-BC, a board-certified Psychiatric-Mental Health Nurse Practitioner passionate about helping individuals find clarity, stability, and peace of mind. I take a <strong>holistic, person-centered approach</strong>, focusing on the connection between mind, body, and emotions.",
+    "bio2": "I specialize in working with <strong>adults and adolescents</strong> experiencing anxiety, depression, ADHD, and trauma-related concerns. My treatment style blends compassionate listening, supportive therapy, and individualized medication management. I aim to create a partnership where clients feel heard, respected, and supported throughout their journey.",
+    "imageAlt": "Rocio Jenkins, PMHNP-BC, Board-Certified Psychiatric-Mental Health Nurse Practitioner"
+  },
+  "credentials": {
+    "title": "Education & Credentials",
+    "msn": "MSN (Master of Science in Nursing), Chamberlain University",
+    "apn": "Advanced Practice Nurse (APN), State of New Jersey",
+    "pmhnpbc": "Board-Certified Psychiatric-Mental Health Nurse Practitioner (PMHNP-BC)"
+  },
+  "quickInfo": {
+    "languages": {
+      "title": "Languages",
+      "value": "English, Spanish"
+    },
+    "ageGroups": {
+      "title": "Age Groups",
+      "value": "Adolescents, Adults, Seniors"
+    },
+    "services": {
+      "title": "Services",
+      "value": "Virtual Sessions, Medication Management"
+    }
+  },
+  "specializations": {
+    "title": "Areas of Specialization",
+    "depression": "Depression",
+    "anxiety": "Anxiety",
+    "adhd": "ADHD",
+    "ptsd": "PTSD & Trauma",
+    "bipolar": "Bipolar Disorder",
+    "ocd": "OCD",
+    "panic": "Panic Disorders",
+    "eating": "Eating Disorders",
+    "maternal": "Maternal Mental Health",
+    "lgbtqia": "LGBTQIA+",
+    "grief": "Grief & Loss",
+    "cultural": "Cultural & Ethnic Issues",
+    "sleep": "Sleep Disorders",
+    "stress": "Stress Management",
+    "anger": "Anger Management",
+    "chronic": "Chronic Conditions",
+    "family": "Family Issues",
+    "physical": "Physical Health Issues"
+  },
+  "modalities": {
+    "title": "Treatment Modalities",
+    "cbt": "Cognitive Behavioral Therapy (CBT)",
+    "ba": "Behavioral Activation (BA)",
+    "mbct": "Mindfulness-Based Cognitive Therapy (MBCT)",
+    "psychodynamic": "Psychodynamic Therapy",
+    "gestalt": "Gestalt Therapy",
+    "mst": "Multi-Systemic Therapy (MST)",
+    "behavior": "Behavior Management"
+  },
+  "therapeuticStyle": {
+    "title": "Therapeutic Style",
+    "empowering": "Empowering",
+    "openMinded": "Open-minded",
+    "holistic": "Holistic"
+  },
+  "approach": {
+    "title": "My Approach to Care",
+    "description1": "My approach is <strong>holistic, collaborative, and compassionate</strong>. I take time to truly listen and understand each client's unique story, considering biological, psychological, and social factors that impact mental health. Together, we develop an individualized treatment plan that may include <strong>medication management, lifestyle support, and therapeutic guidance</strong>.",
+    "description2": "I believe in <strong>partnership</strong>—clients are active participants in their care, and my role is to provide education, support, and evidence-based tools to help them reach stability and emotional well-being."
+  },
+  "firstSession": {
+    "title": "What to Expect from Your First Session",
+    "description1": "During our first session, my goal is to create a <strong>safe, welcoming, and judgment-free environment</strong> where you can share what's been happening in your life and what brings you to care. I'll take the time to listen carefully to your concerns, review your medical and mental health history, and begin to understand how symptoms are affecting your daily life.",
+    "description2": "Together, we'll <strong>clarify your goals</strong>, discuss potential treatment options, including therapy, medication, or lifestyle changes, and develop an individualized plan that feels comfortable and achievable for you.",
+    "description3": "You can expect to leave your first session feeling <strong>heard, understood, and supported</strong>, with clear next steps toward balance and wellness."
+  },
+  "medication": {
+    "title": "Medication Management",
+    "description": "As a board-certified Psychiatric-Mental Health Nurse Practitioner, I am licensed to prescribe medication as part of comprehensive mental health treatment. Medication management is integrated with supportive therapy and lifestyle guidance to provide holistic care tailored to your unique needs."
+  },
+  "insurance": {
+    "title": "Insurance Accepted",
+    "description": "We accept the following insurance plans for mental health services:",
+    "aetna": "Aetna",
+    "carelon": "Carelon Behavioral Health",
+    "cigna": "Cigna",
+    "independence": "Independence Blue Cross Pennsylvania",
+    "quest": "Quest Behavioral Health",
+    "verifyNote": "Please contact us to verify your specific coverage and benefits."
+  },
+  "cta": {
+    "title": "Ready to Start Your Journey?",
+    "button": "Schedule an Appointment"
+  }
+}

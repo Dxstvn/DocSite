@@ -1,0 +1,62 @@
+{
+  "asrs": {
+    "title": "Evaluación TDAH ASRS",
+    "resultsTitle": "Resultados ASRS",
+    "about": {
+      "title": "Acerca de Esta Evaluación",
+      "text": "La Escala de Autoevaluación de TDAH en Adultos (ASRS) es una herramienta validada desarrollada junto con la Organización Mundial de la Salud. Consta de 18 preguntas diseñadas para identificar síntomas de TDAH en adultos."
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "text": "Por favor responda las siguientes preguntas basándose en cómo se ha sentido y comportado durante los últimos 6 meses. Seleccione la respuesta que mejor describa con qué frecuencia ocurren estos síntomas."
+    },
+    "partA": "Parte A",
+    "partB": "Parte B",
+    "questions": {
+      "q1": "¿Con qué frecuencia tiene problemas para terminar los detalles finales de un proyecto, una vez que las partes difíciles han sido completadas?",
+      "q2": "¿Con qué frecuencia tiene dificultad para organizar tareas y actividades?",
+      "q3": "¿Con qué frecuencia tiene problemas para recordar citas u obligaciones?",
+      "q4": "¿Cuando tiene una tarea que requiere mucho pensamiento, con qué frecuencia evita o retrasa empezarla?",
+      "q5": "¿Con qué frecuencia mueve las manos o los pies o se retuerce cuando tiene que estar sentado durante mucho tiempo?",
+      "q6": "¿Con qué frecuencia se siente demasiado activo y obligado a hacer cosas, como si estuviera impulsado por un motor?",
+      "q7": "¿Con qué frecuencia comete errores por descuido cuando tiene que trabajar en un proyecto aburrido o difícil?",
+      "q8": "¿Con qué frecuencia tiene dificultad para mantener la atención cuando realiza tareas aburridas o repetitivas?",
+      "q9": "¿Con qué frecuencia tiene dificultad para concentrarse en lo que la gente le dice, incluso cuando le están hablando directamente?",
+      "q10": "¿Con qué frecuencia extravía o tiene dificultad para encontrar cosas en casa o en el trabajo?",
+      "q11": "¿Con qué frecuencia se distrae con actividad o ruido a su alrededor?",
+      "q12": "¿Con qué frecuencia se levanta de su asiento en reuniones u otras situaciones en las que se espera que permanezca sentado?",
+      "q13": "¿Con qué frecuencia se siente inquieto o nervioso?",
+      "q14": "¿Con qué frecuencia tiene dificultad para relajarse cuando tiene tiempo libre?",
+      "q15": "¿Con qué frecuencia se encuentra hablando demasiado cuando está en situaciones sociales?",
+      "q16": "Cuando está conversando, ¿con qué frecuencia se encuentra terminando las frases de las personas con las que está hablando, antes de que ellas puedan terminarlas?",
+      "q17": "¿Con qué frecuencia tiene dificultad para esperar su turno en situaciones donde se requiere turnarse?",
+      "q18": "¿Con qué frecuencia interrumpe a otros cuando están ocupados?"
+    },
+    "options": {
+      "never": "Nunca",
+      "rarely": "Raramente",
+      "sometimes": "A veces",
+      "often": "A menudo",
+      "veryOften": "Muy a menudo"
+    },
+    "results": {
+      "yourScore": "Su Puntuación",
+      "partAScore": "Puntuación Parte A",
+      "partBScore": "Puntuación Parte B",
+      "totalScore": "Puntuación Total",
+      "positiveItems": "Elementos Positivos en Parte A",
+      "screening": {
+        "positive": "Positivo para Síntomas de TDAH",
+        "negative": "Negativo para Síntomas de TDAH"
+      },
+      "interpretation": {
+        "positive": "Sus respuestas sugieren la presencia de síntomas consistentes con TDAH en adultos. Se recomienda encarecidamente una evaluación profesional para determinar si cumple con los criterios diagnósticos completos del TDAH. Este no es un diagnóstico, sino una indicación de que sería beneficioso una evaluación adicional.",
+        "negative": "Sus respuestas sugieren menos síntomas comúnmente asociados con TDAH en adultos. Sin embargo, esta herramienta de evaluación no reemplaza una evaluación profesional. Si continúa experimentando dificultades con la atención, concentración u organización que afectan su vida diaria, considere consultar a un profesional de la salud mental."
+      },
+      "recommendation": {
+        "positive": "Recomendamos encarecidamente programar una evaluación con un profesional de salud mental calificado que se especialice en TDAH en adultos. Pueden realizar una evaluación integral y discutir opciones de tratamiento apropiadas, que pueden incluir terapia conductual, medicación o estrategias de manejo del estilo de vida.",
+        "negative": "Si bien sus resultados de evaluación no indican síntomas significativos de TDAH, si tiene preocupaciones persistentes sobre la atención, concentración o funcionamiento ejecutivo, considere consultar a un profesional de la salud mental para una evaluación más profunda."
+      }
+    }
+  }
+}

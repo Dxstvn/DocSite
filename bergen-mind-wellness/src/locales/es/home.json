@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Atención Compasiva de Salud Mental",
+    "description": "Tratamiento basado en evidencia para depresión, ansiedad, TDAH, trastorno bipolar y TEPT. Su viaje hacia el bienestar comienza aquí.",
+    "scheduleButton": "Programar una Cita",
+    "screeningButton": "Realizar una Evaluación"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "education": {
+      "title": "Educación en Salud Mental",
+      "description": "Aprenda sobre condiciones, tratamientos y recursos basados en evidencia",
+      "button": "Explorar"
+    },
+    "screening": {
+      "title": "Herramientas de Evaluación",
+      "description": "Evaluaciones de salud mental gratuitas y confidenciales",
+      "button": "Realizar una Evaluación"
+    },
+    "nutrition": {
+      "title": "Nutrición y Bienestar",
+      "description": "Alimentos saludables para el cerebro y optimización del estilo de vida",
+      "button": "Más Información"
+    },
+    "mindfulness": {
+      "title": "Prácticas de Atención Plena",
+      "description": "Meditaciones guiadas, escritura reflexiva y ejercicios de respiración",
+      "button": "Comenzar"
+    }
+  },
+  "privacy": {
+    "title": "Su Privacidad Es Importante",
+    "description": "Todas las herramientas de evaluación se procesan completamente en su navegador. No recopilamos, almacenamos ni transmitimos sus respuestas. Su viaje de salud mental es privado y seguro.",
+    "button": "Leer Nuestra Política de Privacidad"
+  }
+}

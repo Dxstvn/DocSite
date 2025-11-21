@@ -1,0 +1,28 @@
+{
+  "button": {
+    "text": "Ayuda en Crisis: 988",
+    "ariaLabel": "Acceder a recursos de crisis"
+  },
+  "dialog": {
+    "title": "Recursos Inmediatos de Crisis",
+    "description": "Si está experimentando una emergencia de salud mental, use uno de estos recursos inmediatamente."
+  },
+  "resources": {
+    "988": {
+      "title": "988 Línea de Vida para Crisis y Suicidio",
+      "description": "Apoyo gratuito y confidencial 24/7",
+      "action": "Llamar al 988"
+    },
+    "text": {
+      "title": "Línea de Texto para Crisis",
+      "description": "Envíe HOME al 741741",
+      "action": "Enviar Texto"
+    },
+    "emergency": {
+      "title": "Servicios de Emergencia",
+      "description": "Para emergencias que ponen en peligro la vida",
+      "action": "Llamar al 911"
+    }
+  },
+  "close": "Cerrar"
+}

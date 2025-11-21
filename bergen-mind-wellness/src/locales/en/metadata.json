@@ -1,0 +1,46 @@
+{
+  "site": {
+    "name": "Bergen Mind & Wellness",
+    "description": "Compassionate, evidence-based mental health treatment in New Jersey"
+  },
+  "home": {
+    "title": "Mental Health Care in Bergen County, NJ | Bergen Mind & Wellness",
+    "description": "Compassionate, evidence-based mental health treatment in New Jersey. Specializing in depression, anxiety, ADHD, bipolar disorder & PTSD. Virtual appointments available."
+  },
+  "about": {
+    "title": "About Rocio Jenkins, PMHNP-BC | Bergen Mind & Wellness",
+    "description": "Meet Rocio Jenkins, board-certified psychiatric nurse practitioner specializing in depression, anxiety, ADHD, bipolar disorder, and PTSD treatment in New Jersey."
+  },
+  "contact": {
+    "title": "Contact Us | Schedule an Appointment | Bergen Mind & Wellness",
+    "description": "Schedule a mental health appointment with Bergen Mind & Wellness. Virtual and in-person consultations available in New Jersey."
+  },
+  "screening": {
+    "title": "Free Mental Health Screening Tools | Bergen Mind & Wellness",
+    "description": "Free, confidential mental health screenings for depression (PHQ-9), anxiety (GAD-7), ADHD (ASRS), bipolar disorder (MDQ), and PTSD (PCL-5)."
+  },
+  "education": {
+    "title": "Mental Health Education | Bergen Mind & Wellness",
+    "description": "Evidence-based information about mental health conditions, treatments, and recovery. Learn about depression, anxiety, ADHD, bipolar disorder, and PTSD."
+  },
+  "nutrition": {
+    "title": "Nutrition & Mental Health | Brain-Healthy Foods | Bergen Mind & Wellness",
+    "description": "Discover how nutrition impacts mental health. Learn about brain-healthy foods for depression, anxiety, ADHD, and cognitive function."
+  },
+  "mindfulness": {
+    "title": "Mindfulness Practices for Mental Health | Bergen Mind & Wellness",
+    "description": "Guided mindfulness practices, meditation, breathing exercises, and journaling techniques to support mental wellness."
+  },
+  "appointments": {
+    "title": "Schedule an Appointment | Book Consultation | Bergen Mind & Wellness",
+    "description": "Book your mental health appointment online. Flexible scheduling for psychiatry consultations, medication management, and therapy sessions in New Jersey."
+  },
+  "privacy": {
+    "title": "Privacy Policy | Bergen Mind & Wellness",
+    "description": "Our commitment to protecting your privacy and health information. HIPAA-compliant mental health services."
+  },
+  "terms": {
+    "title": "Terms of Service | Bergen Mind & Wellness",
+    "description": "Terms and conditions for using Bergen Mind & Wellness services."
+  }
+}

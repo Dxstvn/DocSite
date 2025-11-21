@@ -1,0 +1,99 @@
+{
+  "title": "Acerca de Bergen Mind & Wellness",
+  "intro": "Bergen Mind & Wellness, LLC brinda atención de salud mental compasiva y basada en evidencia a individuos en Nueva Jersey. Nuestro enfoque combina experiencia clínica con una comprensión holística del bienestar mental, enfocándose en la conexión entre mente, cuerpo y emociones.",
+  "provider": {
+    "name": "Rocio Jenkins, PMHNP-BC",
+    "title": "Enfermera Practicante Psiquiátrica de Salud Mental Certificada",
+    "profileTitle": "Perfil del Proveedor",
+    "aboutTitle": "Acerca de Rocio",
+    "bio1": "Soy Rocio Jenkins, PMHNP-BC, una Enfermera Practicante Psiquiátrica de Salud Mental certificada apasionada por ayudar a las personas a encontrar claridad, estabilidad y paz mental. Adopto un <strong>enfoque holístico y centrado en la persona</strong>, enfocándome en la conexión entre mente, cuerpo y emociones.",
+    "bio2": "Me especializo en trabajar con <strong>adultos y adolescentes</strong> que experimentan ansiedad, depresión, TDAH y preocupaciones relacionadas con el trauma. Mi estilo de tratamiento combina escucha compasiva, terapia de apoyo y manejo individualizado de medicamentos. Mi objetivo es crear una asociación donde los clientes se sientan escuchados, respetados y apoyados durante su viaje.",
+    "imageAlt": "Rocio Jenkins, PMHNP-BC, Enfermera Practicante Psiquiátrica de Salud Mental Certificada"
+  },
+  "credentials": {
+    "title": "Educación y Credenciales",
+    "msn": "MSN (Maestría en Ciencias de Enfermería), Universidad Chamberlain",
+    "apn": "Enfermera de Práctica Avanzada (APN), Estado de Nueva Jersey",
+    "pmhnpbc": "Enfermera Practicante Psiquiátrica de Salud Mental Certificada (PMHNP-BC)"
+  },
+  "quickInfo": {
+    "languages": {
+      "title": "Idiomas",
+      "value": "Inglés, Español"
+    },
+    "ageGroups": {
+      "title": "Grupos de Edad",
+      "value": "Adolescentes, Adultos, Adultos Mayores"
+    },
+    "services": {
+      "title": "Servicios",
+      "value": "Sesiones Virtuales, Manejo de Medicamentos"
+    }
+  },
+  "specializations": {
+    "title": "Áreas de Especialización",
+    "depression": "Depresión",
+    "anxiety": "Ansiedad",
+    "adhd": "TDAH",
+    "ptsd": "TEPT y Trauma",
+    "bipolar": "Trastorno Bipolar",
+    "ocd": "TOC",
+    "panic": "Trastornos de Pánico",
+    "eating": "Trastornos Alimenticios",
+    "maternal": "Salud Mental Materna",
+    "lgbtqia": "LGBTQIA+",
+    "grief": "Duelo y Pérdida",
+    "cultural": "Temas Culturales y Étnicos",
+    "sleep": "Trastornos del Sueño",
+    "stress": "Manejo del Estrés",
+    "anger": "Manejo de la Ira",
+    "chronic": "Condiciones Crónicas",
+    "family": "Problemas Familiares",
+    "physical": "Problemas de Salud Física"
+  },
+  "modalities": {
+    "title": "Modalidades de Tratamiento",
+    "cbt": "Terapia Cognitivo-Conductual (TCC)",
+    "ba": "Activación Conductual (AC)",
+    "mbct": "Terapia Cognitiva Basada en Mindfulness (TCBM)",
+    "psychodynamic": "Terapia Psicodinámica",
+    "gestalt": "Terapia Gestalt",
+    "mst": "Terapia Multi-Sistémica (TMS)",
+    "behavior": "Manejo Conductual"
+  },
+  "therapeuticStyle": {
+    "title": "Estilo Terapéutico",
+    "empowering": "Empoderador",
+    "openMinded": "De Mente Abierta",
+    "holistic": "Holístico"
+  },
+  "approach": {
+    "title": "Mi Enfoque de Atención",
+    "description1": "Mi enfoque es <strong>holístico, colaborativo y compasivo</strong>. Me tomo el tiempo para escuchar verdaderamente y entender la historia única de cada cliente, considerando los factores biológicos, psicológicos y sociales que impactan la salud mental. Juntos, desarrollamos un plan de tratamiento individualizado que puede incluir <strong>manejo de medicamentos, apoyo de estilo de vida y orientación terapéutica</strong>.",
+    "description2": "Creo en la <strong>asociación</strong>—los clientes son participantes activos en su atención, y mi rol es proporcionar educación, apoyo y herramientas basadas en evidencia para ayudarlos a alcanzar estabilidad y bienestar emocional."
+  },
+  "firstSession": {
+    "title": "Qué Esperar de Su Primera Sesión",
+    "description1": "Durante nuestra primera sesión, mi objetivo es crear un <strong>ambiente seguro, acogedor y libre de juicios</strong> donde pueda compartir lo que ha estado sucediendo en su vida y qué lo trae a la atención. Me tomaré el tiempo para escuchar cuidadosamente sus preocupaciones, revisar su historial médico y de salud mental, y comenzar a entender cómo los síntomas están afectando su vida diaria.",
+    "description2": "Juntos, <strong>clarificaremos sus metas</strong>, discutiremos opciones de tratamiento potenciales, incluyendo terapia, medicamentos o cambios de estilo de vida, y desarrollaremos un plan individualizado que se sienta cómodo y alcanzable para usted.",
+    "description3": "Puede esperar salir de su primera sesión sintiéndose <strong>escuchado, comprendido y apoyado</strong>, con pasos claros hacia el equilibrio y el bienestar."
+  },
+  "medication": {
+    "title": "Manejo de Medicamentos",
+    "description": "Como Enfermera Practicante Psiquiátrica de Salud Mental certificada, estoy licenciada para recetar medicamentos como parte del tratamiento integral de salud mental. El manejo de medicamentos se integra con terapia de apoyo y orientación de estilo de vida para proporcionar atención holística adaptada a sus necesidades únicas."
+  },
+  "insurance": {
+    "title": "Seguros Aceptados",
+    "description": "Aceptamos los siguientes planes de seguro para servicios de salud mental:",
+    "aetna": "Aetna",
+    "carelon": "Carelon Behavioral Health",
+    "cigna": "Cigna",
+    "independence": "Independence Blue Cross Pennsylvania",
+    "quest": "Quest Behavioral Health",
+    "verifyNote": "Por favor contáctenos para verificar su cobertura y beneficios específicos."
+  },
+  "cta": {
+    "title": "¿Listo para Comenzar su Viaje?",
+    "button": "Programar una Cita"
+  }
+}

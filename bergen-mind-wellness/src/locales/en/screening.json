@@ -1,0 +1,387 @@
+{
+  "hub": {
+    "title": "Mental Health Screening Tools",
+    "description": "Free, confidential mental health assessments. These screening tools can help you understand your symptoms and decide if you should speak with a mental health professional.",
+    "disclaimer": {
+      "title": "Important Disclaimer",
+      "text": "These screening tools are for informational purposes only and do not constitute medical advice, diagnosis, or treatment. Only a qualified healthcare provider can diagnose mental health conditions. If you are experiencing a mental health crisis, please contact 988 (Suicide & Crisis Lifeline) or call 911."
+    }
+  },
+  "tools": {
+    "phq9": {
+      "name": "PHQ-9",
+      "fullName": "Patient Health Questionnaire",
+      "description": "9-question screening for depression",
+      "duration": "Takes 2-3 minutes"
+    },
+    "gad7": {
+      "name": "GAD-7",
+      "fullName": "Generalized Anxiety Disorder Scale",
+      "description": "7-question screening for anxiety",
+      "duration": "Takes 2-3 minutes"
+    },
+    "asrs": {
+      "name": "ASRS",
+      "fullName": "Adult ADHD Self-Report Scale",
+      "description": "18-question screening for ADHD",
+      "duration": "Takes 5-7 minutes"
+    },
+    "mdq": {
+      "name": "MDQ",
+      "fullName": "Mood Disorder Questionnaire",
+      "description": "Screening for bipolar disorder",
+      "duration": "Takes 3-5 minutes"
+    },
+    "pcl5": {
+      "name": "PCL-5",
+      "fullName": "PTSD Checklist",
+      "description": "20-question screening for PTSD",
+      "duration": "Takes 5-7 minutes"
+    }
+  },
+  "common": {
+    "startButton": "Start Screening",
+    "backToHub": "Back to Screening Tools",
+    "nextQuestion": "Next Question",
+    "previousQuestion": "Previous Question",
+    "submit": "Submit",
+    "restart": "Restart",
+    "yourScore": "Your Score",
+    "interpretation": "Interpretation",
+    "recommendation": "Recommendation",
+    "disclaimer": "This screening is not a diagnosis",
+    "privacyNote": "Your responses are processed entirely in your browser and are not stored or transmitted.",
+    "calculateScore": "Calculate Score",
+    "scheduleAppointment": "Schedule an Appointment",
+    "retakeScreening": "Retake Screening"
+  },
+  "phq9": {
+    "title": "PHQ-9 Depression Screening",
+    "resultsTitle": "PHQ-9 Results",
+    "about": {
+      "title": "About This Screening",
+      "text": "The Patient Health Questionnaire (PHQ-9) is a validated screening tool for depression. It asks about symptoms you may have experienced over the past two weeks. Your responses are processed entirely in your browser and are not stored or transmitted."
+    },
+    "instructions": {
+      "title": "Instructions",
+      "text": "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
+    },
+    "questions": {
+      "q1": "Little interest or pleasure in doing things",
+      "q2": "Feeling down, depressed, or hopeless",
+      "q3": "Trouble falling or staying asleep, or sleeping too much",
+      "q4": "Feeling tired or having little energy",
+      "q5": "Poor appetite or overeating",
+      "q6": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+      "q7": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "q8": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+      "q9": "Thoughts that you would be better off dead, or of hurting yourself"
+    },
+    "options": {
+      "notAtAll": "Not at all",
+      "severalDays": "Several days",
+      "moreThanHalf": "More than half the days",
+      "nearlyEvery": "Nearly every day"
+    },
+    "results": {
+      "severityLabel": "Severity Level",
+      "immediateAttention": {
+        "title": "Immediate Attention Recommended",
+        "suicidalThoughts": "You indicated thoughts of self-harm. Please reach out for help immediately. Call 988 (Suicide & Crisis Lifeline) or text HOME to 741741.",
+        "severeSymptoms": "Your score suggests severe depression symptoms. Please contact a mental health professional or your primary care physician as soon as possible."
+      },
+      "severity": {
+        "minimal": "Minimal",
+        "mild": "Mild",
+        "moderate": "Moderate",
+        "moderatelySevere": "Moderately Severe",
+        "severe": "Severe"
+      },
+      "interpretation": {
+        "minimal": "Your responses suggest minimal depression symptoms.",
+        "mild": "Your responses suggest mild depression symptoms.",
+        "moderate": "Your responses suggest moderate depression symptoms.",
+        "moderatelySevere": "Your responses suggest moderately severe depression symptoms.",
+        "severe": "Your responses suggest severe depression symptoms."
+      },
+      "recommendation": {
+        "low": "Continue monitoring your mental health. If symptoms worsen or persist, consider consulting a mental health professional.",
+        "high": "Based on your responses, we recommend speaking with a mental health professional for a comprehensive evaluation and discussion of treatment options."
+      },
+      "disclaimer": {
+        "title": "Remember",
+        "text": "This screening tool is not a diagnosis. Only a licensed mental health professional can provide an accurate diagnosis and treatment plan."
+      },
+      "learnMore": "Learn About Depression"
+    }
+  },
+  "gad7": {
+    "title": "GAD-7 Anxiety Screening",
+    "resultsTitle": "GAD-7 Results",
+    "about": {
+      "title": "About This Screening",
+      "text": "The Generalized Anxiety Disorder (GAD-7) is a validated screening tool for anxiety. It asks about symptoms you may have experienced over the past two weeks. Your responses are processed entirely in your browser and are not stored or transmitted."
+    },
+    "instructions": {
+      "title": "Instructions",
+      "text": "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
+    },
+    "questions": {
+      "q1": "Feeling nervous, anxious, or on edge",
+      "q2": "Not being able to stop or control worrying",
+      "q3": "Worrying too much about different things",
+      "q4": "Trouble relaxing",
+      "q5": "Being so restless that it is hard to sit still",
+      "q6": "Becoming easily annoyed or irritable",
+      "q7": "Feeling afraid, as if something awful might happen"
+    },
+    "results": {
+      "severityLabel": "Severity Level",
+      "immediateAttention": {
+        "title": "Immediate Attention Recommended",
+        "severeSymptoms": "Your score suggests severe anxiety symptoms. Please contact a mental health professional or your primary care physician as soon as possible."
+      },
+      "severity": {
+        "minimal": "Minimal",
+        "mild": "Mild",
+        "moderate": "Moderate",
+        "severe": "Severe"
+      },
+      "interpretation": {
+        "minimal": "Your responses suggest minimal anxiety symptoms.",
+        "mild": "Your responses suggest mild anxiety symptoms.",
+        "moderate": "Your responses suggest moderate anxiety symptoms.",
+        "severe": "Your responses suggest severe anxiety symptoms."
+      },
+      "recommendation": {
+        "low": "Continue monitoring your mental health. If symptoms worsen or persist, consider consulting a mental health professional.",
+        "high": "Based on your responses, we recommend speaking with a mental health professional for a comprehensive evaluation and discussion of treatment options."
+      },
+      "disclaimer": {
+        "title": "Remember",
+        "text": "This screening tool is not a diagnosis. Only a licensed mental health professional can provide an accurate diagnosis and treatment plan."
+      },
+      "learnMore": "Learn About Anxiety"
+    }
+  },
+  "asrs": {
+    "title": "ASRS ADHD Screening",
+    "resultsTitle": "ASRS Results",
+    "about": {
+      "title": "About This Screening",
+      "text": "The Adult ADHD Self-Report Scale (ASRS) is a validated screening tool for adult ADHD. It consists of 18 questions divided into two parts. Your responses are processed entirely in your browser and are not stored or transmitted."
+    },
+    "instructions": {
+      "title": "Instructions",
+      "text": "Please answer the questions below, rating yourself on each of the criteria shown. As you answer each question, select the option that best describes how you have felt and conducted yourself over the past 6 months."
+    },
+    "partA": "Part A",
+    "partB": "Part B",
+    "questions": {
+      "q1": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+      "q2": "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "q3": "How often do you have problems remembering appointments or obligations?",
+      "q4": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+      "q5": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+      "q6": "How often do you feel overly active and compelled to do things, like you were driven by a motor?",
+      "q7": "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+      "q8": "How often do you have difficulty keeping your attention when you are doing boring or repetitive work?",
+      "q9": "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+      "q10": "How often do you misplace or have difficulty finding things at home or at work?",
+      "q11": "How often are you distracted by activity or noise around you?",
+      "q12": "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?",
+      "q13": "How often do you feel restless or fidgety?",
+      "q14": "How often do you have difficulty unwinding and relaxing when you have time to yourself?",
+      "q15": "How often do you find yourself talking too much when you are in social situations?",
+      "q16": "When you're in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?",
+      "q17": "How often do you have difficulty waiting your turn in situations when turn taking is required?",
+      "q18": "How often do you interrupt others when they are busy?"
+    },
+    "options": {
+      "never": "Never",
+      "rarely": "Rarely",
+      "sometimes": "Sometimes",
+      "often": "Often",
+      "veryOften": "Very Often"
+    },
+    "results": {
+      "screeningResult": "Screening Result",
+      "partAScore": "Part A Score",
+      "partBScore": "Part B Score",
+      "totalScore": "Total Score",
+      "screening": {
+        "positive": "Positive",
+        "negative": "Negative"
+      },
+      "interpretation": {
+        "positive": "Your responses suggest symptoms consistent with adult ADHD. Four or more symptoms in Part A were marked as \"Often\" or \"Very Often,\" which indicates a positive screening.",
+        "negative": "Your responses suggest fewer symptoms consistent with adult ADHD. However, this screening tool is not diagnostic, and ADHD symptoms can vary widely."
+      },
+      "recommendation": {
+        "positive": "We strongly recommend scheduling a comprehensive evaluation with a mental health professional or physician who specializes in ADHD. A formal diagnosis requires a clinical assessment and consideration of your developmental history.",
+        "negative": "If you continue to experience difficulties with attention, hyperactivity, or impulsivity that interfere with daily functioning, consider consulting a mental health professional for further evaluation."
+      },
+      "disclaimer": {
+        "title": "Remember",
+        "text": "This screening tool is not a diagnosis. Only a licensed mental health professional can provide an accurate diagnosis and treatment plan."
+      },
+      "learnMore": "Learn About ADHD"
+    }
+  },
+  "mdq": {
+    "title": "MDQ Mood Disorder Screening",
+    "resultsTitle": "MDQ Results",
+    "about": {
+      "title": "About This Screening",
+      "text": "The Mood Disorder Questionnaire (MDQ) is a validated screening tool for bipolar disorder. It asks about periods of elevated or irritable mood and related symptoms. Your responses are processed entirely in your browser and are not stored or transmitted."
+    },
+    "instructions": {
+      "title": "Instructions",
+      "text": "Please answer each question as best you can. Check YES or NO for each item.",
+      "prefix": "Has there ever been a period of time when you were not your usual self and..."
+    },
+    "questions": {
+      "q1": "You felt so good or so hyper that other people thought you were not your normal self or you were so hyper that you got into trouble?",
+      "q2": "You were so irritable that you shouted at people or started fights or arguments?",
+      "q3": "You felt much more self-confident than usual?",
+      "q4": "You got much less sleep than usual and found you didn't really miss it?",
+      "q5": "You were much more talkative or spoke much faster than usual?",
+      "q6": "Thoughts raced through your head or you couldn't slow your mind down?",
+      "q7": "You were so easily distracted by things around you that you had trouble concentrating or staying on track?",
+      "q8": "You had much more energy than usual?",
+      "q9": "You were much more active or did many more things than usual?",
+      "q10": "You were much more social or outgoing than usual, for example, you telephoned friends in the middle of the night?",
+      "q11": "You were much more interested in sex than usual?",
+      "q12": "You did things that were unusual for you or that other people might have thought were excessive, foolish, or risky?",
+      "q13": "Spending money got you or your family into trouble?"
+    },
+    "followUp": {
+      "coOccurrenceTitle": "Part 2: Co-occurrence",
+      "coOccurrenceQuestion": "If you checked YES to more than one of the above, have several of these ever happened during the same period of time?",
+      "coOccurrenceDescription": "Check YES if several of these symptoms happened during the same period of time.",
+      "problemLevelTitle": "Part 3: Problem Level",
+      "problemLevelQuestion": "How much of a problem did any of these cause you?"
+    },
+    "problemLevelOptions": {
+      "noProblem": "No problem",
+      "minorProblem": "Minor problem",
+      "moderateProblem": "Moderate problem",
+      "seriousProblem": "Serious problem"
+    },
+    "results": {
+      "screeningResult": "Screening Result",
+      "symptomsEndorsed": "Symptoms Endorsed",
+      "coOccurrence": "Co-occurrence",
+      "problemLevel": "Problem Level",
+      "yes": "Yes",
+      "no": "No",
+      "screening": {
+        "positive": "Positive",
+        "negative": "Negative"
+      },
+      "interpretation": {
+        "positive": "Your responses suggest symptoms consistent with bipolar disorder. You endorsed multiple symptoms that occurred together and caused significant problems in your life.",
+        "negative": "Your responses suggest fewer symptoms consistent with bipolar disorder, which is below the threshold for a positive screening. However, mood disorders exist on a spectrum.",
+        "negativeNoCoOccurrence": "You endorsed multiple symptoms, but indicated they did not occur during the same time period. Bipolar disorder requires symptoms to cluster together.",
+        "negativeLowProblemLevel": "You endorsed multiple symptoms occurring together, but reported they caused minimal problems. Bipolar disorder typically causes significant functional impairment."
+      },
+      "recommendation": {
+        "positive": "We strongly recommend scheduling an evaluation with a mental health professional who specializes in mood disorders. Bipolar disorder is a serious but treatable condition, and proper diagnosis is essential for effective treatment.",
+        "negative": "If you're experiencing mood-related difficulties that interfere with your daily functioning, consider consulting a mental health professional for personalized guidance.",
+        "negativeNoCoOccurrence": "If you continue to experience mood-related difficulties, consider consulting a mental health professional for further evaluation.",
+        "negativeLowProblemLevel": "Continue monitoring your mood. If symptoms worsen or begin to interfere with your daily life, consult a mental health professional."
+      },
+      "disclaimer": {
+        "title": "Remember",
+        "text": "This screening tool is not a diagnosis. Only a licensed mental health professional can provide an accurate diagnosis of bipolar disorder after a comprehensive clinical evaluation that includes mood history, family history, and functional assessment."
+      },
+      "positiveAlert": {
+        "title": "Positive Screening Result",
+        "text": "Your screening suggests symptoms consistent with bipolar disorder. Please schedule an evaluation with a mental health professional who specializes in mood disorders. Bipolar disorder requires comprehensive clinical assessment for accurate diagnosis."
+      },
+      "learnMore": "Learn About Bipolar Disorder"
+    }
+  },
+  "pcl5": {
+    "title": "PCL-5 PTSD Screening",
+    "resultsTitle": "PCL-5 Results",
+    "about": {
+      "title": "About This Screening",
+      "text": "The PTSD Checklist for DSM-5 (PCL-5) is a validated screening tool for post-traumatic stress disorder. It asks about symptoms you may have experienced in the past month related to a traumatic event. Your responses are processed entirely in your browser and are not stored or transmitted."
+    },
+    "instructions": {
+      "title": "Instructions",
+      "text": "Below is a list of problems that people sometimes have in response to a very stressful experience. Please read each problem carefully and then select one of the options to indicate how much you have been bothered by that problem in the past month."
+    },
+    "questions": {
+      "q1": "Repeated, disturbing, and unwanted memories of the stressful experience?",
+      "q2": "Repeated, disturbing dreams of the stressful experience?",
+      "q3": "Suddenly feeling or acting as if the stressful experience were actually happening again (as if you were actually back there reliving it)?",
+      "q4": "Feeling very upset when something reminded you of the stressful experience?",
+      "q5": "Having strong physical reactions when something reminded you of the stressful experience (for example, heart pounding, trouble breathing, sweating)?",
+      "q6": "Avoiding memories, thoughts, or feelings related to the stressful experience?",
+      "q7": "Avoiding external reminders of the stressful experience (for example, people, places, conversations, activities, objects, or situations)?",
+      "q8": "Trouble remembering important parts of the stressful experience?",
+      "q9": "Having strong negative beliefs about yourself, other people, or the world (for example, having thoughts such as: I am bad, there is something seriously wrong with me, no one can be trusted, the world is completely dangerous)?",
+      "q10": "Blaming yourself or someone else for the stressful experience or what happened after it?",
+      "q11": "Having strong negative feelings such as fear, horror, anger, guilt, or shame?",
+      "q12": "Loss of interest in activities that you used to enjoy?",
+      "q13": "Feeling distant or cut off from other people?",
+      "q14": "Trouble experiencing positive feelings (for example, being unable to feel happiness or have loving feelings for people close to you)?",
+      "q15": "Irritable behavior, angry outbursts, or acting aggressively?",
+      "q16": "Taking too many risks or doing things that could cause you harm?",
+      "q17": "Being \"superalert\" or watchful or on guard?",
+      "q18": "Feeling jumpy or easily startled?",
+      "q19": "Having difficulty concentrating?",
+      "q20": "Trouble falling or staying asleep?"
+    },
+    "options": {
+      "notAtAll": "Not at all",
+      "aLittleBit": "A little bit",
+      "moderately": "Moderately",
+      "quiteABit": "Quite a bit",
+      "extremely": "Extremely"
+    },
+    "clusters": {
+      "reexperiencing": "Re-experiencing",
+      "avoidance": "Avoidance",
+      "negativeCognitions": "Negative Cognitions & Mood",
+      "arousal": "Arousal & Reactivity"
+    },
+    "results": {
+      "yourScore": "Your Score",
+      "symptomClusters": "Symptom Cluster Scores",
+      "provisionalDiagnosis": {
+        "positive": "Score suggests clinically significant PTSD symptoms",
+        "negative": "Score below typical PTSD threshold"
+      },
+      "severity": {
+        "severe": "Severe",
+        "borderline": "Borderline",
+        "moderate": "Moderate",
+        "minimal": "Minimal"
+      },
+      "interpretation": {
+        "severe": "Your responses suggest symptoms consistent with PTSD. Your total score is in the range that may indicate clinically significant PTSD symptoms.",
+        "borderline": "Your responses suggest significant trauma-related symptoms that may warrant further evaluation. Your score is in the borderline range for PTSD.",
+        "moderate": "Your responses suggest moderate trauma-related symptoms. While below the typical PTSD threshold, these symptoms may still impact your daily functioning.",
+        "minimal": "Your responses suggest minimal trauma-related symptoms at this time."
+      },
+      "recommendation": {
+        "severe": "We strongly recommend scheduling an evaluation with a mental health professional who specializes in trauma. PTSD is a treatable condition, and evidence-based therapies like CPT, PE, and EMDR have high success rates.",
+        "borderline": "Consider consulting with a mental health professional to discuss your symptoms and explore whether trauma-focused treatment might be helpful.",
+        "moderate": "Consider speaking with a mental health professional about your symptoms. Trauma-focused therapy can be helpful even for subthreshold symptoms.",
+        "minimal": "Continue monitoring your wellbeing. If you experience traumatic events or symptoms worsen, consult a mental health professional."
+      },
+      "disclaimer": {
+        "title": "Remember",
+        "text": "This screening tool is not a diagnosis. Only a licensed mental health professional can provide an accurate diagnosis of PTSD after a comprehensive clinical evaluation that includes trauma history and functional assessment."
+      },
+      "severeAlert": {
+        "title": "Immediate Attention Recommended",
+        "text": "Your score suggests symptoms consistent with PTSD. Please contact a mental health professional who specializes in trauma as soon as possible. PTSD is highly treatable with evidence-based therapies."
+      },
+      "learnMore": "Learn About PTSD"
+    }
+  }
+}

@@ -1,0 +1,824 @@
+{
+  "hub": {
+    "title": "Nutrition & Brain Optimization",
+    "description": "What you eat affects how you feel. Discover evidence-based nutrition strategies to support your mental health and optimize brain function.",
+    "disclaimer": {
+      "title": "Medical Disclaimer",
+      "text": "Nutritional information is educational and not a substitute for medical advice. Always consult with your healthcare provider before making significant dietary changes or starting supplements, especially if you take medications."
+    },
+    "topics": {
+      "depression": {
+        "title": "Foods for Depression",
+        "description": "Nutrition strategies to support mood and mental health recovery"
+      },
+      "anxiety": {
+        "title": "Foods for Anxiety",
+        "description": "Dietary approaches to reduce anxiety and promote calm"
+      },
+      "focus": {
+        "title": "Foods for Focus",
+        "description": "Brain-healthy foods to support concentration and cognitive function"
+      },
+      "supplements": {
+        "title": "Supplements Guide",
+        "description": "Evidence-based supplements for mental health support"
+      }
+    },
+    "explore": "Explore",
+    "downloadPDF": "Download PDF",
+    "resources": {
+      "title": "Downloadable Resources",
+      "description": "Free guides to support your nutrition journey",
+      "mealPlan": {
+        "title": "Brain-Healthy Meal Plan",
+        "description": "7-day meal plan for mental wellness"
+      },
+      "groceryList": {
+        "title": "Mood-Boosting Grocery List",
+        "description": "Foods to stock for mental health support"
+      }
+    }
+  },
+  "common": {
+    "medicalDisclaimer": "Medical Disclaimer",
+    "medicalDisclaimerText": "This information is educational and not a substitute for professional medical advice. Always consult with your healthcare provider before making significant dietary changes, especially if you are taking medications.",
+    "scheduleAppointment": "Schedule an Appointment",
+    "learnMore": "Learn About",
+    "backToNutrition": "Back to Nutrition Home"
+  },
+  "depression": {
+    "title": "Foods for Depression",
+    "metaDescription": "Evidence-based nutrition strategies for depression. Learn which foods support mood, omega-3 benefits, gut-brain connection, and practical meal plans for mental health.",
+    "intro": {
+      "p1": "Research increasingly shows that nutrition plays a significant role in mental health. While food alone cannot cure depression, a nutrient-rich diet can support brain function, stabilize mood, and complement other treatments like therapy and medication.",
+      "p2": "The gut-brain axis—the bidirectional communication between your digestive system and brain—means what you eat directly affects neurotransmitter production, inflammation levels, and overall brain health."
+    },
+    "sections": {
+      "foods": {
+        "title": "Foods to Emphasize",
+        "fattyFish": {
+          "title": "Fatty Fish",
+          "description": "Salmon, sardines, mackerel, anchovies are rich in omega-3 fatty acids (EPA and DHA), which reduce brain inflammation and support neurotransmitter function. Research shows omega-3s can reduce depression symptoms.",
+          "serving": "Aim for 2-3 servings per week."
+        },
+        "leafyGreens": {
+          "title": "Leafy Greens",
+          "description": "Spinach, kale, Swiss chard, collard greens provide folate (vitamin B9), which is essential for producing serotonin and dopamine. Low folate levels are associated with increased depression risk.",
+          "serving": "Include 1-2 cups daily in salads, smoothies, or cooked dishes."
+        },
+        "nutsSeeds": {
+          "title": "Nuts and Seeds",
+          "description": "Walnuts, flaxseeds, chia seeds, almonds contain omega-3s, zinc, and magnesium. Walnuts are particularly beneficial for brain health and mood regulation.",
+          "serving": "A handful (1 oz) daily as a snack or added to meals."
+        },
+        "berries": {
+          "title": "Berries",
+          "description": "Blueberries, strawberries, blackberries are rich in antioxidants that protect the brain from oxidative stress and inflammation, both linked to depression.",
+          "serving": "½-1 cup daily, fresh or frozen."
+        },
+        "wholeGrains": {
+          "title": "Whole Grains",
+          "description": "Quinoa, oats, brown rice, whole wheat provide B vitamins and complex carbohydrates that stabilize blood sugar and support serotonin production.",
+          "serving": "Choose whole grains over refined grains for sustained energy."
+        },
+        "fermentedFoods": {
+          "title": "Fermented Foods",
+          "description": "Yogurt, kefir, kimchi, sauerkraut, kombucha contain probiotics that support gut health. A healthy gut microbiome is crucial for neurotransmitter production—90% of serotonin is made in the gut.",
+          "serving": "Include probiotic-rich foods daily."
+        },
+        "darkChocolate": {
+          "title": "Dark Chocolate",
+          "description": "70%+ cocoa content contains flavonoids and compounds that may boost mood and reduce stress hormones. Dark chocolate also provides magnesium.",
+          "serving": "1-2 small squares (about 1 oz) as an occasional treat."
+        }
+      },
+      "nutrients": {
+        "title": "Key Nutrients for Depression",
+        "omega3": {
+          "title": "Omega-3 Fatty Acids (EPA/DHA)",
+          "description": "Reduce inflammation, support neurotransmitter function, and improve brain cell membrane fluidity. Multiple studies show EPA supplementation reduces depression symptoms.",
+          "sources": "Sources: Fatty fish, walnuts, flaxseeds, chia seeds"
+        },
+        "bVitamins": {
+          "title": "B Vitamins (B6, B12, Folate)",
+          "description": "Essential for producing serotonin, dopamine, and norepinephrine. Deficiencies in B vitamins are common in depression.",
+          "sources": "Sources: Leafy greens, legumes, whole grains, eggs, fish, poultry"
+        },
+        "vitaminD": {
+          "title": "Vitamin D",
+          "description": "Vitamin D receptors are found throughout the brain. Deficiency is linked to seasonal affective disorder (SAD) and major depression.",
+          "sources": "Sources: Sunlight exposure, fatty fish, fortified dairy, egg yolks, mushrooms"
+        },
+        "magnesium": {
+          "title": "Magnesium",
+          "description": "Calms the nervous system, regulates stress response, and supports neurotransmitter function. Low magnesium is associated with increased depression and anxiety.",
+          "sources": "Sources: Leafy greens, nuts, seeds, whole grains, dark chocolate, legumes"
+        },
+        "zinc": {
+          "title": "Zinc",
+          "description": "Modulates brain and body response to stress. Zinc deficiency is observed in depression, and supplementation may enhance antidepressant effects.",
+          "sources": "Sources: Oysters, beef, pumpkin seeds, lentils, cashews"
+        },
+        "tryptophan": {
+          "title": "Tryptophan",
+          "description": "An amino acid that is the precursor to serotonin, the \"feel-good\" neurotransmitter.",
+          "sources": "Sources: Turkey, chicken, eggs, cheese, tofu, pumpkin seeds, oats"
+        }
+      },
+      "limit": {
+        "title": "Foods & Substances to Limit",
+        "processedSugar": {
+          "title": "Processed Foods High in Sugar",
+          "description": "Causes blood sugar spikes and crashes that worsen mood instability. High sugar intake is associated with increased depression risk and inflammation.",
+          "advice": "Limit candy, soda, baked goods, and processed snacks."
+        },
+        "caffeine": {
+          "title": "Excessive Caffeine",
+          "description": "While moderate caffeine can improve alertness, excessive intake (>400mg/day, ~4 cups coffee) can worsen anxiety, disrupt sleep, and cause mood crashes.",
+          "advice": "Monitor your tolerance; some people with depression are more caffeine-sensitive."
+        },
+        "alcohol": {
+          "title": "Alcohol",
+          "description": "A central nervous system depressant that disrupts sleep, depletes B vitamins, and interferes with antidepressant medications. Chronic use worsens depression.",
+          "advice": "Limit or avoid alcohol, especially when experiencing depressive episodes."
+        },
+        "transFats": {
+          "title": "Trans Fats & Highly Processed Oils",
+          "description": "Found in fried foods, margarine, and many packaged snacks. Trans fats increase inflammation and are linked to higher depression rates.",
+          "advice": "Choose olive oil, avocado oil, or coconut oil instead."
+        }
+      },
+      "research": {
+        "title": "Research & Evidence",
+        "keyStudies": "Key Studies:",
+        "studies": {
+          "mediterranean": "Mediterranean diet and depression (SMILES trial, 2017)",
+          "omega3": "Omega-3 fatty acids for depression (meta-analyses)",
+          "gutBrain": "Gut-brain axis and mental health (emerging research)"
+        }
+      },
+      "meals": {
+        "title": "Practical Meal Ideas",
+        "breakfast": {
+          "title": "Breakfast Options",
+          "items": {
+            "oatmeal": "Oatmeal topped with blueberries, walnuts, and a drizzle of honey",
+            "yogurt": "Greek yogurt with strawberries, chia seeds, and sliced almonds",
+            "omelet": "Spinach and mushroom omelet with whole grain toast",
+            "smoothie": "Smoothie with kale, banana, berries, flaxseeds, and almond milk"
+          }
+        },
+        "lunch": {
+          "title": "Lunch Options",
+          "items": {
+            "salmon": "Grilled salmon salad with mixed greens, avocado, and olive oil dressing",
+            "quinoa": "Quinoa bowl with roasted vegetables, chickpeas, and tahini sauce",
+            "wrap": "Turkey and avocado wrap with whole wheat tortilla and vegetables",
+            "soup": "Lentil soup with kale and whole grain bread"
+          }
+        },
+        "dinner": {
+          "title": "Dinner Options",
+          "items": {
+            "bakedSalmon": "Baked salmon with roasted sweet potato and steamed broccoli",
+            "chicken": "Grilled chicken with quinoa and sautéed spinach",
+            "sardines": "Sardines over mixed greens with cherry tomatoes and olive oil",
+            "tofu": "Tofu stir-fry with brown rice and colorful vegetables"
+          }
+        },
+        "snacks": {
+          "title": "Snack Ideas",
+          "items": {
+            "nuts": "Handful of walnuts or almonds",
+            "yogurt": "Greek yogurt with berries",
+            "chocolate": "Dark chocolate square (70%+ cocoa)",
+            "apple": "Apple slices with almond butter",
+            "carrots": "Carrot sticks with hummus"
+          }
+        }
+      }
+    },
+    "learnAboutDepression": "Learn About Depression"
+  },
+  "anxiety": {
+    "title": "Foods for Anxiety",
+    "metaDescription": "Foods that reduce anxiety naturally. Learn about magnesium-rich foods, calming nutrients, gut-brain connection, and meal plans to manage anxiety symptoms.",
+    "intro": {
+      "p1": "Nutrition plays a crucial role in managing anxiety. Certain foods can help calm the nervous system, stabilize blood sugar levels, and support neurotransmitter balance—all of which influence anxiety levels.",
+      "p2": "While dietary changes alone may not eliminate anxiety, they can significantly reduce symptoms and complement other treatments like therapy, medication, and stress management techniques."
+    },
+    "sections": {
+      "foods": {
+        "title": "Foods to Emphasize",
+        "fattyFish": {
+          "title": "Fatty Fish",
+          "description": "Salmon, sardines, mackerel are rich in omega-3 fatty acids, which reduce inflammation and have been shown to decrease anxiety symptoms in multiple studies.",
+          "serving": "Aim for 2-3 servings per week."
+        },
+        "leafyGreens": {
+          "title": "Dark Leafy Greens",
+          "description": "Spinach, kale, Swiss chard are high in magnesium, a natural muscle relaxant that calms the nervous system. Magnesium deficiency is linked to increased anxiety.",
+          "serving": "Include 1-2 cups daily in salads, smoothies, or sautéed."
+        },
+        "chamomile": {
+          "title": "Chamomile Tea",
+          "description": "Contains apigenin, an antioxidant that binds to brain receptors promoting relaxation and reducing anxiety. Chamomile has been used for centuries as a natural calming agent.",
+          "serving": "1-2 cups daily, especially in the evening."
+        },
+        "almonds": {
+          "title": "Almonds",
+          "description": "Rich in magnesium and vitamin E, both of which support stress reduction. Almonds also provide healthy fats that stabilize blood sugar and mood.",
+          "serving": "A handful (1 oz) as a snack or added to meals."
+        },
+        "avocados": {
+          "title": "Avocados",
+          "description": "Loaded with B vitamins (especially B6) that support neurotransmitter production and stress response. The healthy fats promote brain health and stabilize mood.",
+          "serving": "½ avocado daily in salads, sandwiches, or smoothies."
+        },
+        "turkey": {
+          "title": "Turkey",
+          "description": "Contains tryptophan, an amino acid that produces serotonin—a neurotransmitter that promotes calm and well-being.",
+          "serving": "Lean protein at lunch or dinner."
+        },
+        "bananas": {
+          "title": "Bananas",
+          "description": "Provide vitamin B6, which helps produce serotonin, and potassium, which regulates blood pressure during stress. The natural sugars offer quick energy without a crash.",
+          "serving": "1-2 bananas daily as a snack or in smoothies."
+        },
+        "complexCarbs": {
+          "title": "Complex Carbohydrates",
+          "description": "Oats, quinoa, sweet potatoes, brown rice promote steady serotonin release and stabilize blood sugar, preventing the mood swings associated with anxiety.",
+          "serving": "Choose whole grains over refined carbs for sustained calm."
+        }
+      },
+      "nutrients": {
+        "title": "Key Nutrients for Anxiety",
+        "magnesium": {
+          "title": "Magnesium",
+          "description": "The \"relaxation mineral\" that calms the nervous system, relaxes muscles, and supports GABA production (the brain's calming neurotransmitter). Magnesium deficiency is common in anxiety disorders.",
+          "sources": "Sources: Leafy greens, almonds, cashews, black beans, dark chocolate, avocados"
+        },
+        "bVitamins": {
+          "title": "B Vitamins (B6, B12, Folate)",
+          "description": "Essential for producing neurotransmitters that regulate mood and stress response. B vitamins are depleted during chronic stress, creating a cycle of increased anxiety.",
+          "sources": "Sources: Turkey, chicken, fish, eggs, leafy greens, legumes, whole grains"
+        },
+        "omega3": {
+          "title": "Omega-3 Fatty Acids",
+          "description": "Reduce inflammation and support brain cell membrane function. Research shows omega-3 supplementation reduces anxiety symptoms, particularly in those with high inflammation.",
+          "sources": "Sources: Fatty fish, walnuts, flaxseeds, chia seeds, hemp seeds"
+        },
+        "probiotics": {
+          "title": "Probiotics",
+          "description": "Support the gut-brain axis. Studies show specific probiotic strains reduce anxiety by producing GABA and regulating the stress response through the vagus nerve.",
+          "sources": "Sources: Yogurt, kefir, kimchi, sauerkraut, kombucha, miso"
+        },
+        "lTheanine": {
+          "title": "L-Theanine",
+          "description": "An amino acid found in green tea that promotes relaxation without sedation. L-theanine increases alpha brain waves associated with calm alertness.",
+          "sources": "Sources: Green tea, black tea, certain mushrooms"
+        },
+        "antioxidants": {
+          "title": "Antioxidants",
+          "description": "Protect the brain from oxidative stress caused by chronic anxiety. Antioxidant-rich diets are associated with lower anxiety levels.",
+          "sources": "Sources: Berries, dark chocolate, green tea, colorful vegetables"
+        }
+      },
+      "limit": {
+        "title": "Foods & Substances to Limit",
+        "caffeine": {
+          "title": "Caffeine",
+          "description": "A stimulant that increases heart rate, triggers the release of stress hormones (cortisol, adrenaline), and can worsen anxiety symptoms. Caffeine sensitivity varies, but many with anxiety benefit from reducing or eliminating it.",
+          "advice": "Limit to <200mg/day (~2 cups coffee) or switch to green tea for gentler caffeine with L-theanine."
+        },
+        "alcohol": {
+          "title": "Alcohol",
+          "description": "While it may temporarily reduce anxiety, alcohol disrupts sleep, depletes B vitamins, and causes rebound anxiety as it wears off. Chronic use worsens anxiety long-term.",
+          "advice": "Minimize or avoid alcohol, especially during high-anxiety periods."
+        },
+        "highSugar": {
+          "title": "High-Sugar Foods",
+          "description": "Cause rapid blood sugar spikes followed by crashes, which trigger anxiety-like symptoms (shakiness, irritability, rapid heartbeat). High sugar intake is linked to increased anxiety.",
+          "advice": "Avoid candy, soda, baked goods; choose whole fruits instead."
+        },
+        "processed": {
+          "title": "Processed Foods",
+          "description": "High in trans fats, artificial additives, and refined carbs that promote inflammation and blood sugar instability—both worsen anxiety.",
+          "advice": "Choose whole, unprocessed foods whenever possible."
+        },
+        "sodium": {
+          "title": "High-Sodium Foods",
+          "description": "Excessive salt can raise blood pressure and exacerbate physical anxiety symptoms. Many processed foods contain hidden sodium.",
+          "advice": "Limit processed meats, canned soups, fast food; use herbs and spices for flavor instead."
+        }
+      },
+      "research": {
+        "title": "Research & Evidence",
+        "keyFindings": "Key Research Findings:",
+        "findings": {
+          "magnesium": "Magnesium supplementation reduces subjective anxiety (multiple RCTs)",
+          "omega3": "Omega-3 fatty acids decrease anxiety symptoms (meta-analysis, 2018)",
+          "probiotics": "Probiotics reduce anxiety via gut-brain axis (emerging evidence)",
+          "mediterranean": "Mediterranean diet associated with lower anxiety rates"
+        }
+      },
+      "meals": {
+        "title": "Practical Meal Ideas",
+        "breakfast": {
+          "title": "Breakfast Options",
+          "items": {
+            "parfait": "Greek yogurt parfait with banana, almonds, and honey",
+            "oatmeal": "Oatmeal with berries, flaxseeds, and almond butter",
+            "eggs": "Scrambled eggs with spinach and avocado on whole grain toast",
+            "smoothie": "Green smoothie with kale, banana, chia seeds, and almond milk"
+          }
+        },
+        "lunch": {
+          "title": "Lunch Options",
+          "items": {
+            "wrap": "Turkey and avocado wrap with mixed greens and hummus",
+            "salad": "Salmon salad with spinach, walnuts, and olive oil dressing",
+            "bowl": "Quinoa bowl with roasted vegetables and tahini sauce",
+            "soup": "Lentil soup with kale and whole grain crackers"
+          }
+        },
+        "dinner": {
+          "title": "Dinner Options",
+          "items": {
+            "salmon": "Baked salmon with sweet potato and steamed broccoli",
+            "chicken": "Grilled chicken with brown rice and sautéed spinach",
+            "meatballs": "Turkey meatballs with whole wheat pasta and marinara sauce",
+            "stirfry": "Stir-fried tofu with vegetables over quinoa"
+          }
+        },
+        "snacks": {
+          "title": "Snack Ideas",
+          "items": {
+            "nuts": "Handful of almonds or cashews",
+            "banana": "Banana with almond butter",
+            "chocolate": "Dark chocolate square (70%+ cocoa)",
+            "tea": "Chamomile tea with honey",
+            "avocado": "Avocado on whole grain crackers"
+          }
+        },
+        "beverages": {
+          "title": "Calming Beverages",
+          "items": {
+            "chamomile": "Chamomile tea (any time, especially evening)",
+            "green": "Green tea (morning/afternoon for calm focus)",
+            "golden": "Warm golden milk (turmeric, ginger, almond milk, honey)",
+            "smoothie": "Magnesium-rich smoothies"
+          }
+        }
+      }
+    },
+    "learnAboutAnxiety": "Learn About Anxiety"
+  },
+  "focus": {
+    "title": "Foods for Focus & Cognitive Function",
+    "metaDescription": "Foods that improve focus and concentration. Learn about nutrients for ADHD, brain-healthy meals, protein-rich breakfasts, and cognitive performance.",
+    "disclaimer": "This information is educational and not a substitute for professional medical advice. Nutrition strategies can support focus and cognitive function, but ADHD and attention difficulties require comprehensive treatment. Consult your healthcare provider.",
+    "intro": {
+      "p1": "Brain-healthy nutrition is essential for optimal focus, concentration, and cognitive performance. Certain foods support neurotransmitter production, improve blood flow to the brain, and provide sustained energy without crashes—all critical for attention and executive function.",
+      "p2": "For those with ADHD, nutrition cannot replace medication or behavioral therapy, but it can significantly enhance treatment effectiveness and reduce symptoms."
+    },
+    "sections": {
+      "foods": {
+        "title": "Foods to Emphasize",
+        "fattyFish": {
+          "title": "Fatty Fish",
+          "description": "Salmon, sardines, anchovies, mackerel are the richest source of DHA, an omega-3 fatty acid that makes up 40% of brain cell membranes. DHA is critical for cognitive function, and low levels are linked to ADHD symptoms.",
+          "serving": "Aim for 2-3 servings per week."
+        },
+        "eggs": {
+          "title": "Eggs",
+          "description": "Contain choline, a nutrient essential for producing acetylcholine—a neurotransmitter crucial for memory and focus. Eggs also provide high-quality protein for sustained energy.",
+          "serving": "1-2 eggs daily, especially at breakfast."
+        },
+        "blueberries": {
+          "title": "Blueberries",
+          "description": "Packed with antioxidants (flavonoids) that cross the blood-brain barrier, improving communication between brain cells and enhancing memory and cognitive processing.",
+          "serving": "½-1 cup daily, fresh or frozen."
+        },
+        "nuts": {
+          "title": "Nuts (Walnuts, Almonds)",
+          "description": "Rich in vitamin E, omega-3s, and magnesium—all support brain health and protect against cognitive decline. Walnuts specifically improve working memory.",
+          "serving": "A handful (1 oz) as a snack or added to meals."
+        },
+        "greenTea": {
+          "title": "Green Tea",
+          "description": "Contains L-theanine plus moderate caffeine—a combination that promotes calm, focused alertness without the jitters. L-theanine increases alpha brain waves associated with relaxed concentration.",
+          "serving": "1-2 cups daily, especially mid-morning or afternoon."
+        },
+        "beets": {
+          "title": "Beets",
+          "description": "High in nitrates that improve blood flow to the brain, enhancing oxygen delivery and cognitive performance. Studies show beets improve reaction time and decision-making.",
+          "serving": "Include in salads, juices, or roasted as a side dish."
+        },
+        "darkChocolate": {
+          "title": "Dark Chocolate",
+          "description": "Contains flavonoids, caffeine, and theobromine that enhance focus, mood, and alertness. Choose 70%+ cocoa for maximum brain benefits and minimal sugar.",
+          "serving": "1-2 small squares (about 1 oz) daily."
+        },
+        "wholeGrains": {
+          "title": "Whole Grains",
+          "description": "Oats, quinoa, brown rice provide steady glucose to the brain (the brain's primary fuel source). Complex carbs prevent blood sugar crashes that impair concentration.",
+          "serving": "Choose whole grains over refined grains for sustained focus."
+        }
+      },
+      "nutrients": {
+        "title": "Key Nutrients for Focus",
+        "omega3": {
+          "title": "Omega-3 Fatty Acids (DHA & EPA)",
+          "description": "DHA is essential for brain structure and function. Research shows omega-3 supplementation improves attention, reduces hyperactivity, and enhances cognitive performance in ADHD.",
+          "sources": "Sources: Fatty fish, walnuts, flaxseeds, chia seeds, algae oil (vegan)"
+        },
+        "bVitamins": {
+          "title": "B Vitamins (B6, B12, Folate)",
+          "description": "Critical for producing dopamine and norepinephrine—neurotransmitters that regulate attention, motivation, and executive function. Deficiencies worsen ADHD symptoms.",
+          "sources": "Sources: Eggs, poultry, fish, leafy greens, legumes, fortified grains"
+        },
+        "iron": {
+          "title": "Iron",
+          "description": "Transports oxygen to the brain and is involved in dopamine production. Low iron (even without anemia) is linked to ADHD symptoms, especially inattention and fatigue.",
+          "sources": "Sources: Red meat, poultry, fish, lentils, spinach, fortified cereals"
+        },
+        "zinc": {
+          "title": "Zinc",
+          "description": "Regulates dopamine function and is often low in individuals with ADHD. Zinc supplementation may enhance stimulant medication effectiveness.",
+          "sources": "Sources: Oysters, beef, pumpkin seeds, cashews, chickpeas"
+        },
+        "protein": {
+          "title": "Protein (Amino Acids)",
+          "description": "Amino acids like tyrosine and tryptophan are precursors to dopamine, norepinephrine, and serotonin. Protein at breakfast is especially important for sustained focus and reducing impulsivity.",
+          "sources": "Sources: Eggs, Greek yogurt, lean meats, fish, tofu, legumes, nuts"
+        },
+        "choline": {
+          "title": "Choline",
+          "description": "Essential for producing acetylcholine, which supports memory, learning, and attention. Choline is particularly important during brain development but benefits adults too.",
+          "sources": "Sources: Eggs (especially yolks), liver, salmon, broccoli, Brussels sprouts"
+        }
+      },
+      "limit": {
+        "title": "Foods & Substances to Limit",
+        "simpleSugars": {
+          "title": "Simple Sugars & Refined Carbohydrates",
+          "description": "Cause rapid blood sugar spikes followed by crashes, which impair concentration, increase hyperactivity, and worsen impulsivity. Consistent blood sugar is essential for focus.",
+          "advice": "Avoid candy, soda, white bread, pastries; choose whole grains and pair carbs with protein."
+        },
+        "additives": {
+          "title": "Artificial Additives & Food Dyes",
+          "description": "Some studies suggest artificial colors (Red 40, Yellow 5, Yellow 6) and preservatives may worsen hyperactivity in sensitive children, though research is mixed. The Feingold Diet eliminates these additives.",
+          "advice": "Consider eliminating for 2-4 weeks to see if symptoms improve; choose whole, unprocessed foods."
+        },
+        "caffeine": {
+          "title": "Excessive Caffeine",
+          "description": "While moderate caffeine can improve focus (especially paired with L-theanine in green tea), excessive amounts cause jitteriness, anxiety, and sleep disruption—all worsen ADHD symptoms.",
+          "advice": "Limit to <200mg/day; avoid caffeine after 2 PM to protect sleep."
+        },
+        "skippingMeals": {
+          "title": "Skipping Meals",
+          "description": "Missing meals causes blood sugar drops that significantly impair concentration, working memory, and impulse control. Breakfast is especially critical for morning focus.",
+          "advice": "Eat regular meals every 3-4 hours; include protein and complex carbs."
+        },
+        "allergens": {
+          "title": "High-Allergen Foods (If Sensitive)",
+          "description": "Some individuals with ADHD have undiagnosed food sensitivities (dairy, gluten, soy) that worsen symptoms. This is not true for everyone but worth exploring if symptoms persist.",
+          "advice": "Work with a healthcare provider to identify potential sensitivities through elimination diet."
+        }
+      },
+      "research": {
+        "title": "Research & Evidence",
+        "keyFindings": "Key Research Findings:",
+        "findings": {
+          "omega3": "Omega-3 supplementation improves ADHD symptoms (multiple meta-analyses)",
+          "protein": "Protein-rich breakfast improves attention and reduces hyperactivity",
+          "minerals": "Iron and zinc deficiencies associated with ADHD severity",
+          "mediterranean": "Mediterranean diet linked to better cognitive function",
+          "elimination": "Elimination diets may help subset of individuals with food sensitivities"
+        }
+      },
+      "meals": {
+        "title": "Practical Meal Ideas",
+        "breakfast": {
+          "title": "Breakfast Options (Protein-Rich for Focus)",
+          "items": {
+            "eggs": "Scrambled eggs with spinach, whole grain toast, and berries",
+            "parfait": "Greek yogurt parfait with walnuts, blueberries, and chia seeds",
+            "salmon": "Smoked salmon and avocado on whole grain bagel",
+            "smoothie": "Protein smoothie with banana, almond butter, oats, and flaxseeds"
+          }
+        },
+        "lunch": {
+          "title": "Lunch Options",
+          "items": {
+            "tuna": "Tuna salad with beets, mixed greens, and olive oil dressing",
+            "wrap": "Turkey and avocado wrap with whole wheat tortilla",
+            "bowl": "Quinoa bowl with grilled chicken, broccoli, and tahini sauce",
+            "soup": "Lentil soup with kale and whole grain crackers"
+          }
+        },
+        "dinner": {
+          "title": "Dinner Options",
+          "items": {
+            "salmon": "Grilled salmon with brown rice and roasted Brussels sprouts",
+            "chicken": "Baked chicken with sweet potato and sautéed spinach",
+            "sardines": "Sardines over whole grain pasta with cherry tomatoes",
+            "beef": "Beef stir-fry with colorful vegetables over quinoa"
+          }
+        },
+        "snacks": {
+          "title": "Snack Ideas (Sustained Energy)",
+          "items": {
+            "eggs": "Hard-boiled eggs with cherry tomatoes",
+            "walnuts": "Walnuts and dark chocolate",
+            "apple": "Apple slices with almond butter",
+            "tea": "Green tea with a small piece of dark chocolate",
+            "hummus": "Hummus with carrot and bell pepper sticks"
+          }
+        },
+        "beverages": {
+          "title": "Focus-Boosting Beverages",
+          "items": {
+            "green": "Green tea (L-theanine + moderate caffeine)",
+            "beet": "Beet juice (improves blood flow to brain)",
+            "smoothie": "Blueberry smoothie with protein powder",
+            "water": "Water (dehydration significantly impairs concentration)"
+          }
+        }
+      }
+    },
+    "learnAboutADHD": "Learn About ADHD"
+  },
+  "supplements": {
+    "title": "Supplements & Nutrients for Mental Health",
+    "metaDescription": "Comprehensive guide to supplements for mental health: omega-3, vitamin D, magnesium, probiotics. Evidence levels, dosages, safety, and quality considerations.",
+    "safetyAlert": {
+      "title": "Important Safety Information",
+      "text": "Always consult your healthcare provider before starting any supplement. Supplements can interact with medications, cause side effects, and may not be appropriate for everyone. This information is educational only and not medical advice."
+    },
+    "intro": {
+      "p1": "Supplements can play a supportive role in mental health treatment, but they should complement—not replace—a healthy diet, therapy, and prescribed medications. While some supplements have strong research support, the industry is largely unregulated, making quality and safety critical considerations.",
+      "p2": "Work with your healthcare provider to determine which supplements, if any, are appropriate for your individual needs, medications, and health conditions."
+    },
+    "supplements": {
+      "omega3": {
+        "title": "Omega-3 Fish Oil (EPA & DHA)",
+        "trigger": "Omega-3 Fish Oil (EPA & DHA)",
+        "evidenceLevel": "Strong",
+        "intro": "Omega-3 fatty acids, particularly EPA (eicosapentaenoic acid) and DHA (docosahexaenoic acid), have the most robust research support for mental health.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "depression": "Depression: Multiple meta-analyses show EPA-rich formulas reduce depression symptoms",
+          "adhd": "ADHD: Improves attention and reduces hyperactivity in children and adults",
+          "anxiety": "Anxiety: May reduce anxiety symptoms, especially in those with high inflammation"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "1000-2000mg combined EPA+DHA daily. For depression, higher EPA ratios (EPA:DHA 2:1 or higher) may be more effective."
+        },
+        "quality": {
+          "title": "Quality Considerations:",
+          "items": {
+            "tested": "Third-party tested for purity (mercury, PCBs)",
+            "distilled": "Molecularly distilled",
+            "certified": "Check for IFOS (International Fish Oil Standards) or USP certification",
+            "storage": "Refrigerate after opening to prevent oxidation"
+          }
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "Generally safe. May cause fishy aftertaste, upset stomach. High doses (>3g/day) may thin blood—consult doctor if on blood thinners."
+        }
+      },
+      "vitaminD": {
+        "title": "Vitamin D",
+        "trigger": "Vitamin D",
+        "evidenceLevel": "Moderate to Strong",
+        "intro": "Vitamin D deficiency is extremely common and strongly linked to depression, seasonal affective disorder (SAD), and cognitive decline.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "depression": "Depression: Deficiency associated with depression; supplementation improves symptoms in deficient individuals",
+          "sad": "Seasonal Affective Disorder (SAD): May reduce winter depression symptoms",
+          "cognitive": "Cognitive Function: Supports brain health and may reduce dementia risk"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "1000-2000 IU daily for maintenance. Test your blood levels first—optimal range is 30-50 ng/mL. Higher doses may be needed to correct deficiency."
+        },
+        "quality": {
+          "title": "Quality Considerations:",
+          "items": {
+            "type": "Vitamin D3 (cholecalciferol) is more effective than D2",
+            "absorption": "Take with a meal containing fat for better absorption",
+            "combine": "Combine with magnesium and vitamin K2 for optimal metabolism"
+          }
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "Safe up to 4000 IU/day for most adults. Excessive doses can cause toxicity. Regular blood testing recommended."
+        }
+      },
+      "bComplex": {
+        "title": "B-Complex Vitamins",
+        "trigger": "B-Complex Vitamins",
+        "evidenceLevel": "Moderate",
+        "intro": "B vitamins (B6, B12, folate) are essential for neurotransmitter production and are often depleted in depression and chronic stress.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "general": "B6, B12, Folate: Support serotonin, dopamine, and norepinephrine production",
+          "b12": "B12 Deficiency: Causes depression, fatigue, and cognitive impairment (common in vegans/vegetarians)",
+          "folate": "Folate (L-methylfolate): May enhance antidepressant effectiveness"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "B-complex containing 100% RDA of each B vitamin. For deficiency, higher therapeutic doses under medical supervision."
+        },
+        "whoBenefits": {
+          "title": "Who Benefits Most:",
+          "items": {
+            "vegans": "Vegans and vegetarians (B12 deficiency risk)",
+            "older": "Older adults (reduced absorption)",
+            "medications": "Those taking metformin or acid-reducing medications (interfere with B12 absorption)",
+            "alcohol": "Heavy alcohol users (B vitamin depletion)"
+          }
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "B vitamins are water-soluble and generally safe. Excess amounts are excreted in urine."
+        }
+      },
+      "magnesium": {
+        "title": "Magnesium",
+        "trigger": "Magnesium",
+        "evidenceLevel": "Moderate",
+        "intro": "Magnesium is involved in over 300 biochemical reactions, including those regulating mood and stress response. Deficiency is common and linked to anxiety and depression.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "anxiety": "Anxiety: Natural muscle relaxant; calms nervous system",
+          "depression": "Depression: Some studies show magnesium reduces depressive symptoms",
+          "sleep": "Sleep: Improves sleep quality (especially magnesium glycinate)"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "200-400mg daily. Best taken in divided doses with food."
+        },
+        "forms": {
+          "title": "Forms of Magnesium:",
+          "items": {
+            "glycinate": "Magnesium Glycinate: Best for anxiety, sleep, gentle on stomach",
+            "citrate": "Magnesium Citrate: Good absorption, may have laxative effect",
+            "threonate": "Magnesium L-Threonate: Crosses blood-brain barrier, supports cognition",
+            "avoid": "Avoid Magnesium Oxide: Poor absorption"
+          }
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "Generally safe. High doses may cause diarrhea. Avoid if you have kidney disease. May interact with certain medications."
+        }
+      },
+      "probiotics": {
+        "title": "Probiotics",
+        "trigger": "Probiotics",
+        "evidenceLevel": "Emerging",
+        "intro": "The gut-brain axis is a major area of mental health research. Specific probiotic strains produce neurotransmitters and regulate the stress response via the vagus nerve.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "anxietyDepression": "Anxiety & Depression: Certain strains (Lactobacillus, Bifidobacterium) may reduce symptoms",
+          "stress": "Stress Resilience: May reduce cortisol and improve stress response",
+          "gut": "Gut Health: Supports overall digestive health"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "10-50 billion CFU daily from multi-strain formula. Refrigerated probiotics tend to have higher viability."
+        },
+        "strains": {
+          "title": "Beneficial Strains for Mental Health:",
+          "items": {
+            "helveticus": "Lactobacillus helveticus",
+            "longum": "Bifidobacterium longum",
+            "rhamnosus": "Lactobacillus rhamnosus"
+          }
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "Generally safe. May cause gas or bloating initially. Those with compromised immune systems should consult a doctor first."
+        }
+      },
+      "same": {
+        "title": "SAMe (S-Adenosyl Methionine)",
+        "trigger": "SAMe (S-Adenosyl Methionine)",
+        "evidenceLevel": "Moderate",
+        "intro": "SAMe is a compound naturally produced in the body that supports neurotransmitter function and has antidepressant properties.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "depression": "Depression: Multiple studies show SAMe as effective as some antidepressants",
+          "onset": "Onset: May work faster than SSRIs (1-2 weeks vs 4-6 weeks)"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "400-1600mg daily in divided doses. Start low and increase gradually."
+        },
+        "considerations": {
+          "title": "Important Considerations:",
+          "items": {
+            "supervision": "Medical Supervision Required: Can interact with antidepressants",
+            "bipolar": "Not for Bipolar: May trigger mania in bipolar disorder",
+            "quality": "Quality Matters: Enteric-coated formulas more stable",
+            "expensive": "Expensive compared to other supplements"
+          }
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "Generally well-tolerated but can cause GI upset, anxiety, or insomnia. Do not combine with antidepressants without medical supervision."
+        }
+      },
+      "lTheanine": {
+        "title": "L-Theanine",
+        "trigger": "L-Theanine",
+        "evidenceLevel": "Moderate",
+        "intro": "An amino acid found in green tea that promotes relaxation without sedation by increasing alpha brain waves.",
+        "benefits": {
+          "title": "Mental Health Benefits:",
+          "anxiety": "Anxiety: Reduces acute anxiety and promotes calm focus",
+          "focus": "Focus: Paired with caffeine, improves attention and reduces jitters",
+          "sleep": "Sleep Quality: May improve sleep without causing drowsiness during the day"
+        },
+        "dosage": {
+          "title": "Recommended Dosage:",
+          "text": "100-200mg as needed, 1-3 times daily. Often combined with caffeine (1:2 ratio) for focused energy."
+        },
+        "safety": {
+          "title": "Safety:",
+          "text": "Extremely safe with minimal side effects. No known drug interactions. Non-habit forming."
+        }
+      },
+      "caution": {
+        "title": "Supplements to Approach Cautiously",
+        "trigger": "Supplements to Approach Cautiously",
+        "stJohnsWort": {
+          "title": "St. John's Wort",
+          "description": "Evidence for depression but serious drug interactions. St. John's Wort reduces effectiveness of many medications including birth control, blood thinners, and antidepressants. Can cause serotonin syndrome if combined with SSRIs.",
+          "warning": "Only use under medical supervision. Never combine with prescription antidepressants."
+        },
+        "highDoseVitamins": {
+          "title": "High-Dose Vitamins",
+          "description": "Mega-doses of fat-soluble vitamins (A, D, E, K) can accumulate and cause toxicity. More is not better—follow recommended dosages."
+        },
+        "herbal": {
+          "title": "Unregulated Herbal Supplements",
+          "description": "Many herbal supplements lack quality control, may be contaminated with heavy metals, and have inconsistent potency. Stick with third-party tested brands."
+        },
+        "kava": {
+          "title": "Kava",
+          "description": "While effective for anxiety, kava has been linked to liver damage in some individuals. Avoid if you have liver disease or take medications affecting the liver."
+        }
+      },
+      "safety": {
+        "title": "Safety & Quality Considerations",
+        "trigger": "Safety & Quality Considerations",
+        "fdaRegulation": {
+          "title": "FDA Regulation",
+          "text": "Supplements are NOT FDA-regulated like medications. Manufacturers are not required to prove safety or effectiveness before selling. This makes quality control critical."
+        },
+        "thirdParty": {
+          "title": "Third-Party Testing",
+          "intro": "Look for these certifications on supplement labels:",
+          "items": {
+            "usp": "USP Verified: Purity, potency, and quality tested",
+            "nsf": "NSF Certified: Independent testing for contaminants",
+            "consumerlab": "ConsumerLab: Third-party verification",
+            "ifos": "IFOS (Fish Oil): International Fish Oil Standards"
+          }
+        },
+        "interactions": {
+          "title": "Medication Interactions",
+          "intro": "Always tell your healthcare provider about all supplements you take. Common interactions include:",
+          "items": {
+            "omega3": "Omega-3s + blood thinners (increased bleeding risk)",
+            "stJohns": "St. John's Wort + SSRIs (serotonin syndrome)",
+            "vitaminK": "Vitamin K + warfarin (reduced medication effectiveness)",
+            "magnesium": "Magnesium + certain antibiotics (reduced absorption)"
+          }
+        },
+        "whenToAvoid": {
+          "title": "When to Avoid Supplements",
+          "items": {
+            "pregnancy": "Pregnancy/breastfeeding (unless approved by doctor)",
+            "surgery": "Before surgery (some increase bleeding risk)",
+            "kidneyLiver": "Liver or kidney disease (certain supplements contraindicated)",
+            "bipolar": "Bipolar disorder (some supplements may trigger mania)"
+          }
+        }
+      },
+      "research": {
+        "title": "Research & Evidence"
+      }
+    },
+    "bottomLine": {
+      "title": "The Bottom Line",
+      "text": "Supplements can be valuable tools in mental health treatment, but they work best as part of a comprehensive approach that includes therapy, lifestyle changes, and—when appropriate—medication. Always prioritize quality, work with your healthcare provider, and remember that no supplement can replace professional treatment for mental health conditions."
+    },
+    "discussWithProvider": "Discuss Supplements with a Provider"
+  }
+}

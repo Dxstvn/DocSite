@@ -1,0 +1,387 @@
+{
+  "hub": {
+    "title": "Herramientas de Evaluación de Salud Mental",
+    "description": "Evaluaciones de salud mental gratuitas y confidenciales. Estas herramientas de evaluación pueden ayudarle a comprender sus síntomas y decidir si debe hablar con un profesional de salud mental.",
+    "disclaimer": {
+      "title": "Aviso Importante",
+      "text": "Estas herramientas de evaluación son solo para fines informativos y no constituyen consejo, diagnóstico o tratamiento médico. Solo un proveedor de atención médica calificado puede diagnosticar condiciones de salud mental. Si está experimentando una crisis de salud mental, comuníquese con el 988 (Línea de Vida para Crisis y Suicidio) o llame al 911."
+    }
+  },
+  "tools": {
+    "phq9": {
+      "name": "PHQ-9",
+      "fullName": "Cuestionario de Salud del Paciente",
+      "description": "Evaluación de 9 preguntas para depresión",
+      "duration": "Toma 2-3 minutos"
+    },
+    "gad7": {
+      "name": "GAD-7",
+      "fullName": "Escala de Trastorno de Ansiedad Generalizada",
+      "description": "Evaluación de 7 preguntas para ansiedad",
+      "duration": "Toma 2-3 minutos"
+    },
+    "asrs": {
+      "name": "ASRS",
+      "fullName": "Escala de Auto-Reporte de TDAH en Adultos",
+      "description": "Evaluación de 18 preguntas para TDAH",
+      "duration": "Toma 5-7 minutos"
+    },
+    "mdq": {
+      "name": "MDQ",
+      "fullName": "Cuestionario de Trastorno del Estado de Ánimo",
+      "description": "Evaluación para trastorno bipolar",
+      "duration": "Toma 3-5 minutos"
+    },
+    "pcl5": {
+      "name": "PCL-5",
+      "fullName": "Lista de Verificación de TEPT",
+      "description": "Evaluación de 20 preguntas para TEPT",
+      "duration": "Toma 5-7 minutos"
+    }
+  },
+  "common": {
+    "startButton": "Comenzar Evaluación",
+    "backToHub": "Volver a Herramientas de Evaluación",
+    "nextQuestion": "Siguiente Pregunta",
+    "previousQuestion": "Pregunta Anterior",
+    "submit": "Enviar",
+    "restart": "Reiniciar",
+    "yourScore": "Su Puntuación",
+    "interpretation": "Interpretación",
+    "recommendation": "Recomendación",
+    "disclaimer": "Esta evaluación no es un diagnóstico",
+    "privacyNote": "Sus respuestas se procesan completamente en su navegador y no se almacenan ni transmiten.",
+    "calculateScore": "Calcular Puntuación",
+    "scheduleAppointment": "Programar una Cita",
+    "retakeScreening": "Repetir Evaluación"
+  },
+  "phq9": {
+    "title": "Evaluación de Depresión PHQ-9",
+    "resultsTitle": "Resultados PHQ-9",
+    "about": {
+      "title": "Acerca de Esta Evaluación",
+      "text": "El Cuestionario de Salud del Paciente (PHQ-9) es una herramienta de evaluación validada para la depresión. Pregunta sobre los síntomas que puede haber experimentado durante las últimas dos semanas. Sus respuestas se procesan completamente en su navegador y no se almacenan ni transmiten."
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "text": "Durante las últimas 2 semanas, ¿con qué frecuencia le han molestado los siguientes problemas?"
+    },
+    "questions": {
+      "q1": "Poco interés o placer en hacer cosas",
+      "q2": "Sentirse desanimado/a, deprimido/a o sin esperanza",
+      "q3": "Problemas para quedarse dormido/a, permanecer dormido/a o dormir demasiado",
+      "q4": "Sentirse cansado/a o con poca energía",
+      "q5": "Poco apetito o comer en exceso",
+      "q6": "Sentirse mal consigo mismo/a, o sentir que es un fracaso o que se ha fallado a sí mismo/a o a su familia",
+      "q7": "Problemas para concentrarse en cosas como leer el periódico o ver televisión",
+      "q8": "Moverse o hablar tan lentamente que otras personas lo han notado. O lo contrario: estar tan inquieto/a o agitado/a que se ha estado moviendo mucho más de lo normal",
+      "q9": "Pensamientos de que estaría mejor muerto/a o de hacerse daño de alguna manera"
+    },
+    "options": {
+      "notAtAll": "Para nada",
+      "severalDays": "Varios días",
+      "moreThanHalf": "Más de la mitad de los días",
+      "nearlyEvery": "Casi todos los días"
+    },
+    "results": {
+      "severityLabel": "Nivel de Gravedad",
+      "immediateAttention": {
+        "title": "Se Recomienda Atención Inmediata",
+        "suicidalThoughts": "Indicó pensamientos de autolesión. Por favor busque ayuda inmediatamente. Llame al 988 (Línea de Vida para Crisis y Suicidio) o envíe un mensaje de texto con HOME al 741741.",
+        "severeSymptoms": "Su puntuación sugiere síntomas de depresión severa. Por favor contacte a un profesional de salud mental o a su médico de atención primaria lo antes posible."
+      },
+      "severity": {
+        "minimal": "Mínima",
+        "mild": "Leve",
+        "moderate": "Moderada",
+        "moderatelySevere": "Moderadamente Severa",
+        "severe": "Severa"
+      },
+      "interpretation": {
+        "minimal": "Sus respuestas sugieren síntomas mínimos de depresión.",
+        "mild": "Sus respuestas sugieren síntomas leves de depresión.",
+        "moderate": "Sus respuestas sugieren síntomas moderados de depresión.",
+        "moderatelySevere": "Sus respuestas sugieren síntomas de depresión moderadamente severos.",
+        "severe": "Sus respuestas sugieren síntomas severos de depresión."
+      },
+      "recommendation": {
+        "low": "Continúe monitoreando su salud mental. Si los síntomas empeoran o persisten, considere consultar a un profesional de salud mental.",
+        "high": "Basándonos en sus respuestas, recomendamos hablar con un profesional de salud mental para una evaluación completa y discusión de opciones de tratamiento."
+      },
+      "disclaimer": {
+        "title": "Recuerde",
+        "text": "Esta herramienta de evaluación no es un diagnóstico. Solo un profesional de salud mental con licencia puede proporcionar un diagnóstico preciso y un plan de tratamiento."
+      },
+      "learnMore": "Aprender Sobre la Depresión"
+    }
+  },
+  "gad7": {
+    "title": "Evaluación de Ansiedad GAD-7",
+    "resultsTitle": "Resultados GAD-7",
+    "about": {
+      "title": "Acerca de Esta Evaluación",
+      "text": "La Escala de Trastorno de Ansiedad Generalizada (GAD-7) es una herramienta de evaluación validada para la ansiedad. Pregunta sobre los síntomas que puede haber experimentado durante las últimas dos semanas. Sus respuestas se procesan completamente en su navegador y no se almacenan ni transmiten."
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "text": "Durante las últimas 2 semanas, ¿con qué frecuencia le han molestado los siguientes problemas?"
+    },
+    "questions": {
+      "q1": "Sentirse nervioso/a, ansioso/a o con los nervios de punta",
+      "q2": "No poder dejar de preocuparse o no poder controlar la preocupación",
+      "q3": "Preocuparse demasiado por diferentes cosas",
+      "q4": "Dificultad para relajarse",
+      "q5": "Estar tan inquieto/a que es difícil quedarse quieto/a",
+      "q6": "Molestarse o irritarse fácilmente",
+      "q7": "Sentir miedo como si algo terrible fuera a pasar"
+    },
+    "results": {
+      "severityLabel": "Nivel de Gravedad",
+      "immediateAttention": {
+        "title": "Se Recomienda Atención Inmediata",
+        "severeSymptoms": "Su puntuación sugiere síntomas severos de ansiedad. Por favor contacte a un profesional de salud mental o a su médico de atención primaria lo antes posible."
+      },
+      "severity": {
+        "minimal": "Mínima",
+        "mild": "Leve",
+        "moderate": "Moderada",
+        "severe": "Severa"
+      },
+      "interpretation": {
+        "minimal": "Sus respuestas sugieren síntomas mínimos de ansiedad.",
+        "mild": "Sus respuestas sugieren síntomas leves de ansiedad.",
+        "moderate": "Sus respuestas sugieren síntomas moderados de ansiedad.",
+        "severe": "Sus respuestas sugieren síntomas severos de ansiedad."
+      },
+      "recommendation": {
+        "low": "Continúe monitoreando su salud mental. Si los síntomas empeoran o persisten, considere consultar a un profesional de salud mental.",
+        "high": "Basándonos en sus respuestas, recomendamos hablar con un profesional de salud mental para una evaluación completa y discusión de opciones de tratamiento."
+      },
+      "disclaimer": {
+        "title": "Recuerde",
+        "text": "Esta herramienta de evaluación no es un diagnóstico. Solo un profesional de salud mental con licencia puede proporcionar un diagnóstico preciso y un plan de tratamiento."
+      },
+      "learnMore": "Aprender Sobre la Ansiedad"
+    }
+  },
+  "asrs": {
+    "title": "Evaluación de TDAH ASRS",
+    "resultsTitle": "Resultados ASRS",
+    "about": {
+      "title": "Acerca de Esta Evaluación",
+      "text": "La Escala de Auto-Reporte de TDAH en Adultos (ASRS) es una herramienta de evaluación validada para el TDAH en adultos. Consta de 18 preguntas divididas en dos partes. Sus respuestas se procesan completamente en su navegador y no se almacenan ni transmiten."
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "text": "Por favor responda las preguntas a continuación, calificándose en cada uno de los criterios mostrados. Al responder cada pregunta, seleccione la opción que mejor describa cómo se ha sentido y comportado durante los últimos 6 meses."
+    },
+    "partA": "Parte A",
+    "partB": "Parte B",
+    "questions": {
+      "q1": "¿Con qué frecuencia tiene problemas para terminar los detalles finales de un proyecto, una vez que las partes difíciles ya han sido completadas?",
+      "q2": "¿Con qué frecuencia tiene dificultad para poner las cosas en orden cuando tiene que hacer una tarea que requiere organización?",
+      "q3": "¿Con qué frecuencia tiene problemas para recordar citas u obligaciones?",
+      "q4": "Cuando tiene una tarea que requiere mucho pensamiento, ¿con qué frecuencia evita o retrasa comenzarla?",
+      "q5": "¿Con qué frecuencia mueve las manos o los pies nerviosamente o se retuerce cuando tiene que estar sentado/a por un período largo?",
+      "q6": "¿Con qué frecuencia se siente excesivamente activo/a y obligado/a a hacer cosas, como si lo impulsara un motor?",
+      "q7": "¿Con qué frecuencia comete errores por descuido cuando tiene que trabajar en un proyecto aburrido o difícil?",
+      "q8": "¿Con qué frecuencia tiene dificultad para mantener la atención cuando está haciendo un trabajo aburrido o repetitivo?",
+      "q9": "¿Con qué frecuencia tiene dificultad para concentrarse en lo que la gente le dice, incluso cuando le están hablando directamente?",
+      "q10": "¿Con qué frecuencia extravía o tiene dificultad para encontrar cosas en casa o en el trabajo?",
+      "q11": "¿Con qué frecuencia se distrae por la actividad o el ruido a su alrededor?",
+      "q12": "¿Con qué frecuencia deja su asiento en reuniones u otras situaciones en las que se espera que permanezca sentado/a?",
+      "q13": "¿Con qué frecuencia se siente inquieto/a o nervioso/a?",
+      "q14": "¿Con qué frecuencia tiene dificultad para relajarse y descansar cuando tiene tiempo libre?",
+      "q15": "¿Con qué frecuencia se encuentra hablando demasiado cuando está en situaciones sociales?",
+      "q16": "Cuando está en una conversación, ¿con qué frecuencia se encuentra terminando las oraciones de las personas con las que está hablando, antes de que puedan terminarlas ellos mismos?",
+      "q17": "¿Con qué frecuencia tiene dificultad para esperar su turno en situaciones donde se requiere tomar turnos?",
+      "q18": "¿Con qué frecuencia interrumpe a otros cuando están ocupados?"
+    },
+    "options": {
+      "never": "Nunca",
+      "rarely": "Raramente",
+      "sometimes": "A veces",
+      "often": "Frecuentemente",
+      "veryOften": "Muy frecuentemente"
+    },
+    "results": {
+      "screeningResult": "Resultado de la Evaluación",
+      "partAScore": "Puntuación Parte A",
+      "partBScore": "Puntuación Parte B",
+      "totalScore": "Puntuación Total",
+      "screening": {
+        "positive": "Positivo",
+        "negative": "Negativo"
+      },
+      "interpretation": {
+        "positive": "Sus respuestas sugieren síntomas consistentes con TDAH en adultos. Cuatro o más síntomas en la Parte A fueron marcados como \"Frecuentemente\" o \"Muy frecuentemente\", lo que indica una evaluación positiva.",
+        "negative": "Sus respuestas sugieren menos síntomas consistentes con TDAH en adultos. Sin embargo, esta herramienta de evaluación no es diagnóstica, y los síntomas del TDAH pueden variar ampliamente."
+      },
+      "recommendation": {
+        "positive": "Recomendamos encarecidamente programar una evaluación completa con un profesional de salud mental o médico que se especialice en TDAH. Un diagnóstico formal requiere una evaluación clínica y consideración de su historial de desarrollo.",
+        "negative": "Si continúa experimentando dificultades con la atención, hiperactividad o impulsividad que interfieren con su funcionamiento diario, considere consultar a un profesional de salud mental para una evaluación adicional."
+      },
+      "disclaimer": {
+        "title": "Recuerde",
+        "text": "Esta herramienta de evaluación no es un diagnóstico. Solo un profesional de salud mental con licencia puede proporcionar un diagnóstico preciso y un plan de tratamiento."
+      },
+      "learnMore": "Aprender Sobre el TDAH"
+    }
+  },
+  "mdq": {
+    "title": "Evaluación de Trastorno del Ánimo MDQ",
+    "resultsTitle": "Resultados MDQ",
+    "about": {
+      "title": "Acerca de Esta Evaluación",
+      "text": "El Cuestionario de Trastorno del Estado de Ánimo (MDQ) es una herramienta de evaluación validada para el trastorno bipolar. Pregunta sobre períodos de ánimo elevado o irritable y síntomas relacionados. Sus respuestas se procesan completamente en su navegador y no se almacenan ni transmiten."
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "text": "Por favor responda cada pregunta lo mejor que pueda. Marque SÍ o NO para cada ítem.",
+      "prefix": "¿Ha habido alguna vez un período de tiempo en el que no era su yo habitual y..."
+    },
+    "questions": {
+      "q1": "¿Se sintió tan bien o tan hiperactivo/a que otras personas pensaron que no era su yo normal o estaba tan hiperactivo/a que se metió en problemas?",
+      "q2": "¿Estaba tan irritable que gritaba a la gente o iniciaba peleas o discusiones?",
+      "q3": "¿Se sentía mucho más seguro/a de sí mismo/a de lo habitual?",
+      "q4": "¿Dormía mucho menos de lo habitual y descubrió que realmente no lo echaba de menos?",
+      "q5": "¿Era mucho más hablador/a o hablaba mucho más rápido de lo habitual?",
+      "q6": "¿Los pensamientos pasaban rápidamente por su cabeza o no podía desacelerar su mente?",
+      "q7": "¿Se distraía tan fácilmente por las cosas a su alrededor que tenía problemas para concentrarse o mantenerse en el tema?",
+      "q8": "¿Tenía mucha más energía de lo habitual?",
+      "q9": "¿Era mucho más activo/a o hacía muchas más cosas de lo habitual?",
+      "q10": "¿Era mucho más sociable o extrovertido/a de lo habitual, por ejemplo, llamaba por teléfono a amigos en medio de la noche?",
+      "q11": "¿Estaba mucho más interesado/a en el sexo de lo habitual?",
+      "q12": "¿Hacía cosas que eran inusuales para usted o que otras personas podrían haber pensado que eran excesivas, tontas o arriesgadas?",
+      "q13": "¿Gastar dinero le causó problemas a usted o a su familia?"
+    },
+    "followUp": {
+      "coOccurrenceTitle": "Parte 2: Co-ocurrencia",
+      "coOccurrenceQuestion": "Si marcó SÍ en más de una de las anteriores, ¿han ocurrido varias de estas durante el mismo período de tiempo?",
+      "coOccurrenceDescription": "Marque SÍ si varios de estos síntomas ocurrieron durante el mismo período de tiempo.",
+      "problemLevelTitle": "Parte 3: Nivel de Problema",
+      "problemLevelQuestion": "¿Cuánto problema le causó alguna de estas?"
+    },
+    "problemLevelOptions": {
+      "noProblem": "Ningún problema",
+      "minorProblem": "Problema menor",
+      "moderateProblem": "Problema moderado",
+      "seriousProblem": "Problema serio"
+    },
+    "results": {
+      "screeningResult": "Resultado de la Evaluación",
+      "symptomsEndorsed": "Síntomas Reportados",
+      "coOccurrence": "Co-ocurrencia",
+      "problemLevel": "Nivel de Problema",
+      "yes": "Sí",
+      "no": "No",
+      "screening": {
+        "positive": "Positivo",
+        "negative": "Negativo"
+      },
+      "interpretation": {
+        "positive": "Sus respuestas sugieren síntomas consistentes con el trastorno bipolar. Reportó múltiples síntomas que ocurrieron juntos y causaron problemas significativos en su vida.",
+        "negative": "Sus respuestas sugieren menos síntomas consistentes con el trastorno bipolar, lo cual está por debajo del umbral para una evaluación positiva. Sin embargo, los trastornos del ánimo existen en un espectro.",
+        "negativeNoCoOccurrence": "Reportó múltiples síntomas, pero indicó que no ocurrieron durante el mismo período de tiempo. El trastorno bipolar requiere que los síntomas se agrupen.",
+        "negativeLowProblemLevel": "Reportó múltiples síntomas que ocurrieron juntos, pero informó que causaron problemas mínimos. El trastorno bipolar típicamente causa deterioro funcional significativo."
+      },
+      "recommendation": {
+        "positive": "Recomendamos encarecidamente programar una evaluación con un profesional de salud mental que se especialice en trastornos del ánimo. El trastorno bipolar es una condición seria pero tratable, y el diagnóstico adecuado es esencial para un tratamiento efectivo.",
+        "negative": "Si está experimentando dificultades relacionadas con el ánimo que interfieren con su funcionamiento diario, considere consultar a un profesional de salud mental para orientación personalizada.",
+        "negativeNoCoOccurrence": "Si continúa experimentando dificultades relacionadas con el ánimo, considere consultar a un profesional de salud mental para una evaluación adicional.",
+        "negativeLowProblemLevel": "Continúe monitoreando su ánimo. Si los síntomas empeoran o comienzan a interferir con su vida diaria, consulte a un profesional de salud mental."
+      },
+      "disclaimer": {
+        "title": "Recuerde",
+        "text": "Esta herramienta de evaluación no es un diagnóstico. Solo un profesional de salud mental con licencia puede proporcionar un diagnóstico preciso del trastorno bipolar después de una evaluación clínica completa que incluya historial del ánimo, historial familiar y evaluación funcional."
+      },
+      "positiveAlert": {
+        "title": "Resultado de Evaluación Positivo",
+        "text": "Su evaluación sugiere síntomas consistentes con el trastorno bipolar. Por favor programe una evaluación con un profesional de salud mental que se especialice en trastornos del ánimo. El trastorno bipolar requiere una evaluación clínica completa para un diagnóstico preciso."
+      },
+      "learnMore": "Aprender Sobre el Trastorno Bipolar"
+    }
+  },
+  "pcl5": {
+    "title": "Evaluación de TEPT PCL-5",
+    "resultsTitle": "Resultados PCL-5",
+    "about": {
+      "title": "Acerca de Esta Evaluación",
+      "text": "La Lista de Verificación de TEPT para DSM-5 (PCL-5) es una herramienta de evaluación validada para el trastorno de estrés postraumático. Pregunta sobre los síntomas que puede haber experimentado durante el último mes relacionados con un evento traumático. Sus respuestas se procesan completamente en su navegador y no se almacenan ni transmiten."
+    },
+    "instructions": {
+      "title": "Instrucciones",
+      "text": "A continuación hay una lista de problemas que las personas a veces tienen en respuesta a una experiencia muy estresante. Por favor lea cada problema cuidadosamente y luego seleccione una de las opciones para indicar cuánto le ha molestado ese problema en el último mes."
+    },
+    "questions": {
+      "q1": "¿Recuerdos repetidos, perturbadores e indeseados de la experiencia estresante?",
+      "q2": "¿Sueños repetidos y perturbadores de la experiencia estresante?",
+      "q3": "¿De repente sentirse o actuar como si la experiencia estresante estuviera ocurriendo de nuevo (como si realmente estuviera de vuelta reviviéndola)?",
+      "q4": "¿Sentirse muy molesto/a cuando algo le recordó la experiencia estresante?",
+      "q5": "¿Tener reacciones físicas fuertes cuando algo le recordó la experiencia estresante (por ejemplo, corazón palpitante, problemas para respirar, sudoración)?",
+      "q6": "¿Evitar recuerdos, pensamientos o sentimientos relacionados con la experiencia estresante?",
+      "q7": "¿Evitar recordatorios externos de la experiencia estresante (por ejemplo, personas, lugares, conversaciones, actividades, objetos o situaciones)?",
+      "q8": "¿Problemas para recordar partes importantes de la experiencia estresante?",
+      "q9": "¿Tener creencias negativas fuertes sobre usted mismo/a, otras personas o el mundo (por ejemplo, tener pensamientos como: soy malo/a, hay algo seriamente mal conmigo, no se puede confiar en nadie, el mundo es completamente peligroso)?",
+      "q10": "¿Culparse a sí mismo/a o a alguien más por la experiencia estresante o lo que sucedió después?",
+      "q11": "¿Tener sentimientos negativos fuertes como miedo, horror, ira, culpa o vergüenza?",
+      "q12": "¿Pérdida de interés en actividades que solía disfrutar?",
+      "q13": "¿Sentirse distante o alejado/a de otras personas?",
+      "q14": "¿Problemas para experimentar sentimientos positivos (por ejemplo, no poder sentir felicidad o tener sentimientos amorosos hacia personas cercanas a usted)?",
+      "q15": "¿Comportamiento irritable, arrebatos de ira o actuar agresivamente?",
+      "q16": "¿Tomar demasiados riesgos o hacer cosas que podrían causarle daño?",
+      "q17": "¿Estar \"súper alerta\" o vigilante o en guardia?",
+      "q18": "¿Sentirse nervioso/a o asustarse fácilmente?",
+      "q19": "¿Tener dificultad para concentrarse?",
+      "q20": "¿Problemas para quedarse dormido/a o permanecer dormido/a?"
+    },
+    "options": {
+      "notAtAll": "Para nada",
+      "aLittleBit": "Un poco",
+      "moderately": "Moderadamente",
+      "quiteABit": "Bastante",
+      "extremely": "Extremadamente"
+    },
+    "clusters": {
+      "reexperiencing": "Re-experimentación",
+      "avoidance": "Evitación",
+      "negativeCognitions": "Cogniciones y Estado de Ánimo Negativos",
+      "arousal": "Activación y Reactividad"
+    },
+    "results": {
+      "yourScore": "Su Puntuación",
+      "symptomClusters": "Puntuaciones por Grupo de Síntomas",
+      "provisionalDiagnosis": {
+        "positive": "La puntuación sugiere síntomas de TEPT clínicamente significativos",
+        "negative": "Puntuación por debajo del umbral típico de TEPT"
+      },
+      "severity": {
+        "severe": "Severo",
+        "borderline": "Límite",
+        "moderate": "Moderado",
+        "minimal": "Mínimo"
+      },
+      "interpretation": {
+        "severe": "Sus respuestas sugieren síntomas consistentes con TEPT. Su puntuación total está en el rango que puede indicar síntomas de TEPT clínicamente significativos.",
+        "borderline": "Sus respuestas sugieren síntomas significativos relacionados con el trauma que pueden justificar una evaluación adicional. Su puntuación está en el rango límite para TEPT.",
+        "moderate": "Sus respuestas sugieren síntomas moderados relacionados con el trauma. Aunque están por debajo del umbral típico de TEPT, estos síntomas aún pueden afectar su funcionamiento diario.",
+        "minimal": "Sus respuestas sugieren síntomas mínimos relacionados con el trauma en este momento."
+      },
+      "recommendation": {
+        "severe": "Recomendamos encarecidamente programar una evaluación con un profesional de salud mental que se especialice en trauma. El TEPT es una condición tratable, y las terapias basadas en evidencia como CPT, PE y EMDR tienen altas tasas de éxito.",
+        "borderline": "Considere consultar con un profesional de salud mental para discutir sus síntomas y explorar si el tratamiento enfocado en el trauma podría ser útil.",
+        "moderate": "Considere hablar con un profesional de salud mental sobre sus síntomas. La terapia enfocada en el trauma puede ser útil incluso para síntomas por debajo del umbral.",
+        "minimal": "Continúe monitoreando su bienestar. Si experimenta eventos traumáticos o los síntomas empeoran, consulte a un profesional de salud mental."
+      },
+      "disclaimer": {
+        "title": "Recuerde",
+        "text": "Esta herramienta de evaluación no es un diagnóstico. Solo un profesional de salud mental con licencia puede proporcionar un diagnóstico preciso de TEPT después de una evaluación clínica completa que incluya historial de trauma y evaluación funcional."
+      },
+      "severeAlert": {
+        "title": "Se Recomienda Atención Inmediata",
+        "text": "Su puntuación sugiere síntomas consistentes con TEPT. Por favor contacte a un profesional de salud mental que se especialice en trauma lo antes posible. El TEPT es altamente tratable con terapias basadas en evidencia."
+      },
+      "learnMore": "Aprender Sobre el TEPT"
+    }
+  }
+}

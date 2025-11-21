@@ -187,6 +187,29 @@ I bring a unique combination of:
 
 ## Development Approach & Work Philosophy
 
+### Database & Environment Strategy
+
+**IMPORTANT: Production Database for All Operations**
+
+For Bergen Mind & Wellness project:
+- **Always use PRODUCTION database** for all edits, updates, migrations, and queries
+- Local Next.js dev server (`pnpm dev` at `localhost:3000`) connects to **production Supabase instance**
+- No local database setup required - product hasn't launched yet, so production is safe for testing
+- All Supabase operations (migrations, queries, data fixes) target the live production database
+- Testing locally means: **local frontend + production backend**
+
+This approach ensures:
+- Single source of truth for data and schema
+- No sync issues between local and production databases
+- Realistic testing environment
+- Simplified workflow without local database management
+
+**Key Commands**:
+- Use `Supabase MCP` tools for all database operations (targets production)
+- Migrations go directly to production via Supabase MCP
+- No need for `pnpm supabase:start` or `pnpm supabase:reset` (local Supabase)
+- Test data lives in production database
+
 ### Thoroughness Over Speed
 
 My development practice prioritizes **quality and completeness** over rushing to finish tasks. Key principles:

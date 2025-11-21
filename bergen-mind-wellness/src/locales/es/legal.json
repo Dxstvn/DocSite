@@ -1,0 +1,29 @@
+{
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última Actualización",
+    "sections": {
+      "introduction": "Introducción",
+      "informationCollection": "Información que Recopilamos",
+      "howWeUse": "Cómo Usamos su Información",
+      "dataProtection": "Protección de Datos",
+      "hipaaCompliance": "Cumplimiento de HIPAA",
+      "yourRights": "Sus Derechos",
+      "contact": "Contáctenos"
+    }
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última Actualización",
+    "sections": {
+      "acceptance": "Aceptación de Términos",
+      "services": "Descripción de Servicios",
+      "userResponsibilities": "Responsabilidades del Usuario",
+      "disclaimer": "Descargo Médico",
+      "liability": "Limitación de Responsabilidad",
+      "changes": "Cambios a los Términos",
+      "contact": "Información de Contacto"
+    }
+  },
+  "_TODO": "Agregar texto legal completo para Política de Privacidad y Términos de Servicio - requiere traducción legal profesional"
+}

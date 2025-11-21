@@ -1,0 +1,29 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "introduction": "Introduction",
+      "informationCollection": "Information We Collect",
+      "howWeUse": "How We Use Your Information",
+      "dataProtection": "Data Protection",
+      "hipaaCompliance": "HIPAA Compliance",
+      "yourRights": "Your Rights",
+      "contact": "Contact Us"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "sections": {
+      "acceptance": "Acceptance of Terms",
+      "services": "Description of Services",
+      "userResponsibilities": "User Responsibilities",
+      "disclaimer": "Medical Disclaimer",
+      "liability": "Limitation of Liability",
+      "changes": "Changes to Terms",
+      "contact": "Contact Information"
+    }
+  },
+  "_TODO": "Add full legal text for Privacy Policy and Terms of Service - requires professional legal translation"
+}

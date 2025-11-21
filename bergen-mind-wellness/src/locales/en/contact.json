@@ -1,0 +1,41 @@
+{
+  "title": "Schedule an Appointment",
+  "description": "Take the first step toward better mental health",
+  "appointmentTypes": {
+    "title": "Appointment Types",
+    "initial": {
+      "name": "Initial Psychiatric Evaluation",
+      "duration": "50 minutes",
+      "description": "Comprehensive assessment and treatment planning"
+    },
+    "followup": {
+      "name": "Follow-up Appointment",
+      "duration": "30 minutes",
+      "description": "Medication management and progress monitoring"
+    },
+    "medication": {
+      "name": "Medication Management",
+      "duration": "15-20 minutes",
+      "description": "Brief check-in and prescription management"
+    }
+  },
+  "officeHours": {
+    "title": "Office Hours",
+    "hours": "Monday - Friday: 9:00 AM - 5:00 PM",
+    "virtualNote": "Virtual appointments available"
+  },
+  "insuranceAccepted": {
+    "title": "Insurance Accepted",
+    "note": "We accept most major insurance plans"
+  },
+  "form": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "preferredContact": "Preferred Contact Method",
+    "appointmentType": "Appointment Type",
+    "message": "Message (Optional)",
+    "submit": "Request Appointment"
+  },
+  "_TODO": "Integrate with appointment booking system"
+}

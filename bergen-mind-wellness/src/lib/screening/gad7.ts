@@ -20,36 +20,29 @@ export const gad7Options = [
   { value: 3, label: 'Nearly every day' },
 ]
 
+export type GAD7Severity = 'minimal' | 'mild' | 'moderate' | 'severe'
+
 export interface GAD7Result {
   score: number
-  severity: string
-  interpretation: string
-  recommendation: string
+  severityKey: GAD7Severity
+  recommendationKey: 'low' | 'high'
 }
 
 export function calculateGAD7(answers: number[]): GAD7Result {
   const score = answers.reduce((sum, val) => sum + val, 0)
 
-  let severity: string
-  let interpretation: string
-
+  let severityKey: GAD7Severity
   if (score <= 4) {
-    severity = 'Minimal'
-    interpretation = 'Your responses suggest minimal anxiety symptoms.'
+    severityKey = 'minimal'
   } else if (score <= 9) {
-    severity = 'Mild'
-    interpretation = 'Your responses suggest mild anxiety symptoms.'
+    severityKey = 'mild'
   } else if (score <= 14) {
-    severity = 'Moderate'
-    interpretation = 'Your responses suggest moderate anxiety symptoms.'
+    severityKey = 'moderate'
   } else {
-    severity = 'Severe'
-    interpretation = 'Your responses suggest severe anxiety symptoms.'
+    severityKey = 'severe'
   }
 
-  const recommendation = score >= 10
-    ? 'Based on your responses, we recommend speaking with a mental health professional for a comprehensive evaluation and discussion of treatment options.'
-    : 'Continue monitoring your mental health. If symptoms worsen or persist, consider consulting a mental health professional.'
+  const recommendationKey = score >= 10 ? 'high' : 'low'
 
-  return { score, severity, interpretation, recommendation }
+  return { score, severityKey, recommendationKey }
 }

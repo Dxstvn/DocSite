@@ -1,0 +1,556 @@
+{
+  "hub": {
+    "title": "Educación en Salud Mental",
+    "description": "Información basada en evidencia sobre condiciones de salud mental, opciones de tratamiento y caminos hacia la recuperación. El conocimiento es el primer paso hacia la sanación.",
+    "learnMore": "Más Información"
+  },
+  "conditions": {
+    "depression": {
+      "title": "Depresión",
+      "description": "Comprensión de los síntomas, causas y tratamientos basados en evidencia para el trastorno depresivo mayor"
+    },
+    "anxiety": {
+      "title": "Trastornos de Ansiedad",
+      "description": "Conozca sobre el TAG, trastorno de pánico, ansiedad social y opciones de tratamiento efectivas"
+    },
+    "adhd": {
+      "title": "TDAH",
+      "description": "Trastorno por déficit de atención e hiperactividad en adultos: síntomas, diagnóstico y manejo"
+    },
+    "bipolar": {
+      "title": "Trastorno Bipolar",
+      "description": "Ciclos del estado de ánimo, manejo de medicamentos y estrategias de estilo de vida para el trastorno bipolar"
+    },
+    "ptsd": {
+      "title": "TEPT",
+      "description": "Trastorno de estrés postraumático: comprensión del trauma y tratamientos basados en evidencia"
+    }
+  },
+  "common": {
+    "clinicalInfoTitle": "Información Clínica",
+    "clinicalInfoDescription": "Esta página proporciona información educativa. No es un sustituto del consejo médico profesional, diagnóstico o tratamiento.",
+    "scheduleAppointment": "Programar una Cita",
+    "symptomsTitle": "Síntomas Comunes",
+    "treatmentTitle": "Opciones de Tratamiento",
+    "medicationTitle": "Manejo de Medicamentos",
+    "resourcesTitle": "Recursos Basados en Evidencia"
+  },
+  "pages": {
+    "depression": {
+      "pageTitle": "Entendiendo la Depresión",
+      "clinicalDisclaimer": "Esta página proporciona información educativa sobre la depresión. No es un sustituto del consejo médico profesional, diagnóstico o tratamiento.",
+      "whatIs": {
+        "title": "¿Qué es la Depresión?",
+        "p1": "El trastorno depresivo mayor (TDM) es un trastorno del estado de ánimo común pero grave que afecta cómo se siente, piensa y maneja las actividades diarias. Se caracteriza por tristeza persistente y pérdida de interés en actividades que antes disfrutaba.",
+        "p2": "La depresión afecta aproximadamente a 21 millones de adultos en Estados Unidos, siendo una de las condiciones de salud mental más comunes. La buena noticia: la depresión es altamente tratable con terapia, medicamentos o una combinación de ambos."
+      },
+      "symptoms": {
+        "intro": "Los síntomas de la depresión pueden incluir:",
+        "list": [
+          "Estado de ánimo triste, ansioso o \"vacío\" persistente",
+          "Pérdida de interés o placer en pasatiempos y actividades",
+          "Disminución de energía o fatiga",
+          "Dificultad para concentrarse, recordar o tomar decisiones",
+          "Cambios en los patrones de sueño (insomnio o dormir demasiado)",
+          "Cambios en el apetito o peso",
+          "Sentimientos de inutilidad o culpa excesiva",
+          "Pensamientos de muerte o suicidio"
+        ],
+        "conclusion": "Si experimenta cinco o más de estos síntomas durante al menos dos semanas, consulte a un profesional de salud mental para una evaluación."
+      },
+      "treatment": {
+        "psychotherapy": {
+          "title": "Psicoterapia",
+          "cbt": "Terapia Cognitivo-Conductual (TCC): Ayuda a identificar y cambiar patrones de pensamiento negativos",
+          "ipt": "Terapia Interpersonal (TIP): Se enfoca en mejorar las relaciones y el funcionamiento social",
+          "ba": "Activación Conductual: Aumenta la participación en actividades positivas"
+        },
+        "medication": {
+          "title": "Medicamentos",
+          "ssris": "ISRS: Inhibidores selectivos de la recaptación de serotonina (ej., fluoxetina, sertralina)",
+          "snris": "IRSN: Inhibidores de la recaptación de serotonina y norepinefrina (ej., venlafaxina, duloxetina)",
+          "atypical": "Antidepresivos atípicos: Bupropión, mirtazapina"
+        },
+        "lifestyle": {
+          "title": "Modificaciones del Estilo de Vida",
+          "list": [
+            "Ejercicio regular (30 minutos, 3-5 veces por semana)",
+            "Horario de sueño consistente",
+            "Conexión y apoyo social",
+            "Técnicas de manejo del estrés",
+            "Nutrición y alimentos saludables para el cerebro"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "title": "Manejo de Medicamentos y Efectos Secundarios",
+        "intro": "Los medicamentos antidepresivos son frecuentemente efectivos para la depresión moderada a severa. Funcionan ajustando los niveles de neurotransmisores en el cerebro.",
+        "sideEffectsTitle": "Efectos Secundarios Comunes (varían según el medicamento):",
+        "sideEffects": [
+          "Náuseas (generalmente temporales)",
+          "Cambios de peso",
+          "Cambios en el sueño (insomnio o somnolencia)",
+          "Efectos secundarios sexuales",
+          "Boca seca"
+        ],
+        "importantNotesTitle": "Notas Importantes:",
+        "importantNotes": [
+          "Los medicamentos típicamente toman 4-6 semanas para mostrar efectos completos",
+          "Nunca deje los antidepresivos abruptamente (riesgo de síndrome de discontinuación)",
+          "Trabaje estrechamente con su prescriptor para encontrar el medicamento y dosis correctos",
+          "Reporte cualquier efecto secundario preocupante inmediatamente"
+        ]
+      },
+      "resources": {
+        "nimh": "Instituto Nacional de Salud Mental (NIMH) - Depresión",
+        "apa": "Asociación Americana de Psicología (APA) - Depresión",
+        "nami": "Alianza Nacional sobre Enfermedades Mentales (NAMI) - Depresión"
+      },
+      "cta": {
+        "screening": "Realizar Evaluación de Depresión (PHQ-9)"
+      }
+    },
+    "anxiety": {
+      "pageTitle": "Entendiendo los Trastornos de Ansiedad",
+      "clinicalDisclaimer": "Esta página proporciona información educativa sobre los trastornos de ansiedad. No es un sustituto del consejo médico profesional, diagnóstico o tratamiento.",
+      "whatIs": {
+        "title": "¿Qué son los Trastornos de Ansiedad?",
+        "p1": "Los trastornos de ansiedad son las condiciones de salud mental más comunes en Estados Unidos, afectando aproximadamente a 40 millones de adultos. Mientras que todos experimentan ansiedad de vez en cuando, los trastornos de ansiedad involucran preocupación persistente y excesiva que interfiere con las actividades diarias.",
+        "p2": "Los trastornos de ansiedad incluyen el trastorno de ansiedad generalizada (TAG), trastorno de pánico, trastorno de ansiedad social y fobias específicas. La buena noticia: los trastornos de ansiedad son altamente tratables con terapia, medicamentos o una combinación de ambos."
+      },
+      "symptoms": {
+        "intro": "Los síntomas de los trastornos de ansiedad pueden incluir:",
+        "list": [
+          "Preocupación o miedo excesivo difícil de controlar",
+          "Inquietud o sensación de estar al borde",
+          "Tensión muscular",
+          "Dificultad para concentrarse o mente en blanco",
+          "Alteraciones del sueño",
+          "Ataques de pánico (miedo intenso repentino con síntomas físicos)",
+          "Evitación de situaciones que desencadenan ansiedad",
+          "Síntomas físicos: latido cardíaco rápido, sudoración, temblores, falta de aire"
+        ],
+        "conclusion": "Si la ansiedad impacta significativamente su vida diaria, relaciones o trabajo, considere consultar a un profesional de salud mental."
+      },
+      "types": {
+        "title": "Tipos de Trastornos de Ansiedad",
+        "gad": {
+          "title": "Trastorno de Ansiedad Generalizada (TAG)",
+          "description": "Preocupación persistente y excesiva sobre varios aspectos de la vida diaria (trabajo, salud, relaciones) que dura al menos 6 meses."
+        },
+        "panic": {
+          "title": "Trastorno de Pánico",
+          "description": "Ataques de pánico recurrentes e inesperados—episodios repentinos de miedo intenso acompañados de síntomas físicos como latido cardíaco rápido, sudoración y dolor en el pecho."
+        },
+        "social": {
+          "title": "Trastorno de Ansiedad Social",
+          "description": "Miedo intenso a situaciones sociales donde podría ser juzgado, avergonzado o escrutado por otros."
+        },
+        "phobias": {
+          "title": "Fobias Específicas",
+          "description": "Miedo excesivo a objetos o situaciones específicas (ej., alturas, volar, animales) que conduce a comportamiento de evitación."
+        }
+      },
+      "treatment": {
+        "psychotherapy": {
+          "title": "Psicoterapia",
+          "cbt": "Terapia Cognitivo-Conductual (TCC): Ayuda a identificar y desafiar pensamientos ansiosos",
+          "exposure": "Terapia de Exposición: Exposición gradual y controlada a situaciones temidas",
+          "act": "Terapia de Aceptación y Compromiso (TAC): Aprender a aceptar la ansiedad mientras se persiguen metas valiosas",
+          "relaxation": "Técnicas de Relajación: Respiración profunda, relajación muscular progresiva, mindfulness"
+        },
+        "medication": {
+          "title": "Medicamentos",
+          "ssris": "ISRS: Tratamiento de primera línea (ej., escitalopram, sertralina)",
+          "snris": "IRSN: Efectivos para TAG (ej., venlafaxina, duloxetina)",
+          "buspirone": "Buspirona: Medicamento ansiolítico no sedante",
+          "betaBlockers": "Betabloqueantes: Para ansiedad de rendimiento y síntomas físicos"
+        },
+        "lifestyle": {
+          "title": "Modificaciones del Estilo de Vida",
+          "list": [
+            "Ejercicio aeróbico regular",
+            "Mindfulness y meditación",
+            "Limitar cafeína y alcohol",
+            "Sueño adecuado (7-9 horas)",
+            "Técnicas de manejo del estrés"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "title": "Manejo de Medicamentos",
+        "intro": "Los medicamentos para la ansiedad funcionan afectando los neurotransmisores en el cerebro que regulan el estado de ánimo y las respuestas al estrés.",
+        "considerationsTitle": "Consideraciones Importantes:",
+        "considerations": [
+          "ISRS/IRSN: Toman 4-6 semanas para efecto completo; primera línea para manejo a largo plazo",
+          "Benzodiazepinas: Acción rápida pero solo para uso a corto plazo debido al riesgo de dependencia",
+          "Buspirona: No adictiva pero toma varias semanas en funcionar",
+          "Betabloqueantes: Útiles para ansiedad situacional (ej., hablar en público)"
+        ],
+        "sideEffectsTitle": "Efectos Secundarios Comunes:",
+        "sideEffects": [
+          "Náuseas (generalmente temporales)",
+          "Cambios en el sueño",
+          "Efectos secundarios sexuales (ISRS/IRSN)",
+          "Somnolencia (varía según el medicamento)"
+        ],
+        "conclusion": "Trabaje con su proveedor de salud para encontrar el medicamento más efectivo con mínimos efectos secundarios. Nunca deje el medicamento abruptamente sin supervisión médica."
+      },
+      "resources": {
+        "nimh": "Instituto Nacional de Salud Mental (NIMH) - Trastornos de Ansiedad",
+        "adaa": "Asociación de Ansiedad y Depresión de América (ADAA)",
+        "apa": "Asociación Americana de Psicología (APA) - Ansiedad"
+      },
+      "cta": {
+        "screening": "Realizar Evaluación de Ansiedad (GAD-7)"
+      }
+    },
+    "adhd": {
+      "pageTitle": "Entendiendo el TDAH",
+      "clinicalDisclaimer": "Esta página proporciona información educativa sobre el TDAH. No es un sustituto del consejo médico profesional, diagnóstico o tratamiento.",
+      "whatIs": {
+        "title": "¿Qué es el TDAH?",
+        "p1": "El Trastorno por Déficit de Atención e Hiperactividad (TDAH) es una condición del neurodesarrollo caracterizada por patrones persistentes de inatención, hiperactividad e impulsividad. Aunque a menudo se diagnostica en la infancia, muchos adultos continúan experimentando síntomas que impactan el trabajo, las relaciones y el funcionamiento diario.",
+        "p2": "El TDAH afecta las funciones ejecutivas—la capacidad del cerebro para planificar, organizar, enfocarse y regular emociones. Con el tratamiento adecuado que incluye medicamentos, terapia y estrategias conductuales, las personas con TDAH pueden prosperar y alcanzar sus metas."
+      },
+      "symptoms": {
+        "inattentionTitle": "Síntomas de Inatención:",
+        "inattention": [
+          "Dificultad para mantener la atención en tareas",
+          "Se distrae fácilmente por estímulos externos",
+          "Olvidos en actividades diarias",
+          "Dificultad para organizar tareas y manejar el tiempo",
+          "Pérdida frecuente de objetos importantes",
+          "Evitar tareas que requieren esfuerzo mental sostenido",
+          "Dificultad para seguir instrucciones hasta el final"
+        ],
+        "hyperactivityTitle": "Síntomas de Hiperactividad/Impulsividad:",
+        "hyperactivity": [
+          "Inquietud o sensación de estar impulsado por un motor",
+          "Dificultad para permanecer sentado cuando se espera",
+          "Hablar excesivamente",
+          "Interrumpir o entrometerse con otros",
+          "Dificultad para esperar turno",
+          "Actuar sin pensar en las consecuencias",
+          "Inquietud con manos o pies"
+        ],
+        "conclusion": "El TDAH se presenta diferente en adultos que en niños, a menudo con hiperactividad menos visible y más inquietud interna y desafíos de función ejecutiva."
+      },
+      "treatment": {
+        "medication": {
+          "title": "Medicamentos",
+          "stimulants": "Estimulantes: Metilfenidato (Ritalin, Concerta) y anfetaminas (Adderall, Vyvanse)—más efectivos para el manejo de síntomas",
+          "nonStimulants": "No estimulantes: Atomoxetina (Strattera), guanfacina, clonidina—opciones alternativas con diferentes perfiles de efectos secundarios"
+        },
+        "behavioral": {
+          "title": "Estrategias Conductuales",
+          "skills": "Entrenamiento en habilidades organizativas: Manejo del tiempo, priorización de tareas, sistemas de calendario",
+          "cbt": "Terapia Cognitivo-Conductual (TCC): Abordar patrones de pensamiento negativos y procrastinación",
+          "coaching": "Coaching para TDAH: Apoyo de responsabilidad y desarrollo de habilidades",
+          "routines": "Rutinas estructuradas: Crear horarios diarios predecibles"
+        },
+        "lifestyle": {
+          "title": "Modificaciones del Estilo de Vida",
+          "list": [
+            "Ejercicio regular (particularmente actividad aeróbica)",
+            "Horario de sueño consistente (el TDAH a menudo coexiste con trastornos del sueño)",
+            "Minimizar distracciones en ambientes de trabajo/estudio",
+            "Dividir tareas grandes en pasos más pequeños y manejables",
+            "Usar temporizadores y recordatorios externos"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "stimulantsTitle": "Medicamentos Estimulantes:",
+        "stimulantsIntro": "Los estimulantes aumentan la dopamina y norepinefrina en el cerebro, mejorando el enfoque, control de impulsos y función ejecutiva. Funcionan rápidamente (a menudo dentro de 30-60 minutos) y son altamente efectivos para el 70-80% de las personas con TDAH.",
+        "sideEffectsTitle": "Efectos Secundarios Comunes:",
+        "sideEffects": [
+          "Disminución del apetito",
+          "Dificultades para dormir (tomar temprano en el día)",
+          "Aumento del ritmo cardíaco o presión arterial (requiere monitoreo)",
+          "Irritabilidad o cambios de humor",
+          "Boca seca"
+        ],
+        "nonStimulantsTitle": "Medicamentos No Estimulantes:",
+        "nonStimulantsIntro": "Los no estimulantes como la atomoxetina toman más tiempo en funcionar (varias semanas) pero proporcionan cobertura de 24 horas y tienen menor potencial de abuso. Pueden ser preferidos para personas con ansiedad, historial de uso de sustancias o preocupaciones cardiovasculares.",
+        "considerationsTitle": "Consideraciones Importantes:",
+        "considerations": [
+          "El medicamento es más efectivo cuando se combina con estrategias conductuales",
+          "Encontrar el medicamento y dosis correctos puede tomar tiempo y ajustes",
+          "Los seguimientos regulares con su prescriptor son esenciales",
+          "Los estimulantes son sustancias controladas; siga las pautas de prescripción cuidadosamente"
+        ]
+      },
+      "livingWith": {
+        "title": "Viviendo con TDAH",
+        "workplaceTitle": "Adaptaciones en el Lugar de Trabajo:",
+        "workplace": [
+          "Horarios de trabajo flexibles",
+          "Espacio de trabajo tranquilo o auriculares con cancelación de ruido",
+          "Instrucciones escritas y listas de verificación",
+          "Reuniones regulares con supervisores",
+          "Dividir proyectos en hitos más pequeños"
+        ],
+        "timeManagementTitle": "Herramientas de Gestión del Tiempo:",
+        "timeManagement": [
+          "Calendarios digitales con alertas y recordatorios",
+          "Aplicaciones de gestión de tareas (Todoist, Things, Asana)",
+          "Técnica Pomodoro (intervalos de trabajo enfocado de 25 minutos)",
+          "Temporizadores visuales y bloqueo de tiempo"
+        ],
+        "supportTitle": "Recursos de Apoyo:",
+        "support": [
+          "Grupos de apoyo para TDAH (presenciales o en línea)",
+          "Coaches de TDAH o compañeros de responsabilidad",
+          "Recursos educativos para familiares"
+        ]
+      },
+      "resources": {
+        "chadd": "Niños y Adultos con Trastorno por Déficit de Atención/Hiperactividad (CHADD)",
+        "nimh": "Instituto Nacional de Salud Mental (NIMH) - TDAH",
+        "adda": "Asociación del Trastorno por Déficit de Atención (ADDA)"
+      },
+      "cta": {
+        "screening": "Realizar Evaluación de TDAH (ASRS)"
+      }
+    },
+    "bipolar": {
+      "pageTitle": "Entendiendo el Trastorno Bipolar",
+      "clinicalDisclaimer": "Esta página proporciona información educativa sobre el trastorno bipolar. No es un sustituto del consejo médico profesional, diagnóstico o tratamiento.",
+      "whatIs": {
+        "title": "¿Qué es el Trastorno Bipolar?",
+        "p1": "El trastorno bipolar es una condición de salud mental caracterizada por cambios extremos de humor que incluyen altos emocionales (manía o hipomanía) y bajos (depresión). Estos episodios de humor pueden afectar el sueño, energía, niveles de actividad, juicio, comportamiento y la capacidad de pensar con claridad.",
+        "p2": "<strong>El Trastorno Bipolar I</strong> involucra al menos un episodio maníaco que puede ser precedido o seguido por episodios hipomaníacos o depresivos mayores. <strong>El Trastorno Bipolar II</strong> involucra al menos un episodio depresivo mayor y al menos un episodio hipomaníaco, pero no episodios maníacos completos.",
+        "p3": "El trastorno bipolar es una condición de por vida que requiere tratamiento continuo, pero con el manejo adecuado que incluye medicamentos, terapia y modificaciones del estilo de vida, las personas con trastorno bipolar pueden llevar vidas plenas y productivas."
+      },
+      "symptoms": {
+        "maniaTitle": "Síntomas del Episodio Maníaco:",
+        "mania": [
+          "Estado de ánimo elevado, expansivo o irritable",
+          "Aumento de energía y niveles de actividad",
+          "Disminución de la necesidad de sueño (sentirse descansado después de 3 horas)",
+          "Pensamientos acelerados y habla rápida",
+          "Grandiosidad o autoestima inflada",
+          "Distractibilidad",
+          "Aumento de actividad dirigida a metas o agitación",
+          "Participar en comportamientos riesgosos (gastos excesivos, conducción imprudente, decisiones impulsivas)"
+        ],
+        "hypomaniaTitle": "Síntomas del Episodio Hipomaníaco:",
+        "hypomaniaDescription": "Similar a la manía pero menos severo y de menor duración (al menos 4 días). El funcionamiento no está tan severamente afectado y no hay características psicóticas.",
+        "depressionTitle": "Síntomas del Episodio Depresivo:",
+        "depression": [
+          "Estado de ánimo triste, vacío o desesperanzado persistente",
+          "Pérdida de interés en actividades",
+          "Cambios significativos de peso o apetito",
+          "Alteraciones del sueño (insomnio o hipersomnia)",
+          "Fatiga o pérdida de energía",
+          "Sentimientos de inutilidad o culpa",
+          "Dificultad para pensar o concentrarse",
+          "Pensamientos de muerte o suicidio"
+        ]
+      },
+      "treatment": {
+        "medication": {
+          "title": "Medicamentos (Tratamiento Principal)",
+          "list": [
+            "<strong>Estabilizadores del Ánimo:</strong> Litio, lamotrigina (Lamictal), valproato (Depakote)",
+            "<strong>Antipsicóticos Atípicos:</strong> Quetiapina (Seroquel), lurasidona (Latuda), aripiprazol (Abilify)",
+            "<strong>Terapia Combinada:</strong> A menudo requiere múltiples medicamentos para control óptimo"
+          ]
+        },
+        "psychotherapy": {
+          "title": "Psicoterapia",
+          "list": [
+            "<strong>Psicoeducación:</strong> Entender el trastorno bipolar, reconocer señales de advertencia tempranas",
+            "<strong>Terapia Cognitivo-Conductual (TCC):</strong> Identificar desencadenantes, desarrollar estrategias de afrontamiento",
+            "<strong>Terapia Enfocada en la Familia:</strong> Mejorar la comunicación y resolución de problemas",
+            "<strong>Terapia Interpersonal y de Ritmo Social (TIPS):</strong> Estabilizar rutinas diarias y sueño"
+          ]
+        },
+        "lifestyle": {
+          "title": "Manejo del Estilo de Vida",
+          "list": [
+            "Horario consistente de sueño-vigilia (crítico para la estabilidad del ánimo)",
+            "Evitar alcohol y drogas recreativas",
+            "Técnicas de reducción del estrés",
+            "Ejercicio regular",
+            "Seguimiento del estado de ánimo y monitoreo de señales de advertencia tempranas"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "moodStabilizersTitle": "Estabilizadores del Ánimo:",
+        "lithium": "<strong>Litio:</strong> Estándar de oro para el tratamiento bipolar. Requiere monitoreo regular de niveles en sangre para asegurar rango terapéutico y prevenir toxicidad. Los efectos secundarios pueden incluir temblor, aumento de peso, sed y micción aumentadas.",
+        "lamotrigine": "<strong>Lamotrigina:</strong> Particularmente efectiva para la depresión bipolar. Requiere titulación lenta para minimizar el riesgo de erupción. Generalmente bien tolerada.",
+        "atypicalTitle": "Antipsicóticos Atípicos:",
+        "atypicalIntro": "Efectivos para tratar la manía aguda y prevenir recaídas. Los efectos secundarios comunes incluyen aumento de peso, cambios metabólicos (monitorear azúcar en sangre y lípidos) y sedación.",
+        "considerationsTitle": "Consideraciones Importantes:",
+        "considerations": [
+          "La adherencia al medicamento es crítica; dejar el medicamento a menudo conduce a recaída",
+          "Se requieren análisis de sangre regulares y monitoreo para muchos medicamentos bipolares",
+          "Los antidepresivos solos pueden desencadenar manía; siempre use con estabilizador del ánimo si se prescribe",
+          "La planificación del embarazo requiere atención especializada debido a consideraciones de medicamentos",
+          "Trabaje estrechamente con un psiquiatra experimentado en tratar el trastorno bipolar"
+        ]
+      },
+      "crisisManagement": {
+        "title": "Manejo de Crisis y Señales de Advertencia",
+        "maniaWarningTitle": "Señales de Advertencia de Manía:",
+        "maniaWarnings": [
+          "Disminución del sueño sin sentirse cansado",
+          "Aumento de energía y actividad",
+          "Irritabilidad o agitación",
+          "Pensamientos acelerados",
+          "Comportamientos impulsivos o riesgosos"
+        ],
+        "depressionWarningTitle": "Señales de Advertencia de Depresión:",
+        "depressionWarnings": [
+          "Retiro de actividades sociales",
+          "Aumento del sueño o dificultad para levantarse de la cama",
+          "Pérdida de interés en actividades previamente disfrutadas",
+          "Patrones de pensamiento negativos",
+          "Pensamientos de muerte o suicidio"
+        ],
+        "emergencyTitle": "Cuándo Buscar Atención de Emergencia:",
+        "emergencySigns": [
+          "Pensamientos de hacerse daño a sí mismo o a otros",
+          "Síntomas psicóticos (alucinaciones, delirios)",
+          "Agitación severa o incapacidad para cuidar de sí mismo",
+          "Comportamientos de riesgo peligrosos"
+        ],
+        "conclusion": "Desarrollar un plan de crisis con su equipo de tratamiento y seres queridos puede ayudar a identificar señales de advertencia tempranas e intervenir antes de que los episodios se vuelvan severos."
+      },
+      "resources": {
+        "dbsa": "Alianza de Apoyo para Depresión y Bipolar (DBSA)",
+        "nimh": "Instituto Nacional de Salud Mental (NIMH) - Trastorno Bipolar",
+        "nami": "Alianza Nacional sobre Enfermedades Mentales (NAMI) - Trastorno Bipolar"
+      },
+      "cta": {
+        "screening": "Realizar Evaluación Bipolar (MDQ)"
+      }
+    },
+    "ptsd": {
+      "pageTitle": "Entendiendo el TEPT",
+      "clinicalDisclaimer": "Esta página proporciona información educativa sobre el TEPT. No es un sustituto del consejo médico profesional, diagnóstico o tratamiento.",
+      "whatIs": {
+        "title": "¿Qué es el TEPT?",
+        "p1": "El Trastorno de Estrés Postraumático (TEPT) es una condición de salud mental que puede desarrollarse después de experimentar o presenciar un evento traumático. Los eventos traumáticos pueden incluir combate, desastres naturales, accidentes graves, agresión física o sexual, o cualquier situación que amenace la vida.",
+        "p2": "El TEPT no es un signo de debilidad—es una respuesta normal a circunstancias anormales y abrumadoras. La respuesta natural del cerebro al estrés se interrumpe después del trauma, llevando a síntomas persistentes que interfieren con la vida diaria. Con el tratamiento adecuado, la recuperación es posible, y muchas personas con TEPT continúan sanando y prosperando."
+      },
+      "symptoms": {
+        "intro": "Los síntomas del TEPT típicamente comienzan dentro de los 3 meses del evento traumático pero pueden aparecer más tarde. Los síntomas deben durar más de un mes y ser lo suficientemente severos para interferir con las relaciones o el trabajo.",
+        "reexperiencingTitle": "Re-experimentación (Síntomas Intrusivos):",
+        "reexperiencing": [
+          "Flashbacks—revivir el evento traumático",
+          "Pesadillas o sueños perturbadores",
+          "Recuerdos intrusivos y angustiantes",
+          "Angustia emocional severa cuando se le recuerda el trauma",
+          "Reacciones físicas a recordatorios del trauma (sudoración, latido cardíaco rápido)"
+        ],
+        "avoidanceTitle": "Evitación:",
+        "avoidance": [
+          "Evitar pensamientos, sentimientos o conversaciones sobre el trauma",
+          "Evitar personas, lugares o actividades que desencadenan recuerdos",
+          "Entumecimiento emocional o desapego",
+          "Dificultad para recordar aspectos importantes del evento traumático"
+        ],
+        "negativeChangesTitle": "Cambios Negativos en el Pensamiento y Estado de Ánimo:",
+        "negativeChanges": [
+          "Creencias negativas sobre uno mismo, otros o el mundo",
+          "Emociones negativas persistentes (miedo, horror, ira, culpa, vergüenza)",
+          "Pérdida de interés en actividades previamente disfrutadas",
+          "Sentirse desapegado de otros",
+          "Incapacidad para experimentar emociones positivas"
+        ],
+        "hyperarousalTitle": "Hiperactivación (Reactividad Aumentada):",
+        "hyperarousal": [
+          "Hipervigilancia (constantemente en guardia)",
+          "Respuesta de sobresalto exagerada",
+          "Irritabilidad o arrebatos de ira",
+          "Comportamiento imprudente o autodestructivo",
+          "Alteraciones del sueño",
+          "Dificultad para concentrarse"
+        ]
+      },
+      "treatment": {
+        "traumaTherapy": {
+          "title": "Psicoterapia Enfocada en el Trauma (Más Efectiva):",
+          "list": [
+            "<strong>Terapia de Procesamiento Cognitivo (TPC):</strong> Ayuda a procesar el trauma y desafiar creencias poco útiles sobre el evento traumático",
+            "<strong>Exposición Prolongada (EP):</strong> Exposición gradual y repetida a recuerdos y recordatorios del trauma de manera segura y controlada para reducir la respuesta de miedo",
+            "<strong>Desensibilización y Reprocesamiento por Movimientos Oculares (EMDR):</strong> Procesa recuerdos traumáticos usando estimulación bilateral (movimientos oculares, golpecitos, sonidos)",
+            "<strong>Terapia Cognitivo-Conductual Enfocada en el Trauma (TCC-T):</strong> Combina técnicas de TCC con intervenciones específicas para el trauma"
+          ]
+        },
+        "medication": {
+          "title": "Medicamentos:",
+          "list": [
+            "<strong>ISRS:</strong> Sertralina (Zoloft) y paroxetina (Paxil) están aprobados por la FDA para TEPT",
+            "<strong>Prazosina:</strong> Puede reducir pesadillas y mejorar el sueño",
+            "Los medicamentos a menudo se usan junto con la terapia para resultados óptimos"
+          ]
+        },
+        "complementary": {
+          "title": "Enfoques Complementarios:",
+          "list": [
+            "Mindfulness y meditación",
+            "Yoga y terapias basadas en el cuerpo",
+            "Técnicas de conexión a tierra para manejar flashbacks",
+            "Grupos de apoyo con otros sobrevivientes de trauma",
+            "Animales de servicio para veteranos con TEPT"
+          ]
+        }
+      },
+      "traumaInformedCare": {
+        "title": "Principios de Atención Informada por el Trauma",
+        "intro": "El tratamiento efectivo del TEPT sigue principios de atención informada por el trauma que priorizan la seguridad, elección y empoderamiento:",
+        "safetyFirstTitle": "Seguridad Primero:",
+        "safetyFirst": [
+          "Crear seguridad física y emocional antes de procesar recuerdos traumáticos",
+          "Establecer habilidades de afrontamiento y planes de crisis",
+          "Asegurar la seguridad actual (violencia doméstica, riesgos de autolesión abordados)"
+        ],
+        "clientControlTitle": "Control del Cliente:",
+        "clientControl": [
+          "Usted controla el ritmo y profundidad de la revelación del trauma",
+          "Sin presión para compartir detalles que no está listo para discutir",
+          "Puede pausar o detenerse en cualquier momento durante la terapia"
+        ],
+        "stabilizationTitle": "Estabilización Antes del Procesamiento del Trauma:",
+        "stabilization": [
+          "Desarrollar habilidades de regulación emocional",
+          "Desarrollar estrategias de afrontamiento saludables",
+          "Abordar uso de sustancias, autolesión o preocupaciones de seguridad",
+          "Solo cuando esté estable comenzará el trabajo enfocado en el trauma"
+        ]
+      },
+      "medicationDetails": {
+        "ssrisTitle": "ISRS para TEPT:",
+        "ssrisIntro": "Los inhibidores selectivos de la recaptación de serotonina pueden ayudar a reducir los síntomas del TEPT incluyendo pensamientos intrusivos, evitación, estado de ánimo negativo e hiperactivación. Toman 4-6 semanas para alcanzar efectividad completa.",
+        "prazosinTitle": "Prazosina para Pesadillas:",
+        "prazosinIntro": "La prazosina es un bloqueador alfa que puede reducir significativamente las pesadillas relacionadas con el TEPT y mejorar la calidad del sueño. Se toma antes de acostarse y puede requerir ajuste de dosis.",
+        "avoidTitle": "Medicamentos a Evitar:",
+        "avoidList": [
+          "<strong>Benzodiazepinas:</strong> No recomendadas para TEPT ya que pueden interferir con el procesamiento del trauma y tienen potencial de adicción",
+          "Uso a largo plazo de medicamentos para dormir sin abordar el trauma subyacente"
+        ],
+        "considerationsTitle": "Consideraciones Importantes:",
+        "considerations": [
+          "Los medicamentos solos son menos efectivos que la terapia sola para TEPT",
+          "La combinación de medicamentos y terapia enfocada en el trauma es a menudo más efectiva",
+          "Trabaje con un psiquiatra experimentado en tratar trauma",
+          "Monitoreo regular de efectos secundarios y respuesta al tratamiento"
+        ]
+      },
+      "resources": {
+        "va": "Centro Nacional para TEPT (Departamento de Asuntos de Veteranos de EE.UU.)",
+        "nimh": "Instituto Nacional de Salud Mental (NIMH) - TEPT",
+        "istss": "Sociedad Internacional para Estudios de Estrés Traumático (ISTSS)",
+        "rainn": "RAINN (Red Nacional de Violación, Abuso e Incesto) - Para sobrevivientes de agresión sexual"
+      },
+      "cta": {
+        "screening": "Realizar Evaluación de TEPT (PCL-5)"
+      }
+    }
+  }
+}

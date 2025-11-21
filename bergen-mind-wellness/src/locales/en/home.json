@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Compassionate Mental Health Care",
+    "description": "Evidence-based treatment for depression, anxiety, ADHD, bipolar disorder, and PTSD. Your journey to wellness starts here.",
+    "scheduleButton": "Schedule an Appointment",
+    "screeningButton": "Take a Screening"
+  },
+  "services": {
+    "title": "Our Services",
+    "education": {
+      "title": "Mental Health Education",
+      "description": "Learn about conditions, treatments, and evidence-based resources",
+      "button": "Explore"
+    },
+    "screening": {
+      "title": "Screening Tools",
+      "description": "Free, confidential mental health assessments",
+      "button": "Take a Screening"
+    },
+    "nutrition": {
+      "title": "Nutrition & Wellness",
+      "description": "Brain-healthy foods and lifestyle optimization",
+      "button": "Learn More"
+    },
+    "mindfulness": {
+      "title": "Mindfulness Practices",
+      "description": "Guided meditations, journaling, and breathing exercises",
+      "button": "Get Started"
+    }
+  },
+  "privacy": {
+    "title": "Your Privacy Matters",
+    "description": "All screening tools are processed entirely in your browser. We do not collect, store, or transmit your responses. Your mental health journey is private and secure.",
+    "button": "Read Our Privacy Policy"
+  }
+}

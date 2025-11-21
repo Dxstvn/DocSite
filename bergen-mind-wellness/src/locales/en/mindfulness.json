@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Mindfulness & Lifestyle Practices",
+    "description": "Evidence-based techniques to reduce stress, improve focus, and support mental wellness."
+  },
+  "tabs": {
+    "meditation": "Meditation",
+    "breathing": "Breathing",
+    "journaling": "Journaling",
+    "sleep": "Sleep"
+  },
+  "meditation": {
+    "title": "Guided Meditations",
+    "description": "Free audio-guided meditation practices",
+    "videoTitle": "5-Minute Meditation for Beginners",
+    "content": "Meditation has been shown to reduce stress, improve focus, and support overall mental health. Start with just 5 minutes per day."
+  },
+  "breathing": {
+    "title": "Breathing Exercises",
+    "description": "Simple techniques to activate the parasympathetic nervous system",
+    "exercise478": {
+      "title": "4-7-8 Breathing",
+      "steps": {
+        "step1": "Breathe in through your nose for 4 counts",
+        "step2": "Hold your breath for 7 counts",
+        "step3": "Exhale through your mouth for 8 counts",
+        "step4": "Repeat 3-4 times"
+      }
+    },
+    "boxBreathing": {
+      "title": "Box Breathing",
+      "steps": {
+        "step1": "Breathe in for 4 counts",
+        "step2": "Hold for 4 counts",
+        "step3": "Breathe out for 4 counts",
+        "step4": "Hold for 4 counts",
+        "step5": "Repeat 5-10 times"
+      }
+    }
+  },
+  "journaling": {
+    "title": "Journaling Templates",
+    "description": "Structured prompts for reflection and growth",
+    "gratitude": {
+      "title": "Gratitude Journal Template",
+      "description": "Daily gratitude practice",
+      "button": "Download PDF"
+    },
+    "thoughtRecord": {
+      "title": "Thought Record Worksheet",
+      "description": "CBT-based thought challenging",
+      "button": "Download PDF"
+    }
+  },
+  "sleep": {
+    "title": "Sleep Hygiene Tips",
+    "description": "Evidence-based strategies for better sleep",
+    "tips": {
+      "tip1": "Maintain a consistent sleep schedule (same bedtime/wake time)",
+      "tip2": "Create a relaxing bedtime routine",
+      "tip3": "Keep bedroom cool, dark, and quiet",
+      "tip4": "Limit screen time 1 hour before bed",
+      "tip5": "Avoid caffeine after 2pm",
+      "tip6": "Get regular exercise (but not close to bedtime)",
+      "tip7": "Reserve bed for sleep and intimacy only",
+      "tip8": "If you can't sleep after 20 minutes, get up and do a calm activity"
+    }
+  }
+}

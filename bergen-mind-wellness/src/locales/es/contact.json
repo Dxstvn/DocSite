@@ -1,0 +1,41 @@
+{
+  "title": "Programar una Cita",
+  "description": "Dé el primer paso hacia una mejor salud mental",
+  "appointmentTypes": {
+    "title": "Tipos de Citas",
+    "initial": {
+      "name": "Evaluación Psiquiátrica Inicial",
+      "duration": "50 minutos",
+      "description": "Evaluación integral y planificación del tratamiento"
+    },
+    "followup": {
+      "name": "Cita de Seguimiento",
+      "duration": "30 minutos",
+      "description": "Manejo de medicamentos y monitoreo del progreso"
+    },
+    "medication": {
+      "name": "Manejo de Medicamentos",
+      "duration": "15-20 minutos",
+      "description": "Consulta breve y manejo de prescripciones"
+    }
+  },
+  "officeHours": {
+    "title": "Horario de Oficina",
+    "hours": "Lunes - Viernes: 9:00 AM - 5:00 PM",
+    "virtualNote": "Citas virtuales disponibles"
+  },
+  "insuranceAccepted": {
+    "title": "Seguro Aceptado",
+    "note": "Aceptamos la mayoría de los planes de seguro principales"
+  },
+  "form": {
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "phone": "Número de Teléfono",
+    "preferredContact": "Método de Contacto Preferido",
+    "appointmentType": "Tipo de Cita",
+    "message": "Mensaje (Opcional)",
+    "submit": "Solicitar Cita"
+  },
+  "_TODO": "Integrar con el sistema de reserva de citas"
+}

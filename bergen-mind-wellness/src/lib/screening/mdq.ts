@@ -31,13 +31,15 @@ export const problemLevelOptions = [
   { value: 3, label: 'Serious problem' },
 ]
 
+export type MDQScreening = 'positive' | 'negative'
+
 export interface MDQResult {
   yesCount: number
   coOccurrence: boolean
   problemLevel: number
-  screening: 'Positive' | 'Negative'
-  interpretation: string
-  recommendation: string
+  screeningKey: MDQScreening
+  interpretationKey: string
+  recommendationKey: string
 }
 
 export function calculateMDQ(
@@ -51,27 +53,27 @@ export function calculateMDQ(
   // 1. 7 or more YES answers
   // 2. Several symptoms occurred during the same time period (co-occurrence)
   // 3. Symptoms caused Moderate or Serious problems (problemLevel >= 2)
-  const screening =
+  const screeningKey: MDQScreening =
     yesCount >= 7 && coOccurrence && problemLevel >= 2
-      ? 'Positive'
-      : 'Negative'
+      ? 'positive'
+      : 'negative'
 
-  let interpretation: string
-  let recommendation: string
+  let interpretationKey: string
+  let recommendationKey: string
 
-  if (screening === 'Positive') {
-    interpretation = `Your responses suggest symptoms consistent with bipolar disorder. You endorsed ${yesCount} symptoms, indicated they occurred together, and reported they caused ${problemLevel === 2 ? 'moderate' : 'serious'} problems in your life.`
-    recommendation = 'We strongly recommend scheduling an evaluation with a mental health professional who specializes in mood disorders. Bipolar disorder is a serious but treatable condition, and proper diagnosis is essential for effective treatment.'
+  if (screeningKey === 'positive') {
+    interpretationKey = 'positive'
+    recommendationKey = 'positive'
   } else {
     if (yesCount >= 7 && !coOccurrence) {
-      interpretation = `You endorsed ${yesCount} symptoms, but indicated they did not occur during the same time period. Bipolar disorder requires symptoms to cluster together.`
-      recommendation = 'If you continue to experience mood-related difficulties, consider consulting a mental health professional for further evaluation.'
+      interpretationKey = 'negativeNoCoOccurrence'
+      recommendationKey = 'negativeNoCoOccurrence'
     } else if (yesCount >= 7 && problemLevel < 2) {
-      interpretation = `You endorsed ${yesCount} symptoms occurring together, but reported they caused ${problemLevel === 0 ? 'no' : 'minor'} problems. Bipolar disorder typically causes significant functional impairment.`
-      recommendation = 'Continue monitoring your mood. If symptoms worsen or begin to interfere with your daily life, consult a mental health professional.'
+      interpretationKey = 'negativeLowProblemLevel'
+      recommendationKey = 'negativeLowProblemLevel'
     } else {
-      interpretation = `You endorsed ${yesCount} symptoms, which is below the threshold for a positive screening. However, mood disorders exist on a spectrum.`
-      recommendation = 'If you\'re experiencing mood-related difficulties that interfere with your daily functioning, consider consulting a mental health professional for personalized guidance.'
+      interpretationKey = 'negative'
+      recommendationKey = 'negative'
     }
   }
 
@@ -79,8 +81,8 @@ export function calculateMDQ(
     yesCount,
     coOccurrence,
     problemLevel,
-    screening,
-    interpretation,
-    recommendation,
+    screeningKey,
+    interpretationKey,
+    recommendationKey,
   }
 }

@@ -22,39 +22,31 @@ export const phq9Options = [
   { value: 3, label: 'Nearly every day' },
 ]
 
+export type PHQ9Severity = 'minimal' | 'mild' | 'moderate' | 'moderatelySevere' | 'severe'
+
 export interface PHQ9Result {
   score: number
-  severity: string
-  interpretation: string
-  recommendation: string
+  severityKey: PHQ9Severity
+  recommendationKey: 'low' | 'high'
 }
 
 export function calculatePHQ9(answers: number[]): PHQ9Result {
   const score = answers.reduce((sum, val) => sum + val, 0)
 
-  let severity: string
-  let interpretation: string
-
+  let severityKey: PHQ9Severity
   if (score <= 4) {
-    severity = 'Minimal'
-    interpretation = 'Your responses suggest minimal depression symptoms.'
+    severityKey = 'minimal'
   } else if (score <= 9) {
-    severity = 'Mild'
-    interpretation = 'Your responses suggest mild depression symptoms.'
+    severityKey = 'mild'
   } else if (score <= 14) {
-    severity = 'Moderate'
-    interpretation = 'Your responses suggest moderate depression symptoms.'
+    severityKey = 'moderate'
   } else if (score <= 19) {
-    severity = 'Moderately Severe'
-    interpretation = 'Your responses suggest moderately severe depression symptoms.'
+    severityKey = 'moderatelySevere'
   } else {
-    severity = 'Severe'
-    interpretation = 'Your responses suggest severe depression symptoms.'
+    severityKey = 'severe'
   }
 
-  const recommendation = score >= 10
-    ? 'Based on your responses, we recommend speaking with a mental health professional for a comprehensive evaluation and discussion of treatment options.'
-    : 'Continue monitoring your mental health. If symptoms worsen or persist, consider consulting a mental health professional.'
+  const recommendationKey = score >= 10 ? 'high' : 'low'
 
-  return { score, severity, interpretation, recommendation }
+  return { score, severityKey, recommendationKey }
 }

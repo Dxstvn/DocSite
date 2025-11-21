@@ -6,9 +6,44 @@
       "args": [],
       "env": {}
     },
+    "supabase": {
+      "type": "stdio",
+      "command": "/Users/dustinjasmin/.npm-global/bin/mcp-server-supabase",
+      "args": [
+        "--project-ref=hentwycveambzudyjbgz",
+        "--access-token=sbp_8ed24efc011f25bab617ab43427b03b45e64000c"
+      ],
+      "env": {}
+    },
     "vercel": {
       "type": "http",
       "url": "https://mcp.vercel.com"
+    },
+    "canva": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.canva.com/mcp"
+      ],
+      "env": {}
+    },
+    "playwright-extension": {
+      "type": "stdio",
+      "command": "/Users/dustinjasmin/.npm-global/bin/mcp-server-playwright",
+      "args": [
+        "--extension"
+      ],
+      "env": {
+        "PLAYWRIGHT_MCP_EXTENSION_TOKEN": "O2AxPr4ci-1LpKJ9qSy4ld8mBpl9B9MBjYrQXZRzUj4"
+      }
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "/Users/dustinjasmin/.npm-global/bin/mcp-server-playwright",
+      "args": [],
+      "env": {}
     }
   }
 }

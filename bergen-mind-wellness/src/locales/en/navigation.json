@@ -1,0 +1,40 @@
+{
+  "header": {
+    "logoAlt": "Bergen Mind & Wellness logo",
+    "logoAriaLabel": "Bergen Mind & Wellness - Return to homepage",
+    "siteName": "Bergen Mind & Wellness",
+    "mainNavAriaLabel": "Main navigation",
+    "toggleMenuAriaLabel": "Toggle menu",
+    "mobileMenuAriaLabel": "Mobile navigation menu",
+    "scheduleAppointment": "Schedule Appointment"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "resources": "Resources",
+    "mentalHealthEducation": "Mental Health Education",
+    "screeningTools": "Screening Tools",
+    "nutrition": "Nutrition",
+    "mindfulness": "Mindfulness",
+    "contact": "Contact"
+  },
+  "footer": {
+    "siteName": "Bergen Mind & Wellness",
+    "description": "Compassionate, evidence-based mental health care serving New Jersey.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "education": "Education",
+    "screeningTools": "Screening Tools",
+    "contact": "Contact",
+    "resources": "Resources",
+    "nutritionBrainHealth": "Nutrition & Brain Health",
+    "mindfulnessPractices": "Mindfulness Practices",
+    "988Lifeline": "988 Suicide & Crisis Lifeline",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "hipaaCompliant": "HIPAA Compliant",
+    "secureSSL": "Secure SSL",
+    "licenseNotice": "Licensed in the State of New Jersey. For emergencies, call 911 or visit your nearest emergency room."
+  }
+}

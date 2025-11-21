@@ -35,14 +35,16 @@ export const asrsOptions = [
   { value: 4, label: 'Very Often' },
 ]
 
+export type ASRSScreening = 'positive' | 'negative'
+
 export interface ASRSResult {
   partAScore: number
   partBScore: number
   totalScore: number
   partAPositive: number  // Number of Part A questions scored 3 or 4
-  screening: 'Positive' | 'Negative'
-  interpretation: string
-  recommendation: string
+  screeningKey: ASRSScreening
+  interpretationKey: ASRSScreening
+  recommendationKey: ASRSScreening
 }
 
 export function calculateASRS(answers: number[]): ASRSResult {
@@ -58,26 +60,15 @@ export function calculateASRS(answers: number[]): ASRSResult {
   const partAPositive = partAAnswers.filter(val => val >= 3).length
 
   // Screening is positive if 4 or more Part A questions are "Often" or "Very Often"
-  const screening = partAPositive >= 4 ? 'Positive' : 'Negative'
-
-  let interpretation: string
-  let recommendation: string
-
-  if (screening === 'Positive') {
-    interpretation = 'Your responses suggest symptoms consistent with adult ADHD. Four or more symptoms in Part A were marked as "Often" or "Very Often," which indicates a positive screening.'
-    recommendation = 'We strongly recommend scheduling a comprehensive evaluation with a mental health professional or physician who specializes in ADHD. A formal diagnosis requires a clinical assessment and consideration of your developmental history.'
-  } else {
-    interpretation = 'Your responses suggest fewer symptoms consistent with adult ADHD. However, this screening tool is not diagnostic, and ADHD symptoms can vary widely.'
-    recommendation = 'If you continue to experience difficulties with attention, hyperactivity, or impulsivity that interfere with daily functioning, consider consulting a mental health professional for further evaluation.'
-  }
+  const screeningKey: ASRSScreening = partAPositive >= 4 ? 'positive' : 'negative'
 
   return {
     partAScore,
     partBScore,
     totalScore,
     partAPositive,
-    screening,
-    interpretation,
-    recommendation,
+    screeningKey,
+    interpretationKey: screeningKey,
+    recommendationKey: screeningKey,
   }
 }

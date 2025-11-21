@@ -1,0 +1,46 @@
+{
+  "site": {
+    "name": "Bergen Mind & Wellness",
+    "description": "Tratamiento de salud mental compasivo y basado en evidencia en Nueva Jersey"
+  },
+  "home": {
+    "title": "Atención de Salud Mental en el Condado de Bergen, NJ | Bergen Mind & Wellness",
+    "description": "Tratamiento de salud mental compasivo y basado en evidencia en Nueva Jersey. Especialización en depresión, ansiedad, TDAH, trastorno bipolar y TEPT. Citas virtuales disponibles."
+  },
+  "about": {
+    "title": "Acerca de Rocio Jenkins, PMHNP-BC | Bergen Mind & Wellness",
+    "description": "Conozca a Rocio Jenkins, enfermera practicante psiquiátrica certificada especializada en el tratamiento de depresión, ansiedad, TDAH, trastorno bipolar y TEPT en Nueva Jersey."
+  },
+  "contact": {
+    "title": "Contáctenos | Programar una Cita | Bergen Mind & Wellness",
+    "description": "Programe una cita de salud mental con Bergen Mind & Wellness. Consultas virtuales y en persona disponibles en Nueva Jersey."
+  },
+  "screening": {
+    "title": "Herramientas Gratuitas de Evaluación de Salud Mental | Bergen Mind & Wellness",
+    "description": "Evaluaciones de salud mental gratuitas y confidenciales para depresión (PHQ-9), ansiedad (GAD-7), TDAH (ASRS), trastorno bipolar (MDQ) y TEPT (PCL-5)."
+  },
+  "education": {
+    "title": "Educación en Salud Mental | Bergen Mind & Wellness",
+    "description": "Información basada en evidencia sobre condiciones de salud mental, tratamientos y recuperación. Aprenda sobre depresión, ansiedad, TDAH, trastorno bipolar y TEPT."
+  },
+  "nutrition": {
+    "title": "Nutrición y Salud Mental | Alimentos Saludables para el Cerebro | Bergen Mind & Wellness",
+    "description": "Descubra cómo la nutrición impacta la salud mental. Aprenda sobre alimentos saludables para el cerebro para depresión, ansiedad, TDAH y función cognitiva."
+  },
+  "mindfulness": {
+    "title": "Prácticas de Atención Plena para la Salud Mental | Bergen Mind & Wellness",
+    "description": "Prácticas guiadas de atención plena, meditación, ejercicios de respiración y técnicas de escritura reflexiva para apoyar el bienestar mental."
+  },
+  "appointments": {
+    "title": "Programar una Cita | Reservar Consulta | Bergen Mind & Wellness",
+    "description": "Reserve su cita de salud mental en línea. Programación flexible para consultas psiquiátricas, manejo de medicamentos y sesiones de terapia en Nueva Jersey."
+  },
+  "privacy": {
+    "title": "Política de Privacidad | Bergen Mind & Wellness",
+    "description": "Nuestro compromiso de proteger su privacidad e información de salud. Servicios de salud mental que cumplen con HIPAA."
+  },
+  "terms": {
+    "title": "Términos de Servicio | Bergen Mind & Wellness",
+    "description": "Términos y condiciones para usar los servicios de Bergen Mind & Wellness."
+  }
+}

@@ -42,6 +42,8 @@ export const pcl5Options = [
   { value: 4, label: 'Extremely' },
 ]
 
+export type PCL5Severity = 'severe' | 'borderline' | 'moderate' | 'minimal'
+
 export interface PCL5Result {
   totalScore: number
   clusterScores: {
@@ -51,8 +53,9 @@ export interface PCL5Result {
     arousal: number
   }
   provisionalDiagnosis: boolean
-  interpretation: string
-  recommendation: string
+  severityKey: PCL5Severity
+  interpretationKey: PCL5Severity
+  recommendationKey: PCL5Severity
 }
 
 export function calculatePCL5(answers: number[]): PCL5Result {
@@ -66,25 +69,17 @@ export function calculatePCL5(answers: number[]): PCL5Result {
 
   // Provisional PTSD diagnosis (DSM-5 criteria):
   // Total score >= 31-33 is commonly used cutoff
-  // Alternative: At least 1 B item (reexperiencing), 1 C item (avoidance),
-  // 2 D items (negative cognitions), and 2 E items (arousal) rated >= 2 (Moderately)
   const provisionalDiagnosis = totalScore >= 33
 
-  let interpretation: string
-  let recommendation: string
-
+  let severityKey: PCL5Severity
   if (totalScore >= 33) {
-    interpretation = 'Your responses suggest symptoms consistent with PTSD. Your total score is in the range that may indicate clinically significant PTSD symptoms.'
-    recommendation = 'We strongly recommend scheduling an evaluation with a mental health professional who specializes in trauma. PTSD is a treatable condition, and evidence-based therapies like CPT, PE, and EMDR have high success rates.'
+    severityKey = 'severe'
   } else if (totalScore >= 31) {
-    interpretation = 'Your responses suggest significant trauma-related symptoms that may warrant further evaluation. Your score is in the borderline range for PTSD.'
-    recommendation = 'Consider consulting with a mental health professional to discuss your symptoms and explore whether trauma-focused treatment might be helpful.'
+    severityKey = 'borderline'
   } else if (totalScore >= 20) {
-    interpretation = 'Your responses suggest moderate trauma-related symptoms. While below the typical PTSD threshold, these symptoms may still impact your daily functioning.'
-    recommendation = 'Consider speaking with a mental health professional about your symptoms. Trauma-focused therapy can be helpful even for subthreshold symptoms.'
+    severityKey = 'moderate'
   } else {
-    interpretation = 'Your responses suggest minimal trauma-related symptoms at this time.'
-    recommendation = 'Continue monitoring your wellbeing. If you experience traumatic events or symptoms worsen, consult a mental health professional.'
+    severityKey = 'minimal'
   }
 
   return {
@@ -96,7 +91,8 @@ export function calculatePCL5(answers: number[]): PCL5Result {
       arousal,
     },
     provisionalDiagnosis,
-    interpretation,
-    recommendation,
+    severityKey,
+    interpretationKey: severityKey,
+    recommendationKey: severityKey,
   }
 }

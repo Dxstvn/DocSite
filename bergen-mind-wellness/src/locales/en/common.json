@@ -1,0 +1,21 @@
+{
+  "skipToContent": "Skip to main content",
+  "close": "Close",
+  "loading": "Loading...",
+  "error": "Error",
+  "success": "Success",
+  "submit": "Submit",
+  "cancel": "Cancel",
+  "save": "Save",
+  "edit": "Edit",
+  "delete": "Delete",
+  "confirm": "Confirm",
+  "back": "Back",
+  "next": "Next",
+  "previous": "Previous",
+  "home": "Home",
+  "or": "or",
+  "contactUs": "contact us",
+  "allRightsReserved": "All rights reserved",
+  "copyright": "© {{year}} Bergen Mind & Wellness, LLC. All rights reserved."
+}

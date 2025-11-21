@@ -1,0 +1,556 @@
+{
+  "hub": {
+    "title": "Mental Health Education",
+    "description": "Evidence-based information about mental health conditions, treatment options, and pathways to recovery. Knowledge is the first step toward healing.",
+    "learnMore": "Learn More"
+  },
+  "conditions": {
+    "depression": {
+      "title": "Depression",
+      "description": "Understanding symptoms, causes, and evidence-based treatments for major depressive disorder"
+    },
+    "anxiety": {
+      "title": "Anxiety Disorders",
+      "description": "Learn about GAD, panic disorder, social anxiety, and effective treatment options"
+    },
+    "adhd": {
+      "title": "ADHD",
+      "description": "Attention-deficit/hyperactivity disorder in adults: symptoms, diagnosis, and management"
+    },
+    "bipolar": {
+      "title": "Bipolar Disorder",
+      "description": "Mood cycling, medication management, and lifestyle strategies for bipolar disorder"
+    },
+    "ptsd": {
+      "title": "PTSD",
+      "description": "Post-traumatic stress disorder: understanding trauma and evidence-based treatments"
+    }
+  },
+  "common": {
+    "clinicalInfoTitle": "Clinical Information",
+    "clinicalInfoDescription": "This page provides educational information. It is not a substitute for professional medical advice, diagnosis, or treatment.",
+    "scheduleAppointment": "Schedule an Appointment",
+    "symptomsTitle": "Common Symptoms",
+    "treatmentTitle": "Treatment Options",
+    "medicationTitle": "Medication Management",
+    "resourcesTitle": "Evidence-Based Resources"
+  },
+  "pages": {
+    "depression": {
+      "pageTitle": "Understanding Depression",
+      "clinicalDisclaimer": "This page provides educational information about depression. It is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "whatIs": {
+        "title": "What is Depression?",
+        "p1": "Major depressive disorder (MDD) is a common but serious mood disorder that affects how you feel, think, and handle daily activities. It's characterized by persistent sadness and loss of interest in previously enjoyed activities.",
+        "p2": "Depression affects approximately 21 million adults in the United States, making it one of the most common mental health conditions. The good news: depression is highly treatable with therapy, medication, or a combination of both."
+      },
+      "symptoms": {
+        "intro": "Symptoms of depression may include:",
+        "list": [
+          "Persistent sad, anxious, or \"empty\" mood",
+          "Loss of interest or pleasure in hobbies and activities",
+          "Decreased energy or fatigue",
+          "Difficulty concentrating, remembering, or making decisions",
+          "Changes in sleep patterns (insomnia or oversleeping)",
+          "Changes in appetite or weight",
+          "Feelings of worthlessness or excessive guilt",
+          "Thoughts of death or suicide"
+        ],
+        "conclusion": "If you experience five or more of these symptoms for at least two weeks, consult a mental health professional for evaluation."
+      },
+      "treatment": {
+        "psychotherapy": {
+          "title": "Psychotherapy",
+          "cbt": "Cognitive Behavioral Therapy (CBT): Helps identify and change negative thought patterns",
+          "ipt": "Interpersonal Therapy (IPT): Focuses on improving relationships and social functioning",
+          "ba": "Behavioral Activation: Increases engagement in positive activities"
+        },
+        "medication": {
+          "title": "Medication",
+          "ssris": "SSRIs: Selective serotonin reuptake inhibitors (e.g., fluoxetine, sertraline)",
+          "snris": "SNRIs: Serotonin-norepinephrine reuptake inhibitors (e.g., venlafaxine, duloxetine)",
+          "atypical": "Atypical antidepressants: Bupropion, mirtazapine"
+        },
+        "lifestyle": {
+          "title": "Lifestyle Modifications",
+          "list": [
+            "Regular exercise (30 minutes, 3-5 times per week)",
+            "Consistent sleep schedule",
+            "Social connection and support",
+            "Stress management techniques",
+            "Nutrition and brain-healthy foods"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "title": "Medication Management & Side Effects",
+        "intro": "Antidepressant medications are often effective for moderate to severe depression. They work by adjusting neurotransmitter levels in the brain.",
+        "sideEffectsTitle": "Common Side Effects (vary by medication):",
+        "sideEffects": [
+          "Nausea (usually temporary)",
+          "Weight changes",
+          "Sleep changes (insomnia or drowsiness)",
+          "Sexual side effects",
+          "Dry mouth"
+        ],
+        "importantNotesTitle": "Important Notes:",
+        "importantNotes": [
+          "Medications typically take 4-6 weeks to show full effects",
+          "Never stop antidepressants abruptly (risk of discontinuation syndrome)",
+          "Work closely with your prescriber to find the right medication and dosage",
+          "Report any concerning side effects immediately"
+        ]
+      },
+      "resources": {
+        "nimh": "National Institute of Mental Health (NIMH) - Depression",
+        "apa": "American Psychological Association (APA) - Depression",
+        "nami": "National Alliance on Mental Illness (NAMI) - Depression"
+      },
+      "cta": {
+        "screening": "Take Depression Screening (PHQ-9)"
+      }
+    },
+    "anxiety": {
+      "pageTitle": "Understanding Anxiety Disorders",
+      "clinicalDisclaimer": "This page provides educational information about anxiety disorders. It is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "whatIs": {
+        "title": "What are Anxiety Disorders?",
+        "p1": "Anxiety disorders are the most common mental health conditions in the United States, affecting approximately 40 million adults. While everyone experiences anxiety from time to time, anxiety disorders involve persistent, excessive worry that interferes with daily activities.",
+        "p2": "Anxiety disorders include generalized anxiety disorder (GAD), panic disorder, social anxiety disorder, and specific phobias. The good news: anxiety disorders are highly treatable with therapy, medication, or a combination of both."
+      },
+      "symptoms": {
+        "intro": "Symptoms of anxiety disorders may include:",
+        "list": [
+          "Excessive worry or fear that's difficult to control",
+          "Restlessness or feeling on edge",
+          "Muscle tension",
+          "Difficulty concentrating or mind going blank",
+          "Sleep disturbances",
+          "Panic attacks (sudden intense fear with physical symptoms)",
+          "Avoidance of situations that trigger anxiety",
+          "Physical symptoms: rapid heartbeat, sweating, trembling, shortness of breath"
+        ],
+        "conclusion": "If anxiety significantly impacts your daily life, relationships, or work, consider consulting a mental health professional."
+      },
+      "types": {
+        "title": "Types of Anxiety Disorders",
+        "gad": {
+          "title": "Generalized Anxiety Disorder (GAD)",
+          "description": "Persistent, excessive worry about various aspects of daily life (work, health, relationships) lasting at least 6 months."
+        },
+        "panic": {
+          "title": "Panic Disorder",
+          "description": "Recurrent unexpected panic attacks—sudden episodes of intense fear accompanied by physical symptoms like rapid heartbeat, sweating, and chest pain."
+        },
+        "social": {
+          "title": "Social Anxiety Disorder",
+          "description": "Intense fear of social situations where you might be judged, embarrassed, or scrutinized by others."
+        },
+        "phobias": {
+          "title": "Specific Phobias",
+          "description": "Excessive fear of specific objects or situations (e.g., heights, flying, animals) that leads to avoidance behavior."
+        }
+      },
+      "treatment": {
+        "psychotherapy": {
+          "title": "Psychotherapy",
+          "cbt": "Cognitive Behavioral Therapy (CBT): Helps identify and challenge anxious thoughts",
+          "exposure": "Exposure Therapy: Gradual, controlled exposure to feared situations",
+          "act": "Acceptance and Commitment Therapy (ACT): Learning to accept anxiety while pursuing valued goals",
+          "relaxation": "Relaxation Techniques: Deep breathing, progressive muscle relaxation, mindfulness"
+        },
+        "medication": {
+          "title": "Medication",
+          "ssris": "SSRIs: First-line treatment (e.g., escitalopram, sertraline)",
+          "snris": "SNRIs: Effective for GAD (e.g., venlafaxine, duloxetine)",
+          "buspirone": "Buspirone: Non-sedating anti-anxiety medication",
+          "betaBlockers": "Beta-blockers: For performance anxiety and physical symptoms"
+        },
+        "lifestyle": {
+          "title": "Lifestyle Modifications",
+          "list": [
+            "Regular aerobic exercise",
+            "Mindfulness and meditation",
+            "Limiting caffeine and alcohol",
+            "Adequate sleep (7-9 hours)",
+            "Stress management techniques"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "title": "Medication Management",
+        "intro": "Medications for anxiety work by affecting neurotransmitters in the brain that regulate mood and stress responses.",
+        "considerationsTitle": "Important Considerations:",
+        "considerations": [
+          "SSRIs/SNRIs: Take 4-6 weeks for full effect; first-line for long-term management",
+          "Benzodiazepines: Fast-acting but only for short-term use due to dependency risk",
+          "Buspirone: Non-addictive but takes several weeks to work",
+          "Beta-blockers: Helpful for situational anxiety (e.g., public speaking)"
+        ],
+        "sideEffectsTitle": "Common Side Effects:",
+        "sideEffects": [
+          "Nausea (usually temporary)",
+          "Sleep changes",
+          "Sexual side effects (SSRIs/SNRIs)",
+          "Drowsiness (varies by medication)"
+        ],
+        "conclusion": "Work with your healthcare provider to find the most effective medication with minimal side effects. Never stop medication abruptly without medical supervision."
+      },
+      "resources": {
+        "nimh": "National Institute of Mental Health (NIMH) - Anxiety Disorders",
+        "adaa": "Anxiety and Depression Association of America (ADAA)",
+        "apa": "American Psychological Association (APA) - Anxiety"
+      },
+      "cta": {
+        "screening": "Take Anxiety Screening (GAD-7)"
+      }
+    },
+    "adhd": {
+      "pageTitle": "Understanding ADHD",
+      "clinicalDisclaimer": "This page provides educational information about ADHD. It is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "whatIs": {
+        "title": "What is ADHD?",
+        "p1": "Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized by persistent patterns of inattention, hyperactivity, and impulsivity. While often diagnosed in childhood, many adults continue to experience symptoms that impact work, relationships, and daily functioning.",
+        "p2": "ADHD affects executive functions—the brain's ability to plan, organize, focus, and regulate emotions. With proper treatment including medication, therapy, and behavioral strategies, individuals with ADHD can thrive and achieve their goals."
+      },
+      "symptoms": {
+        "inattentionTitle": "Inattention Symptoms:",
+        "inattention": [
+          "Difficulty sustaining attention on tasks",
+          "Easily distracted by external stimuli",
+          "Forgetfulness in daily activities",
+          "Difficulty organizing tasks and managing time",
+          "Frequently losing important items",
+          "Avoiding tasks that require sustained mental effort",
+          "Difficulty following through on instructions"
+        ],
+        "hyperactivityTitle": "Hyperactivity/Impulsivity Symptoms:",
+        "hyperactivity": [
+          "Restlessness or feeling driven by a motor",
+          "Difficulty staying seated when expected",
+          "Excessive talking",
+          "Interrupting or intruding on others",
+          "Difficulty waiting turn",
+          "Acting without thinking about consequences",
+          "Fidgeting with hands or feet"
+        ],
+        "conclusion": "ADHD presents differently in adults than children, often with less visible hyperactivity and more internal restlessness and executive function challenges."
+      },
+      "treatment": {
+        "medication": {
+          "title": "Medication",
+          "stimulants": "Stimulants: Methylphenidate (Ritalin, Concerta) and amphetamines (Adderall, Vyvanse)—most effective for symptom management",
+          "nonStimulants": "Non-stimulants: Atomoxetine (Strattera), guanfacine, clonidine—alternative options with different side effect profiles"
+        },
+        "behavioral": {
+          "title": "Behavioral Strategies",
+          "skills": "Organizational skills training: Time management, task prioritization, calendar systems",
+          "cbt": "Cognitive Behavioral Therapy (CBT): Addressing negative thought patterns and procrastination",
+          "coaching": "ADHD coaching: Accountability and skill-building support",
+          "routines": "Structured routines: Creating predictable daily schedules"
+        },
+        "lifestyle": {
+          "title": "Lifestyle Modifications",
+          "list": [
+            "Regular exercise (particularly aerobic activity)",
+            "Consistent sleep schedule (ADHD often co-occurs with sleep disorders)",
+            "Minimizing distractions in work/study environments",
+            "Breaking large tasks into smaller, manageable steps",
+            "Using timers and external reminders"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "stimulantsTitle": "Stimulant Medications:",
+        "stimulantsIntro": "Stimulants increase dopamine and norepinephrine in the brain, improving focus, impulse control, and executive function. They work quickly (often within 30-60 minutes) and are highly effective for 70-80% of people with ADHD.",
+        "sideEffectsTitle": "Common Side Effects:",
+        "sideEffects": [
+          "Decreased appetite",
+          "Sleep difficulties (take early in day)",
+          "Increased heart rate or blood pressure (requires monitoring)",
+          "Irritability or mood changes",
+          "Dry mouth"
+        ],
+        "nonStimulantsTitle": "Non-Stimulant Medications:",
+        "nonStimulantsIntro": "Non-stimulants like atomoxetine take longer to work (several weeks) but provide 24-hour coverage and have lower abuse potential. They may be preferred for people with anxiety, substance use history, or cardiovascular concerns.",
+        "considerationsTitle": "Important Considerations:",
+        "considerations": [
+          "Medication is most effective when combined with behavioral strategies",
+          "Finding the right medication and dose may take time and adjustment",
+          "Regular follow-ups with your prescriber are essential",
+          "Stimulants are controlled substances; follow prescription guidelines carefully"
+        ]
+      },
+      "livingWith": {
+        "title": "Living with ADHD",
+        "workplaceTitle": "Workplace Accommodations:",
+        "workplace": [
+          "Flexible work schedules",
+          "Quiet workspace or noise-canceling headphones",
+          "Written instructions and checklists",
+          "Regular check-ins with supervisors",
+          "Breaking projects into smaller milestones"
+        ],
+        "timeManagementTitle": "Time Management Tools:",
+        "timeManagement": [
+          "Digital calendars with alerts and reminders",
+          "Task management apps (Todoist, Things, Asana)",
+          "Pomodoro technique (25-minute focused work intervals)",
+          "Visual timers and time-blocking"
+        ],
+        "supportTitle": "Support Resources:",
+        "support": [
+          "ADHD support groups (in-person or online)",
+          "ADHD coaches or accountability partners",
+          "Educational resources for family members"
+        ]
+      },
+      "resources": {
+        "chadd": "Children and Adults with Attention-Deficit/Hyperactivity Disorder (CHADD)",
+        "nimh": "National Institute of Mental Health (NIMH) - ADHD",
+        "adda": "Attention Deficit Disorder Association (ADDA)"
+      },
+      "cta": {
+        "screening": "Take ADHD Screening (ASRS)"
+      }
+    },
+    "bipolar": {
+      "pageTitle": "Understanding Bipolar Disorder",
+      "clinicalDisclaimer": "This page provides educational information about bipolar disorder. It is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "whatIs": {
+        "title": "What is Bipolar Disorder?",
+        "p1": "Bipolar disorder is a mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression). These mood episodes can affect sleep, energy, activity levels, judgment, behavior, and the ability to think clearly.",
+        "p2": "<strong>Bipolar I Disorder</strong> involves at least one manic episode that may be preceded or followed by hypomanic or major depressive episodes. <strong>Bipolar II Disorder</strong> involves at least one major depressive episode and at least one hypomanic episode, but no full manic episodes.",
+        "p3": "Bipolar disorder is a lifelong condition that requires ongoing treatment, but with proper management including medication, therapy, and lifestyle modifications, people with bipolar disorder can lead fulfilling, productive lives."
+      },
+      "symptoms": {
+        "maniaTitle": "Manic Episode Symptoms:",
+        "mania": [
+          "Elevated, expansive, or irritable mood",
+          "Increased energy and activity levels",
+          "Decreased need for sleep (feeling rested after 3 hours)",
+          "Racing thoughts and rapid speech",
+          "Grandiosity or inflated self-esteem",
+          "Distractibility",
+          "Increased goal-directed activity or agitation",
+          "Engaging in risky behaviors (spending sprees, reckless driving, impulsive decisions)"
+        ],
+        "hypomaniaTitle": "Hypomanic Episode Symptoms:",
+        "hypomaniaDescription": "Similar to mania but less severe and shorter duration (at least 4 days). Functioning is not as severely impaired, and there are no psychotic features.",
+        "depressionTitle": "Depressive Episode Symptoms:",
+        "depression": [
+          "Persistent sad, empty, or hopeless mood",
+          "Loss of interest in activities",
+          "Significant weight changes or appetite changes",
+          "Sleep disturbances (insomnia or hypersomnia)",
+          "Fatigue or loss of energy",
+          "Feelings of worthlessness or guilt",
+          "Difficulty thinking or concentrating",
+          "Thoughts of death or suicide"
+        ]
+      },
+      "treatment": {
+        "medication": {
+          "title": "Medication (Primary Treatment)",
+          "list": [
+            "<strong>Mood Stabilizers:</strong> Lithium, lamotrigine (Lamictal), valproate (Depakote)",
+            "<strong>Atypical Antipsychotics:</strong> Quetiapine (Seroquel), lurasidone (Latuda), aripiprazole (Abilify)",
+            "<strong>Combination Therapy:</strong> Often requires multiple medications for optimal control"
+          ]
+        },
+        "psychotherapy": {
+          "title": "Psychotherapy",
+          "list": [
+            "<strong>Psychoeducation:</strong> Understanding bipolar disorder, recognizing early warning signs",
+            "<strong>Cognitive Behavioral Therapy (CBT):</strong> Identifying triggers, developing coping strategies",
+            "<strong>Family-Focused Therapy:</strong> Improving communication and problem-solving",
+            "<strong>Interpersonal and Social Rhythm Therapy (IPSRT):</strong> Stabilizing daily routines and sleep"
+          ]
+        },
+        "lifestyle": {
+          "title": "Lifestyle Management",
+          "list": [
+            "Consistent sleep-wake schedule (critical for mood stability)",
+            "Avoiding alcohol and recreational drugs",
+            "Stress reduction techniques",
+            "Regular exercise",
+            "Mood tracking and early warning sign monitoring"
+          ]
+        }
+      },
+      "medicationDetails": {
+        "moodStabilizersTitle": "Mood Stabilizers:",
+        "lithium": "<strong>Lithium:</strong> Gold standard for bipolar treatment. Requires regular blood level monitoring to ensure therapeutic range and prevent toxicity. Side effects may include tremor, weight gain, increased thirst and urination.",
+        "lamotrigine": "<strong>Lamotrigine:</strong> Particularly effective for bipolar depression. Requires slow titration to minimize rash risk. Generally well-tolerated.",
+        "atypicalTitle": "Atypical Antipsychotics:",
+        "atypicalIntro": "Effective for treating acute mania and preventing relapse. Common side effects include weight gain, metabolic changes (monitor blood sugar and lipids), and sedation.",
+        "considerationsTitle": "Important Considerations:",
+        "considerations": [
+          "Medication adherence is critical; stopping medication often leads to relapse",
+          "Regular blood work and monitoring required for many bipolar medications",
+          "Antidepressants alone can trigger mania; always use with mood stabilizer if prescribed",
+          "Pregnancy planning requires specialized care due to medication considerations",
+          "Work closely with a psychiatrist experienced in treating bipolar disorder"
+        ]
+      },
+      "crisisManagement": {
+        "title": "Crisis Management & Warning Signs",
+        "maniaWarningTitle": "Warning Signs of Mania:",
+        "maniaWarnings": [
+          "Decreased sleep without feeling tired",
+          "Increased energy and activity",
+          "Irritability or agitation",
+          "Racing thoughts",
+          "Impulsive or risky behaviors"
+        ],
+        "depressionWarningTitle": "Warning Signs of Depression:",
+        "depressionWarnings": [
+          "Withdrawal from social activities",
+          "Increased sleep or difficulty getting out of bed",
+          "Loss of interest in previously enjoyed activities",
+          "Negative thinking patterns",
+          "Thoughts of death or suicide"
+        ],
+        "emergencyTitle": "When to Seek Emergency Care:",
+        "emergencySigns": [
+          "Thoughts of harming yourself or others",
+          "Psychotic symptoms (hallucinations, delusions)",
+          "Severe agitation or inability to care for yourself",
+          "Dangerous risk-taking behaviors"
+        ],
+        "conclusion": "Developing a crisis plan with your treatment team and loved ones can help identify early warning signs and intervene before episodes become severe."
+      },
+      "resources": {
+        "dbsa": "Depression and Bipolar Support Alliance (DBSA)",
+        "nimh": "National Institute of Mental Health (NIMH) - Bipolar Disorder",
+        "nami": "National Alliance on Mental Illness (NAMI) - Bipolar Disorder"
+      },
+      "cta": {
+        "screening": "Take Bipolar Screening (MDQ)"
+      }
+    },
+    "ptsd": {
+      "pageTitle": "Understanding PTSD",
+      "clinicalDisclaimer": "This page provides educational information about PTSD. It is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "whatIs": {
+        "title": "What is PTSD?",
+        "p1": "Post-Traumatic Stress Disorder (PTSD) is a mental health condition that can develop after experiencing or witnessing a traumatic event. Traumatic events may include combat, natural disasters, serious accidents, physical or sexual assault, or any life-threatening situation.",
+        "p2": "PTSD is not a sign of weakness—it's a normal response to abnormal and overwhelming circumstances. The brain's natural stress response becomes disrupted after trauma, leading to persistent symptoms that interfere with daily life. With proper treatment, recovery is possible, and many people with PTSD go on to heal and thrive."
+      },
+      "symptoms": {
+        "intro": "PTSD symptoms typically begin within 3 months of the traumatic event but may appear later. Symptoms must last more than one month and be severe enough to interfere with relationships or work.",
+        "reexperiencingTitle": "Re-experiencing (Intrusive Symptoms):",
+        "reexperiencing": [
+          "Flashbacks—reliving the traumatic event",
+          "Nightmares or disturbing dreams",
+          "Intrusive, distressing memories",
+          "Severe emotional distress when reminded of trauma",
+          "Physical reactions to trauma reminders (sweating, rapid heartbeat)"
+        ],
+        "avoidanceTitle": "Avoidance:",
+        "avoidance": [
+          "Avoiding thoughts, feelings, or conversations about the trauma",
+          "Avoiding people, places, or activities that trigger memories",
+          "Emotional numbing or detachment",
+          "Difficulty remembering important aspects of the traumatic event"
+        ],
+        "negativeChangesTitle": "Negative Changes in Thinking and Mood:",
+        "negativeChanges": [
+          "Negative beliefs about oneself, others, or the world",
+          "Persistent negative emotions (fear, horror, anger, guilt, shame)",
+          "Loss of interest in previously enjoyed activities",
+          "Feeling detached from others",
+          "Inability to experience positive emotions"
+        ],
+        "hyperarousalTitle": "Hyperarousal (Increased Reactivity):",
+        "hyperarousal": [
+          "Hypervigilance (constantly on guard)",
+          "Exaggerated startle response",
+          "Irritability or angry outbursts",
+          "Reckless or self-destructive behavior",
+          "Sleep disturbances",
+          "Difficulty concentrating"
+        ]
+      },
+      "treatment": {
+        "traumaTherapy": {
+          "title": "Trauma-Focused Psychotherapy (Most Effective):",
+          "list": [
+            "<strong>Cognitive Processing Therapy (CPT):</strong> Helps process the trauma and challenge unhelpful beliefs about the traumatic event",
+            "<strong>Prolonged Exposure (PE):</strong> Gradual, repeated exposure to trauma memories and reminders in a safe, controlled way to reduce fear response",
+            "<strong>Eye Movement Desensitization and Reprocessing (EMDR):</strong> Processes traumatic memories using bilateral stimulation (eye movements, taps, sounds)",
+            "<strong>Trauma-Focused Cognitive Behavioral Therapy (TF-CBT):</strong> Combines CBT techniques with trauma-specific interventions"
+          ]
+        },
+        "medication": {
+          "title": "Medication:",
+          "list": [
+            "<strong>SSRIs:</strong> Sertraline (Zoloft) and paroxetine (Paxil) are FDA-approved for PTSD",
+            "<strong>Prazosin:</strong> Can reduce nightmares and improve sleep",
+            "Medication is often used alongside therapy for optimal results"
+          ]
+        },
+        "complementary": {
+          "title": "Complementary Approaches:",
+          "list": [
+            "Mindfulness and meditation",
+            "Yoga and body-based therapies",
+            "Grounding techniques for managing flashbacks",
+            "Support groups with other trauma survivors",
+            "Service animals for veterans with PTSD"
+          ]
+        }
+      },
+      "traumaInformedCare": {
+        "title": "Trauma-Informed Care Principles",
+        "intro": "Effective PTSD treatment follows trauma-informed care principles that prioritize safety, choice, and empowerment:",
+        "safetyFirstTitle": "Safety First:",
+        "safetyFirst": [
+          "Creating physical and emotional safety before processing trauma memories",
+          "Establishing coping skills and crisis plans",
+          "Ensuring current safety (domestic violence, self-harm risks addressed)"
+        ],
+        "clientControlTitle": "Client Control:",
+        "clientControl": [
+          "You control the pace and depth of trauma disclosure",
+          "No pressure to share details you're not ready to discuss",
+          "You can pause or stop at any time during therapy"
+        ],
+        "stabilizationTitle": "Stabilization Before Trauma Processing:",
+        "stabilization": [
+          "Building emotion regulation skills",
+          "Developing healthy coping strategies",
+          "Addressing substance use, self-harm, or safety concerns",
+          "Only when stable will trauma-focused work begin"
+        ]
+      },
+      "medicationDetails": {
+        "ssrisTitle": "SSRIs for PTSD:",
+        "ssrisIntro": "Selective serotonin reuptake inhibitors can help reduce PTSD symptoms including intrusive thoughts, avoidance, negative mood, and hyperarousal. They take 4-6 weeks to reach full effectiveness.",
+        "prazosinTitle": "Prazosin for Nightmares:",
+        "prazosinIntro": "Prazosin is an alpha-blocker that can significantly reduce PTSD-related nightmares and improve sleep quality. It's taken before bedtime and may require dose adjustment.",
+        "avoidTitle": "Medications to Avoid:",
+        "avoidList": [
+          "<strong>Benzodiazepines:</strong> Not recommended for PTSD as they can interfere with trauma processing and have addiction potential",
+          "Long-term use of sleep medications without addressing underlying trauma"
+        ],
+        "considerationsTitle": "Important Considerations:",
+        "considerations": [
+          "Medication alone is less effective than therapy alone for PTSD",
+          "Combination of medication and trauma-focused therapy is often most effective",
+          "Work with a psychiatrist experienced in treating trauma",
+          "Regular monitoring for side effects and treatment response"
+        ]
+      },
+      "resources": {
+        "va": "National Center for PTSD (U.S. Department of Veterans Affairs)",
+        "nimh": "National Institute of Mental Health (NIMH) - PTSD",
+        "istss": "International Society for Traumatic Stress Studies (ISTSS)",
+        "rainn": "RAINN (Rape, Abuse & Incest National Network) - For sexual assault survivors"
+      },
+      "cta": {
+        "screening": "Take PTSD Screening (PCL-5)"
+      }
+    }
+  }
+}
