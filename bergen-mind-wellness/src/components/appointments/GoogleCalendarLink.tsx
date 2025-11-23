@@ -29,10 +29,6 @@ export function GoogleCalendarLink({ locale = 'en' }: GoogleCalendarLinkProps) {
     callLabel: locale === 'es'
       ? `Llamar al ${PHONE_NUMBER} para programar una cita`
       : `Call ${PHONE_NUMBER} to schedule an appointment`,
-    contactInfoTitle: locale === 'es' ? 'Información de Contacto' : 'Contact Information',
-    phone: locale === 'es' ? 'Teléfono' : 'Phone',
-    hours: locale === 'es' ? 'Horario de Oficina' : 'Office Hours',
-    hoursValue: locale === 'es' ? 'Lunes - Viernes, 9:00 AM - 5:00 PM' : 'Monday - Friday, 9:00 AM - 5:00 PM',
   };
 
   return (
@@ -84,22 +80,6 @@ export function GoogleCalendarLink({ locale = 'en' }: GoogleCalendarLinkProps) {
               {text.callNow}
             </a>
           </Button>
-        </div>
-
-        <div className="pt-4 border-t">
-          <h3 className="font-medium text-sm mb-2">{text.contactInfoTitle}</h3>
-          <div className="space-y-1 text-sm text-muted-foreground">
-            <p>
-              <strong>{text.phone}:</strong>{' '}
-              <a href={PHONE_LINK} className="hover:underline">
-                {PHONE_NUMBER}
-              </a>
-            </p>
-            <p>
-              <strong>{text.hours}:</strong>{' '}
-              {text.hoursValue}
-            </p>
-          </div>
         </div>
       </CardContent>
     </Card>
