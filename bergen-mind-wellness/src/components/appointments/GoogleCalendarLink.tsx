@@ -19,8 +19,8 @@ export function GoogleCalendarLink({ locale = 'en' }: GoogleCalendarLinkProps) {
       ? 'Vea los horarios disponibles y reserve directamente a través de nuestro calendario.'
       : 'View available times and book directly through our calendar.',
     instructions: locale === 'es'
-      ? 'Haga clic en el botón a continuación para ver los horarios de cita disponibles del Dr. Jasmin. Puede reservar un horario que funcione mejor para usted, o llámenos para programar.'
-      : "Click the button below to view Dr. Jasmin's available appointment times. You can book a time slot that works best for you, or call us to schedule.",
+      ? 'Haga clic en el botón a continuación para ver los horarios de cita disponibles con Rocio Jenkins, MSN, APN, PMHNP-BC. Puede reservar un horario que funcione mejor para usted, o llámenos para programar.'
+      : "Click the button below to view available appointment times with Rocio Jenkins, MSN, APN, PMHNP-BC. You can book a time slot that works best for you, or call us to schedule.",
     viewCalendar: locale === 'es' ? 'Ver Horarios Disponibles' : 'View Available Times',
     viewCalendarLabel: locale === 'es'
       ? 'Abrir calendario para ver horarios de cita disponibles'
