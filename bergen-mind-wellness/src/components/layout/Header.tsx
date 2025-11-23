@@ -30,10 +30,6 @@ export default function Header() {
     { name: t('nav.mindfulness'), href: '/mindfulness' },
   ]
 
-  const endNavigation = [
-    { name: t('nav.contact'), href: '/contact' },
-  ]
-
   // Handle Escape key and click outside to close dropdowns
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
@@ -179,16 +175,6 @@ export default function Header() {
               </div>
             )}
           </div>
-
-          {endNavigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-neutral-700 hover:text-primary-700 underline underline-offset-4 transition-colors"
-            >
-              {item.name}
-            </Link>
-          ))}
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-4 lg:items-center">
@@ -261,17 +247,6 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-            {endNavigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-3 py-2 text-base font-medium text-neutral-700 hover:bg-neutral-100 rounded-md underline underline-offset-2 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
 
             <Button asChild className="w-full mt-4">
               <Link href="/appointments">{t('header.scheduleAppointment')}</Link>

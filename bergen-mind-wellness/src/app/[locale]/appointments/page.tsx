@@ -88,11 +88,6 @@ export default async function AppointmentsPage({ params }: PageProps) {
               <a href="tel:+12016902182" className="text-primary-600 hover:underline font-medium">
                 (201) 690-2182
               </a>
-              {' '}{t('common:or', 'or')}{' '}
-              <a href={`/${locale}/contact`} className="text-primary-600 hover:underline font-medium">
-                {t('common:contactUs', 'contact us')}
-              </a>
-              .
             </p>
           </div>
         </div>
