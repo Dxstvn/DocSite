@@ -145,7 +145,13 @@ export default async function HomePage({ params }: PageProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
-                <Link href="/contact">{t('hero.scheduleButton')}</Link>
+                <a
+                  href="https://calendar.app.google/rvUA24diHnUoWTi79"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('hero.scheduleButton')}
+                </a>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/screening">{t('hero.screeningButton')}</Link>
