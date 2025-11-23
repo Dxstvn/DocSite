@@ -1,5 +1,32 @@
 {
   "title": "Schedule Your Appointment",
   "subtitle": "Choose a convenient time for your consultation. We offer flexible scheduling to accommodate your needs.",
-  "helpText": "Need assistance? Call us at"
+  "helpText": "Need assistance? Call us at",
+  "googleCalendar": {
+    "title": "Schedule Your Appointment",
+    "description": "View available times and book directly through our calendar.",
+    "instructions": "Click the button below to view Dr. Jasmin's available appointment times. You can book a time slot that works best for you, or call us to schedule.",
+    "viewCalendar": "View Available Times",
+    "viewCalendarLabel": "Open calendar to view available appointment times",
+    "callNow": "Call to Book",
+    "callLabel": "Call {phone} to schedule an appointment",
+    "contactInfo": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "hours": "Office Hours",
+      "hoursValue": "Monday - Friday, 9:00 AM - 5:00 PM"
+    }
+  },
+  "calendar": {
+    "temporaryNotice": "We've simplified our appointment booking process. View available times through our calendar or call us to schedule."
+  },
+  "types": {
+    "title": "Appointment Types",
+    "description": "We offer different appointment durations to meet your needs. All appointments are conducted via telehealth.",
+    "duration": "{minutes} minutes",
+    "suitable": "Suitable for consultations and follow-up appointments"
+  },
+  "booking": {
+    "title": "Book Your Appointment"
+  }
 }

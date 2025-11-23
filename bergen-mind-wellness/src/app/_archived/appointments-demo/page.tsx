@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { BookingConfirmation } from '@/components/appointments/BookingConfirmation'
+import { BookingConfirmation } from '@/components/appointments/_archived/BookingConfirmation.original'
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 

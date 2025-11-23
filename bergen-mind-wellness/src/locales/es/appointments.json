@@ -1,5 +1,32 @@
 {
   "title": "Programe Su Cita",
   "subtitle": "Elija un horario conveniente para su consulta. Ofrecemos programación flexible para adaptarnos a sus necesidades.",
-  "helpText": "¿Necesita ayuda? Llámenos al"
+  "helpText": "¿Necesita ayuda? Llámenos al",
+  "googleCalendar": {
+    "title": "Programe Su Cita",
+    "description": "Vea los horarios disponibles y reserve directamente a través de nuestro calendario.",
+    "instructions": "Haga clic en el botón a continuación para ver los horarios de cita disponibles del Dr. Jasmin. Puede reservar un horario que funcione mejor para usted, o llámenos para programar.",
+    "viewCalendar": "Ver Horarios Disponibles",
+    "viewCalendarLabel": "Abrir calendario para ver horarios de cita disponibles",
+    "callNow": "Llamar para Reservar",
+    "callLabel": "Llamar al {phone} para programar una cita",
+    "contactInfo": {
+      "title": "Información de Contacto",
+      "phone": "Teléfono",
+      "hours": "Horario de Oficina",
+      "hoursValue": "Lunes - Viernes, 9:00 AM - 5:00 PM"
+    }
+  },
+  "calendar": {
+    "temporaryNotice": "Hemos simplificado nuestro proceso de reserva de citas. Vea los horarios disponibles a través de nuestro calendario o llámenos para programar."
+  },
+  "types": {
+    "title": "Tipos de Citas",
+    "description": "Ofrecemos diferentes duraciones de citas para satisfacer sus necesidades. Todas las citas se realizan por telesalud.",
+    "duration": "{minutes} minutos",
+    "suitable": "Adecuado para consultas y citas de seguimiento"
+  },
+  "booking": {
+    "title": "Reserve Su Cita"
+  }
 }

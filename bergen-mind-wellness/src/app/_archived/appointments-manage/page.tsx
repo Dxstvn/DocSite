@@ -1,4 +1,4 @@
-import { ManageAppointment } from '@/components/appointments/ManageAppointment'
+import { ManageAppointment } from '@/components/appointments/_archived/ManageAppointment.original'
 import { getAppointmentByToken } from '@/app/actions/appointments'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Button } from '@/components/ui/button'
