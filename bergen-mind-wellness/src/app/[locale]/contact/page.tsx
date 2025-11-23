@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert'
-import { Stethoscope, Mail, Phone, MapPin, Info, PhoneCall, Calendar } from 'lucide-react'
+import { Stethoscope, Mail, Phone, Info, PhoneCall, Calendar } from 'lucide-react'
 import { initTranslations } from '@/lib/i18n'
 
 type PageProps = {
@@ -146,22 +146,11 @@ export default async function ContactPage({ params }: PageProps) {
                 <div>
                   <h3 className="font-semibold text-sm mb-1">Email</h3>
                   <a
-                    href="mailto:info@bergenmindwellness.com"
+                    href="mailto:rocio@bergenmindwellness.com"
                     className="text-neutral-700 hover:text-primary-700 transition-colors break-all"
                   >
-                    info@bergenmindwellness.com
+                    rocio@bergenmindwellness.com
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary-600 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-sm mb-1">Address</h3>
-                  <p className="text-neutral-700">
-                    123 Main Street, Suite 200<br />
-                    Bergen County, NJ 07000
-                  </p>
                 </div>
               </div>
             </CardContent>

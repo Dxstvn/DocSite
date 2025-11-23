@@ -85,8 +85,8 @@ export default async function AppointmentsPage({ params }: PageProps) {
           <div className="mt-12 text-center text-sm text-neutral-600">
             <p>
               {t('appointments:helpText', 'Need assistance? Call us at')} {' '}
-              <a href="tel:+12015551234" className="text-primary-600 hover:underline font-medium">
-                (201) 555-1234
+              <a href="tel:+12016902182" className="text-primary-600 hover:underline font-medium">
+                (201) 690-2182
               </a>
               {' '}{t('common:or', 'or')}{' '}
               <a href={`/${locale}/contact`} className="text-primary-600 hover:underline font-medium">
