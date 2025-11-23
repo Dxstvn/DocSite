@@ -19,7 +19,7 @@ const createAvailabilitySlot = async (
   slot: Partial<AvailabilitySlot>
 ) => {
   const { data, error } = await supabase
-    .from('availability')
+    .from('availability_slots')
     .insert(slot)
     .select()
     .single()
@@ -44,7 +44,7 @@ describe('Availability Management Integration', () => {
     // Cleanup: Delete all created slots
     if (createdSlots.length > 0) {
       await supabase
-        .from('availability')
+        .from('availability_slots')
         .delete()
         .in('id', createdSlots)
     }
@@ -92,7 +92,7 @@ describe('Availability Management Integration', () => {
 
     // Verify all slots were created
     const { data: slots, error } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .select('*')
       .eq('doctor_id', testDoctorId)
       .in('day_of_week', weekdays)
@@ -136,7 +136,7 @@ describe('Availability Management Integration', () => {
     // This should either throw an error or be handled by application logic
     // For now, we'll verify we can detect the overlap
     const { data: existingSlots } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .select('*')
       .eq('doctor_id', testDoctorId)
       .eq('day_of_week', 1)
@@ -190,7 +190,7 @@ describe('Availability Management Integration', () => {
 
     // Delete the slot
     const { error } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .delete()
       .eq('id', slotId)
 
@@ -198,7 +198,7 @@ describe('Availability Management Integration', () => {
 
     // Verify it's deleted
     const { data: deleted } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .select('*')
       .eq('id', slotId)
 
@@ -220,7 +220,7 @@ describe('Availability Management Integration', () => {
 
     // Update to shorter hours: 12pm-4pm
     const { data: updated, error } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .update({
         start_time: '12:00:00',
         end_time: '16:00:00',
@@ -249,7 +249,7 @@ describe('Availability Management Integration', () => {
 
     // Block the slot (e.g., vacation)
     const { data: blocked, error } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .update({
         is_blocked: true,
         block_reason: 'Vacation',
@@ -282,7 +282,7 @@ describe('Availability Management Integration', () => {
 
     // Query only Monday's availability
     const { data: mondaySlots, error } = await supabase
-      .from('availability')
+      .from('availability_slots')
       .select('*')
       .eq('doctor_id', testDoctorId)
       .eq('day_of_week', 1)

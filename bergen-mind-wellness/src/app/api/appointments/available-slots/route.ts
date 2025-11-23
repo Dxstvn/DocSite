@@ -117,53 +117,50 @@ export async function GET(request: NextRequest) {
       end: new Date(apt.end_time),
     }))
 
-    // Fetch blocked availability slots for the date
+    // Fetch ALL availability slots for the date (both available and blocked)
     const dateString = format(requestedDate, 'yyyy-MM-dd')
     const dayOfWeek = getDayOfWeek(requestedDate)
 
-    console.log(`[Available Slots API] Fetching blocked slots for ${dateString} (day ${dayOfWeek})`)
+    console.log(`[Available Slots API] Fetching availability records for ${dateString} (day ${dayOfWeek})`)
 
-    // Query 1: Specific date blocks for this exact date
-    const { data: specificDateBlocks, error: specificError } = await supabase
+    // Query 1: Specific date availability for this exact date
+    const { data: specificDateAvailability, error: specificError } = await supabase
       .from('availability_slots')
-      .select('id, specific_date, start_time, end_time, day_of_week, is_recurring, is_blocked, block_reason')
+      .select('id, doctor_id, specific_date, start_time, end_time, day_of_week, is_recurring, is_blocked, block_reason')
       .eq('doctor_id', selectedDoctorId)
-      .eq('is_blocked', true)
       .eq('specific_date', dateString)
 
-    // Query 2: Recurring weekly blocks for this day of week
-    const { data: recurringBlocks, error: recurringError } = await supabase
+    // Query 2: Recurring weekly availability for this day of week
+    const { data: recurringAvailability, error: recurringError } = await supabase
       .from('availability_slots')
-      .select('id, specific_date, start_time, end_time, day_of_week, is_recurring, is_blocked, block_reason')
+      .select('id, doctor_id, specific_date, start_time, end_time, day_of_week, is_recurring, is_blocked, block_reason')
       .eq('doctor_id', selectedDoctorId)
-      .eq('is_blocked', true)
       .eq('is_recurring', true)
       .eq('day_of_week', dayOfWeek)
 
-    // Combine results
-    const blockedSlots = [...(specificDateBlocks || []), ...(recurringBlocks || [])]
-    const blockedError = specificError || recurringError
+    // Combine results - specific date records override recurring ones
+    const availabilityRecords = [...(specificDateAvailability || []), ...(recurringAvailability || [])]
+    const availabilityError = specificError || recurringError
 
-    if (blockedError) {
-      console.error('[Available Slots API] Error fetching blocked slots:', blockedError)
-      // Don't fail the request - just log the error and continue without blocked slots
-    } else {
-      console.log(`[Available Slots API] Found ${blockedSlots?.length || 0} blocked slots:`,
-        blockedSlots?.map(s => ({
-          type: s.is_recurring ? 'recurring' : 'specific',
-          date: s.specific_date,
-          time: `${s.start_time}-${s.end_time}`,
-          reason: s.block_reason
-        }))
+    if (availabilityError) {
+      console.error('[Available Slots API] Error fetching availability records:', availabilityError)
+      return NextResponse.json(
+        { error: 'Failed to fetch availability data' },
+        { status: 500 }
       )
     }
 
-    // Get available slots using our utility function with dynamic duration
+    const availableRecords = availabilityRecords.filter(r => !r.is_blocked)
+    const blockedRecords = availabilityRecords.filter(r => r.is_blocked)
+
+    console.log(`[Available Slots API] Found ${availableRecords.length} available ranges and ${blockedRecords.length} blocked ranges`)
+
+    // Get available slots using our utility function with database-driven hours
     const availableSlots = await getAvailableSlotsForDate(
       requestedDate,
+      availabilityRecords,
       appointments,
-      appointmentDuration,
-      blockedSlots || []
+      appointmentDuration
     )
 
     // Format slots for response

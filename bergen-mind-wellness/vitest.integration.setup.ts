@@ -84,7 +84,7 @@ export const testDataTracker = {
     }
 
     if (this.availabilityIds.length > 0) {
-      await supabaseService.from('availability').delete().in('id', this.availabilityIds)
+      await supabaseService.from('availability_slots').delete().in('id', this.availabilityIds)
       this.availabilityIds = []
     }
 
@@ -149,7 +149,7 @@ async function cleanAllTestData() {
 
     // Delete all availability slots
     await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .delete()
       .neq('id', '00000000-0000-0000-0000-000000000000')
 

@@ -137,23 +137,22 @@ END $$;
 -- =====================================================
 -- 4. SEED DOCTOR AVAILABILITY (for E2E booking tests)
 -- =====================================================
--- Create extensive recurring weekly availability for test environment
--- Extended hours to provide abundant slots for E2E tests
--- Monday-Friday: 7am-9pm, Saturday: 9am-5pm
--- This generates ~150+ available slots per week to prevent test exhaustion
+-- Create recurring weekly availability
+-- Standard business hours: Monday-Friday 9am-5pm, Saturday 9am-5pm
+-- This provides realistic availability for appointments
 
-INSERT INTO availability (doctor_id, day_of_week, start_time, end_time, is_recurring, is_blocked)
+INSERT INTO availability_slots (doctor_id, day_of_week, start_time, end_time, is_recurring, is_blocked)
 VALUES
-  -- Monday (7am-9pm = 14 hours, ~28 slots with 30min intervals)
-  ('11111111-1111-1111-1111-111111111111', 1, '07:00:00', '21:00:00', true, false),
-  -- Tuesday (7am-9pm)
-  ('11111111-1111-1111-1111-111111111111', 2, '07:00:00', '21:00:00', true, false),
-  -- Wednesday (7am-9pm)
-  ('11111111-1111-1111-1111-111111111111', 3, '07:00:00', '21:00:00', true, false),
-  -- Thursday (7am-9pm)
-  ('11111111-1111-1111-1111-111111111111', 4, '07:00:00', '21:00:00', true, false),
-  -- Friday (7am-9pm)
-  ('11111111-1111-1111-1111-111111111111', 5, '07:00:00', '21:00:00', true, false),
+  -- Monday (9am-5pm = 8 hours, ~16 slots with 30min intervals)
+  ('11111111-1111-1111-1111-111111111111', 1, '09:00:00', '17:00:00', true, false),
+  -- Tuesday (9am-5pm)
+  ('11111111-1111-1111-1111-111111111111', 2, '09:00:00', '17:00:00', true, false),
+  -- Wednesday (9am-5pm)
+  ('11111111-1111-1111-1111-111111111111', 3, '09:00:00', '17:00:00', true, false),
+  -- Thursday (9am-5pm)
+  ('11111111-1111-1111-1111-111111111111', 4, '09:00:00', '17:00:00', true, false),
+  -- Friday (9am-5pm)
+  ('11111111-1111-1111-1111-111111111111', 5, '09:00:00', '17:00:00', true, false),
   -- Saturday (9am-5pm = 8 hours, ~16 slots)
   ('11111111-1111-1111-1111-111111111111', 6, '09:00:00', '17:00:00', true, false)
 ON CONFLICT DO NOTHING;
@@ -165,4 +164,4 @@ ON CONFLICT DO NOTHING;
 --
 -- SELECT * FROM appointment_types ORDER BY sort_order;
 -- SELECT * FROM profiles;
--- SELECT * FROM availability ORDER BY day_of_week;
+-- SELECT * FROM availability_slots ORDER BY day_of_week;

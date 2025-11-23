@@ -12,19 +12,12 @@ import { addMinutes, format, isAfter, isBefore, isSameDay, parse, startOfDay } f
 /**
  * Business configuration for appointment scheduling
  */
+/**
+ * Appointment scheduling configuration
+ * NOTE: Business hours are now sourced from the availability_slots database table
+ * This config only contains scheduling parameters
+ */
 export const APPOINTMENT_CONFIG = {
-  // Business hours (24-hour format)
-  // Aligned with test environment availability: Mon-Fri 7am-9pm, Sat 9am-5pm
-  businessHours: {
-    monday: { start: '07:00', end: '21:00' },
-    tuesday: { start: '07:00', end: '21:00' },
-    wednesday: { start: '07:00', end: '21:00' },
-    thursday: { start: '07:00', end: '21:00' },
-    friday: { start: '07:00', end: '21:00' },
-    saturday: { start: '09:00', end: '17:00' },
-    sunday: null,   // Closed
-  },
-
   // Appointment duration in minutes
   appointmentDuration: 60,
 
@@ -54,7 +47,22 @@ export interface BusinessHours {
 }
 
 /**
- * Get day of week from Date object
+ * Availability record from the availability_slots database table
+ */
+export interface AvailabilityRecord {
+  id?: string
+  doctor_id?: string
+  day_of_week: number | null  // 1=Mon, 2=Tue, ..., 7=Sun
+  specific_date: string | null  // YYYY-MM-DD format
+  start_time: string  // HH:mm:ss or HH:mm format
+  end_time: string    // HH:mm:ss or HH:mm format
+  is_recurring: boolean
+  is_blocked: boolean
+  block_reason?: string | null
+}
+
+/**
+ * Get day of week from Date object as string
  */
 function getDayOfWeek(date: Date): DayOfWeek {
   const days: DayOfWeek[] = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -62,16 +70,63 @@ function getDayOfWeek(date: Date): DayOfWeek {
 }
 
 /**
- * Check if a given date falls within business hours
+ * Get numeric day of week from Date object
+ * Returns 1=Monday, 2=Tuesday, ..., 7=Sunday (matches database schema)
  */
-export function isWithinBusinessHours(date: Date): boolean {
-  const dayOfWeek = getDayOfWeek(date)
-  const businessHours = APPOINTMENT_CONFIG.businessHours[dayOfWeek]
+function getNumericDayOfWeek(date: Date): number {
+  const day = date.getDay()
+  // Convert JavaScript's Sunday=0 to database's Monday=1, Sunday=7
+  return day === 0 ? 7 : day
+}
 
-  if (!businessHours) return false
+/**
+ * Extract available time ranges from database availability records for a specific date
+ * @param date - The date to get hours for
+ * @param availabilityRecords - All availability records from the database
+ * @returns Array of time ranges when the doctor is available (non-blocked)
+ */
+export function getAvailableHoursForDay(
+  date: Date,
+  availabilityRecords: AvailabilityRecord[]
+): Array<{ start: string; end: string }> {
+  const numericDay = getNumericDayOfWeek(date)
+  const dateStr = format(date, 'yyyy-MM-dd')
 
+  // Filter to matching, non-blocked records
+  const matchingRecords = availabilityRecords.filter(record => {
+    // Skip blocked records - these are used for filtering, not defining availability
+    if (record.is_blocked) return false
+
+    // Check if record matches the requested date
+    if (record.is_recurring) {
+      return record.day_of_week === numericDay
+    } else {
+      return record.specific_date === dateStr
+    }
+  })
+
+  // Extract time ranges and normalize format (remove seconds if present)
+  return matchingRecords.map(record => ({
+    start: record.start_time.substring(0, 5),  // Convert "HH:mm:ss" to "HH:mm"
+    end: record.end_time.substring(0, 5),
+  }))
+}
+
+/**
+ * Check if a given date falls within available hours
+ * @param date - The date/time to check
+ * @param availableHours - Array of time ranges when doctor is available
+ * @returns true if the date falls within any available time range
+ */
+export function isWithinAvailableHours(
+  date: Date,
+  availableHours: Array<{ start: string; end: string }>
+): boolean {
   const timeString = format(date, 'HH:mm')
-  return timeString >= businessHours.start && timeString < businessHours.end
+
+  return availableHours.some(range => {
+    return timeString >= range.start && timeString < range.end
+  })
 }
 
 /**
@@ -86,38 +141,50 @@ export function isWithinBookingWindow(date: Date): boolean {
 }
 
 /**
- * Generate all possible time slots for a given date
+ * Generate all possible time slots for a given date based on available hours
  * @param date - The date to generate slots for
+ * @param availableHours - Time ranges when doctor is available (from database)
  * @param appointmentDuration - Duration of appointment in minutes (defaults to 60)
+ * @returns Array of time slots within the available hours
  */
-export function generateTimeSlots(date: Date, appointmentDuration: number = APPOINTMENT_CONFIG.appointmentDuration): TimeSlot[] {
-  const dayOfWeek = getDayOfWeek(date)
-  const businessHours = APPOINTMENT_CONFIG.businessHours[dayOfWeek]
-
-  if (!businessHours) return []
+export function generateTimeSlots(
+  date: Date,
+  availableHours: Array<{ start: string; end: string }>,
+  appointmentDuration: number = APPOINTMENT_CONFIG.appointmentDuration
+): TimeSlot[] {
+  // No availability = no slots
+  if (availableHours.length === 0) {
+    console.log(`[Availability] No available hours for ${format(date, 'yyyy-MM-dd')}`)
+    return []
+  }
 
   const slots: TimeSlot[] = []
   const dayStart = startOfDay(date)
-
-  // Parse business hours
-  const startTime = parse(businessHours.start, 'HH:mm', dayStart)
-  const endTime = parse(businessHours.end, 'HH:mm', dayStart)
-
-  // Generate slots with dynamic duration
-  let currentTime = startTime
   const slotDuration = appointmentDuration + APPOINTMENT_CONFIG.bufferTime
 
-  while (isBefore(addMinutes(currentTime, appointmentDuration), endTime)) {
-    const slotEnd = addMinutes(currentTime, appointmentDuration)
+  // Generate slots for each availability range
+  availableHours.forEach(range => {
+    const startTime = parse(range.start, 'HH:mm', dayStart)
+    const endTime = parse(range.end, 'HH:mm', dayStart)
 
-    slots.push({
-      start: currentTime,
-      end: slotEnd,
-      available: true, // Will be checked against existing appointments
-    })
+    let currentTime = startTime
 
-    currentTime = addMinutes(currentTime, slotDuration)
-  }
+    // Generate slots within this time range
+    while (isBefore(addMinutes(currentTime, appointmentDuration), endTime) ||
+           addMinutes(currentTime, appointmentDuration).getTime() === endTime.getTime()) {
+      const slotEnd = addMinutes(currentTime, appointmentDuration)
+
+      slots.push({
+        start: currentTime,
+        end: slotEnd,
+        available: true, // Will be checked against existing appointments and blocked slots
+      })
+
+      currentTime = addMinutes(currentTime, slotDuration)
+    }
+  })
+
+  console.log(`[Availability] Generated ${slots.length} slots from ${availableHours.length} availability ranges`)
 
   return slots
 }
@@ -209,18 +276,31 @@ export function filterAvailableSlots(
 /**
  * Get all available appointment slots for a specific date
  * @param date - The date to get slots for
+ * @param availabilityRecords - ALL availability records from database (both available and blocked)
  * @param existingAppointments - Existing appointments to check conflicts against
  * @param appointmentDuration - Duration of appointment in minutes (defaults to 60)
- * @param blockedSlots - Admin-blocked availability slots to check conflicts against
  */
 export async function getAvailableSlotsForDate(
   date: Date,
+  availabilityRecords: AvailabilityRecord[],
   existingAppointments: Array<{ start: Date; end: Date }>,
-  appointmentDuration?: number,
-  blockedSlots: Array<{ start_time: string; end_time: string }> = []
+  appointmentDuration?: number
 ): Promise<TimeSlot[]> {
-  // Generate all possible slots for the day with specified duration
-  const allSlots = generateTimeSlots(date, appointmentDuration)
+  // Extract available hours from non-blocked database records
+  const availableHours = getAvailableHoursForDay(date, availabilityRecords)
+
+  console.log(`[Availability] Found ${availableHours.length} availability ranges for ${format(date, 'yyyy-MM-dd')}:`, availableHours)
+
+  // Generate all possible slots within available hours
+  const allSlots = generateTimeSlots(date, availableHours, appointmentDuration)
+
+  // Extract blocked slots for conflict checking
+  const blockedSlots = availabilityRecords
+    .filter(record => record.is_blocked)
+    .map(record => ({
+      start_time: record.start_time,
+      end_time: record.end_time,
+    }))
 
   console.log(`[Availability] Generated ${allSlots.length} total slots for ${format(date, 'yyyy-MM-dd')}`)
   console.log(`[Availability] Checking against ${existingAppointments.length} appointments and ${blockedSlots.length} blocked slots`)
@@ -237,8 +317,14 @@ export async function getAvailableSlotsForDate(
 
 /**
  * Validate that an appointment booking is allowed
+ * @param startTime - The proposed appointment start time
+ * @param availableHours - Available hours for the date (from database)
+ * @returns Validation result with error message if invalid
  */
-export function validateAppointmentBooking(startTime: Date): { valid: boolean; error?: string } {
+export function validateAppointmentBooking(
+  startTime: Date,
+  availableHours: Array<{ start: string; end: string }>
+): { valid: boolean; error?: string } {
   // Check if within booking window
   if (!isWithinBookingWindow(startTime)) {
     return {
@@ -247,11 +333,11 @@ export function validateAppointmentBooking(startTime: Date): { valid: boolean; e
     }
   }
 
-  // Check if within business hours
-  if (!isWithinBusinessHours(startTime)) {
+  // Check if within available hours
+  if (!isWithinAvailableHours(startTime, availableHours)) {
     return {
       valid: false,
-      error: 'Appointment must be during business hours (Monday-Friday, 9 AM - 5 PM)',
+      error: 'Appointment must be during available hours. Please check the schedule.',
     }
   }
 

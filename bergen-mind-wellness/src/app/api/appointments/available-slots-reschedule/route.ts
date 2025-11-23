@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { getAvailableSlotsForDate } from '@/lib/appointments/availability'
-import { parseISO, startOfDay, endOfDay } from 'date-fns'
+import { parseISO, startOfDay, endOfDay, format } from 'date-fns'
 
 /**
  * GET /api/appointments/available-slots-reschedule
@@ -114,9 +114,30 @@ export async function GET(request: NextRequest) {
       end: new Date(apt.end_time),
     }))
 
-    // Get available slots using our utility function
+    // Fetch availability records for the date
+    const dateString = format(requestedDate, 'yyyy-MM-dd')
+    const dayOfWeek = requestedDate.getDay() === 0 ? 7 : requestedDate.getDay()
+
+    // Fetch both specific date and recurring availability
+    const { data: specificDateAvailability } = await supabase
+      .from('availability_slots')
+      .select('id, day_of_week, specific_date, start_time, end_time, is_recurring, is_blocked, block_reason')
+      .eq('doctor_id', doctorId)
+      .eq('specific_date', dateString)
+
+    const { data: recurringAvailability } = await supabase
+      .from('availability_slots')
+      .select('id, day_of_week, specific_date, start_time, end_time, is_recurring, is_blocked, block_reason')
+      .eq('doctor_id', doctorId)
+      .eq('is_recurring', true)
+      .eq('day_of_week', dayOfWeek)
+
+    const availabilityRecords = [...(specificDateAvailability || []), ...(recurringAvailability || [])]
+
+    // Get available slots using our utility function with correct parameter order
     const availableSlots = await getAvailableSlotsForDate(
       requestedDate,
+      availabilityRecords,
       appointments,
       appointmentType.duration_minutes
     )

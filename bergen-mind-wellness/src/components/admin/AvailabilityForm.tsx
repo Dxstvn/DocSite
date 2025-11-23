@@ -113,7 +113,7 @@ export function AvailabilityForm({ locale, mode = 'create', initialData, onSucce
         }
 
         let query = supabase
-          .from('availability')
+          .from('availability_slots')
           .select('*')
           .eq('doctor_id', user.id)
 
@@ -210,67 +210,11 @@ export function AvailabilityForm({ locale, mode = 'create', initialData, onSucce
         throw new Error('You must be logged in to add availability')
       }
 
-      // Check for overlapping slots (skip in edit mode for now - we'll exclude current slot)
-      if (mode === 'create') {
-        if (availabilityMode === 'recurring') {
-          // Check overlaps on the same day of week
-          const { data: existing } = await supabase
-            .from('availability')
-            .select('*')
-            .eq('doctor_id', user.id)
-            .eq('is_recurring', true)
-            .eq('day_of_week', parseInt(dayOfWeek))
-            .or(`start_time.lte.${startTime},end_time.gte.${endTime}`)
-
-          if (existing && existing.length > 0) {
-            throw new Error('This time slot overlaps with an existing availability')
-          }
-        } else {
-          // Check overlaps on specific date
-          const dateStr = format(specificDate!, 'yyyy-MM-dd')
-          const { data: existing } = await supabase
-            .from('availability')
-            .select('*')
-            .eq('doctor_id', user.id)
-            .eq('is_recurring', false)
-            .eq('specific_date', dateStr)
-            .or(`start_time.lte.${startTime},end_time.gte.${endTime}`)
-
-          if (existing && existing.length > 0) {
-            throw new Error('This time slot overlaps with an existing availability on this date')
-          }
-        }
-      } else {
-        // Edit mode: check overlaps but exclude current slot
-        if (availabilityMode === 'recurring') {
-          const { data: existing } = await supabase
-            .from('availability')
-            .select('*')
-            .eq('doctor_id', user.id)
-            .eq('is_recurring', true)
-            .eq('day_of_week', parseInt(dayOfWeek))
-            .neq('id', initialData!.id)
-            .or(`start_time.lte.${startTime},end_time.gte.${endTime}`)
-
-          if (existing && existing.length > 0) {
-            throw new Error('This time slot overlaps with an existing availability')
-          }
-        } else {
-          const dateStr = format(specificDate!, 'yyyy-MM-dd')
-          const { data: existing } = await supabase
-            .from('availability')
-            .select('*')
-            .eq('doctor_id', user.id)
-            .eq('is_recurring', false)
-            .eq('specific_date', dateStr)
-            .neq('id', initialData!.id)
-            .or(`start_time.lte.${startTime},end_time.gte.${endTime}`)
-
-          if (existing && existing.length > 0) {
-            throw new Error('This time slot overlaps with an existing availability on this date')
-          }
-        }
-      }
+      // Note: Overlap validation intentionally removed
+      // Overlapping slots are valid and necessary for use cases like:
+      // - Blocked time within available time (e.g., lunch break during business hours)
+      // - Specific date overrides for recurring availability
+      // The slot calculation logic properly handles overlaps (blocked slots take precedence)
 
       // Prepare data for insert or update
       const data: {
@@ -307,14 +251,14 @@ export function AvailabilityForm({ locale, mode = 'create', initialData, onSucce
       // Insert new availability or update existing
       if (mode === 'create') {
         const { error: insertError } = await supabase
-          .from('availability')
+          .from('availability_slots')
           .insert(data)
 
         if (insertError) throw insertError
       } else {
         // Update existing availability
         const { error: updateError } = await supabase
-          .from('availability')
+          .from('availability_slots')
           .update(data)
           .eq('id', initialData!.id)
 

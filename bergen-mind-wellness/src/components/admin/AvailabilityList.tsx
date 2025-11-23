@@ -47,7 +47,7 @@ export function AvailabilityList({ slots, locale }: AvailabilityListProps) {
     try {
       const supabase = createClient()
       const { error } = await supabase
-        .from('availability')
+        .from('availability_slots')
         .delete()
         .eq('id', id)
 

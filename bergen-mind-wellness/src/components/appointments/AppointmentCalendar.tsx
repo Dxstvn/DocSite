@@ -30,12 +30,36 @@ export function AppointmentCalendar({ onDateSelect, appointmentTypeId, locale = 
   const [error, setError] = useState<string | null>(null)
   const [availableSlots, setAvailableSlots] = useState<TimeSlot[]>([])
 
-  // Business hours configuration for FullCalendar
-  const businessHours = {
-    daysOfWeek: [1, 2, 3, 4, 5], // Monday-Friday
+  // Dynamic business hours from database
+  const [businessHours, setBusinessHours] = useState({
+    daysOfWeek: [1, 2, 3, 4, 5], // Default Monday-Friday
     startTime: '09:00',
     endTime: '17:00',
-  }
+  })
+  const [hoursDescription, setHoursDescription] = useState<string>(
+    locale === 'es'
+      ? 'Lunes a viernes, de 9:00 AM a 5:00 PM'
+      : 'Monday-Friday, 9:00 AM - 5:00 PM'
+  )
+
+  // Fetch business hours from database on mount
+  useEffect(() => {
+    const fetchBusinessHours = async () => {
+      try {
+        const response = await fetch('/api/appointments/business-hours')
+        if (response.ok) {
+          const data = await response.json()
+          setBusinessHours(data.businessHours)
+          setHoursDescription(locale === 'es' ? data.descriptionEs : data.description)
+        }
+      } catch (err) {
+        console.error('Failed to fetch business hours:', err)
+        // Keep default values on error
+      }
+    }
+
+    fetchBusinessHours()
+  }, [locale])
 
   // Update data-selected attributes when selection changes
   // FullCalendar doesn't re-mount cells on state changes, so we manually update attributes
@@ -133,8 +157,8 @@ export function AppointmentCalendar({ onDateSelect, appointmentTypeId, locale = 
           <Info className="h-4 w-4" />
           <AlertDescription>
             {locale === 'es'
-              ? 'Las citas están disponibles de lunes a viernes, de 9:00 AM a 5:00 PM. Se requiere un aviso mínimo de 24 horas.'
-              : 'Appointments are available Monday-Friday, 9:00 AM - 5:00 PM. Minimum 24-hour notice required.'}
+              ? `Las citas están disponibles ${hoursDescription.toLowerCase()}. Se requiere un aviso mínimo de 24 horas.`
+              : `Appointments are available ${hoursDescription}. Minimum 24-hour notice required.`}
           </AlertDescription>
         </Alert>
 

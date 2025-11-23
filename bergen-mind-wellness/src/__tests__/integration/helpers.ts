@@ -256,7 +256,7 @@ export async function createTestAvailability(params: {
   }
 
   const { data, error } = await supabaseService
-    .from('availability')
+    .from('availability_slots')
     .insert(availabilityData)
     .select()
     .single()
@@ -418,7 +418,7 @@ export async function cleanupPatient(patientId: string) {
  * @param availabilityId - ID of availability to delete
  */
 export async function cleanupAvailability(availabilityId: string) {
-  const { error } = await supabaseService.from('availability').delete().eq('id', availabilityId)
+  const { error } = await supabaseService.from('availability_slots').delete().eq('id', availabilityId)
 
   if (error && error.code !== 'PGRST116') {
     console.warn(`Warning: Failed to cleanup availability ${availabilityId}:`, error)

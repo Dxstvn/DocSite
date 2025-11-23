@@ -75,7 +75,7 @@ export function AvailabilityCopyDialog({ slot, locale }: AvailabilityCopyDialogP
       }
 
       // Create new slot with same times but different day
-      const { error: insertError } = await supabase.from('availability').insert({
+      const { error: insertError } = await supabase.from('availability_slots').insert({
         doctor_id: user.id,
         day_of_week: parseInt(targetDay),
         specific_date: null,

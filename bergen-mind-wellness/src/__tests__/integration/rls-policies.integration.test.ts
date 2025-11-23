@@ -72,7 +72,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
       // Query as anonymous user (uses anon client)
       const { data, error } = await supabaseAnon
-        .from('availability')
+        .from('availability_slots')
         .select('*')
         .eq('id', availability.id)
         .single()
@@ -85,7 +85,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
     it('should prevent public (anonymous) users from creating availability', async () => {
       // Try to insert as anonymous user
-      const { data, error } = await supabaseAnon.from('availability').insert({
+      const { data, error } = await supabaseAnon.from('availability_slots').insert({
         doctor_id: testDoctorId,
         is_recurring: true,
         day_of_week: 2, // Tuesday
@@ -109,7 +109,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
       // Try to update as anonymous user
       const { data, error } = await supabaseAnon
-        .from('availability')
+        .from('availability_slots')
         .update({ start_time: '10:00:00' })
         .eq('id', availability.id)
         .select()
@@ -121,7 +121,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
       // Verify the record wasn't actually updated
       const { data: unchanged } = await supabaseService
-        .from('availability')
+        .from('availability_slots')
         .select('start_time')
         .eq('id', availability.id)
         .single()
@@ -140,7 +140,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
       // Try to delete as anonymous user
       const { data, error } = await supabaseAnon
-        .from('availability')
+        .from('availability_slots')
         .delete()
         .eq('id', availability.id)
         .select()
@@ -152,7 +152,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
       // Verify the record still exists
       const { data: stillExists } = await supabaseService
-        .from('availability')
+        .from('availability_slots')
         .select('id')
         .eq('id', availability.id)
         .single()
@@ -166,7 +166,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
       await signInAsDoctor(doctor.email)
 
       // Try to insert as authenticated user
-      const { data, error } = await supabaseAnon.from('availability').insert({
+      const { data, error } = await supabaseAnon.from('availability_slots').insert({
         doctor_id: doctor.id,
         is_recurring: true,
         day_of_week: 5,
@@ -326,7 +326,7 @@ describe('Row Level Security (RLS) Policies - Real Database Integration', () => 
 
       // Verify availability was created correctly
       const { data: availCheck } = await supabaseService
-        .from('availability')
+        .from('availability_slots')
         .select('*')
         .eq('id', availability.id)
         .single()

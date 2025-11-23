@@ -17,7 +17,7 @@ export type SlotState = 'available' | 'blocked' | 'booked' | 'past'
  */
 export interface AvailabilityRecord {
   id: string
-  day_of_week: number | null // 0=Sunday, 6=Saturday
+  day_of_week: number | null // 1=Monday, 2=Tuesday, ..., 7=Sunday (matches database schema)
   specific_date: string | null // YYYY-MM-DD
   start_time: string // HH:MM:SS
   end_time: string // HH:MM:SS
@@ -49,28 +49,101 @@ export interface WeeklySlot {
 }
 
 /**
+ * Default grid display hours for admin interface
+ * This defines the visual range of the grid, allowing admins to add availability
+ * anywhere within this range. Slots without availability records are marked as "blocked".
+ */
+const DEFAULT_GRID_HOURS = {
+  start: '07:00',
+  end: '21:00'
+}
+
+/**
+ * Convert JavaScript day of week (0=Sunday) to database format (1=Monday, 7=Sunday)
+ */
+function getNumericDayOfWeek(date: Date): number {
+  const day = date.getDay() // 0=Sunday, 1=Monday, ..., 6=Saturday
+  return day === 0 ? 7 : day // Convert Sunday from 0 to 7
+}
+
+/**
+ * Calculate the time range to display in the admin grid based on existing availability
+ * @param date - The date to check
+ * @param availabilityRecords - Existing availability records
+ * @returns Start and end time strings in HH:mm format
+ */
+function calculateGridRange(
+  date: Date,
+  availabilityRecords: AvailabilityRecord[]
+): { start: string; end: string } {
+  const dayOfWeek = getNumericDayOfWeek(date)
+  const dateStr = format(date, 'yyyy-MM-dd')
+
+  // Find records that apply to this day
+  const applicableRecords = availabilityRecords.filter(record => {
+    if (record.is_recurring) {
+      return record.day_of_week === dayOfWeek
+    } else {
+      return record.specific_date === dateStr
+    }
+  })
+
+  // If no records exist, use default grid hours
+  if (applicableRecords.length === 0) {
+    return DEFAULT_GRID_HOURS
+  }
+
+  // Find the earliest start and latest end from available (non-blocked) records
+  const availableRecords = applicableRecords.filter(r => !r.is_blocked)
+
+  if (availableRecords.length === 0) {
+    return DEFAULT_GRID_HOURS
+  }
+
+  const startTimes = availableRecords.map(r => r.start_time.substring(0, 5))
+  const endTimes = availableRecords.map(r => r.end_time.substring(0, 5))
+
+  const earliestStart = startTimes.sort()[0]
+  const latestEnd = endTimes.sort().reverse()[0]
+
+  return {
+    start: earliestStart,
+    end: latestEnd
+  }
+}
+
+/**
  * Generate time slots for a day based on appointment duration
  *
  * @param date - The date to generate slots for
  * @param duration - Appointment duration in minutes (30, 45, or 60)
+ * @param availabilityRecords - Availability records to determine grid range (optional)
  * @returns Array of time slots with proper intervals (duration + 15 min buffer)
  *
  * Examples:
- * - 30-min appointments: 7:00, 7:45, 8:30, 9:15... (45-min intervals)
- * - 45-min appointments: 7:00, 8:00, 9:00... (60-min intervals)
- * - 60-min appointments: 7:00, 8:15, 9:30... (75-min intervals)
+ * - 30-min appointments: 9:00, 9:45, 10:30, 11:15... (45-min intervals)
+ * - 45-min appointments: 9:00, 10:00, 11:00... (60-min intervals)
+ * - 60-min appointments: 9:00, 10:15, 11:30... (75-min intervals)
+ *
+ * The time range is calculated from availability records or defaults to 7am-9pm if no records exist.
+ * This allows admins to add new availability within the displayed range.
  */
-export function generateDaySlots(date: Date, duration: number = 30): WeeklySlot[] {
+export function generateDaySlots(
+  date: Date,
+  duration: number = 30,
+  availabilityRecords: AvailabilityRecord[] = []
+): WeeklySlot[] {
   const slots: WeeklySlot[] = []
   const dayStart = startOfDay(date)
 
   const BUFFER_TIME = 15 // minutes
   const slotInterval = duration + BUFFER_TIME
 
-  // Start at 7:00 AM (07:00)
-  let currentTime = parse('07:00', 'HH:mm', dayStart)
-  // End at 9:00 PM (21:00)
-  const endTime = parse('21:00', 'HH:mm', dayStart)
+  // Calculate grid range based on availability or use defaults
+  const gridRange = calculateGridRange(date, availabilityRecords)
+
+  let currentTime = parse(gridRange.start, 'HH:mm', dayStart)
+  const endTime = parse(gridRange.end, 'HH:mm', dayStart)
 
   while (isBefore(currentTime, endTime)) {
     const slotEnd = addMinutes(currentTime, duration)
@@ -103,8 +176,8 @@ function slotMatchesAvailability(
 ): boolean {
   // Check if this availability applies to this day
   if (availability.is_recurring) {
-    // Recurring: Check day of week
-    const dayOfWeek = slotDate.getDay() // 0=Sunday, 6=Saturday
+    // Recurring: Check day of week (convert JS format to database format)
+    const dayOfWeek = getNumericDayOfWeek(slotDate) // 1=Monday, 7=Sunday
     if (availability.day_of_week !== dayOfWeek) {
       return false
     }
@@ -218,10 +291,8 @@ export function calculateSlotState(
  * @param appointments - Existing appointments
  * @returns 2D array of slots (days × slots per day)
  *
- * Number of slots per day varies by duration:
- * - 30-min: ~18 slots (45-min intervals from 7am-9pm)
- * - 45-min: ~14 slots (60-min intervals)
- * - 60-min: ~11 slots (75-min intervals)
+ * Number of slots per day varies by duration and actual availability ranges.
+ * The grid displays times based on existing availability or defaults to 7am-9pm.
  */
 export function generateWeeklyGrid(
   weekStart: Date,
@@ -234,7 +305,9 @@ export function generateWeeklyGrid(
   // Generate for Monday-Saturday (6 days, skip Sunday)
   for (let dayOffset = 0; dayOffset < 6; dayOffset++) {
     const currentDate = addMinutes(weekStart, dayOffset * 24 * 60)
-    const daySlots = generateDaySlots(currentDate, duration)
+
+    // Generate day slots with dynamic range based on availability
+    const daySlots = generateDaySlots(currentDate, duration, availabilityRecords)
 
     // Calculate state for each slot
     const slotsWithState = daySlots.map((slot) => {

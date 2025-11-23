@@ -2,8 +2,8 @@
 
 import { z } from 'zod'
 import { createServiceRoleClient } from '@/lib/supabase/server'
-import { validateAppointmentBooking, hasTimeConflict } from '@/lib/appointments/availability'
-import { addMinutes, parseISO, format } from 'date-fns'
+import { validateAppointmentBooking, hasTimeConflict, getAvailableHoursForDay } from '@/lib/appointments/availability'
+import { addMinutes, parseISO, format, startOfDay, endOfDay } from 'date-fns'
 import { sendAppointmentConfirmation } from '@/lib/email/send'
 
 /**
@@ -94,37 +94,10 @@ export async function bookAppointment(
       }
     }
 
-    // Validate the appointment time is allowed
-    const validation = validateAppointmentBooking(startDateTime)
-    if (!validation.valid) {
-      return {
-        success: false,
-        error: validation.error || 'This time slot is not available.',
-      }
-    }
-
     // Create Supabase client with service role (bypasses RLS for public booking)
     const supabase = createServiceRoleClient()
 
-    // Get appointment type details
-    const { data: appointmentType, error: typeError } = await supabase
-      .from('appointment_types')
-      .select('id, duration_minutes, display_name, display_name_es')
-      .eq('id', validatedData.appointmentTypeId)
-      .eq('is_active', true)
-      .single()
-
-    if (typeError || !appointmentType) {
-      return {
-        success: false,
-        error: 'Invalid appointment type. Please select a valid appointment type.',
-      }
-    }
-
-    // Calculate end time based on appointment type duration
-    const endDateTime = addMinutes(startDateTime, appointmentType.duration_minutes)
-
-    // Get or default doctor ID
+    // Get or default doctor ID (need this to fetch availability)
     let doctorId = validatedData.doctorId
     if (!doctorId) {
       const { data: doctor, error: doctorError } = await supabase
@@ -143,6 +116,54 @@ export async function bookAppointment(
 
       doctorId = doctor.id
     }
+
+    // Fetch availability records to validate appointment time
+    const dateString = format(startDateTime, 'yyyy-MM-dd')
+    const dayOfWeek = startDateTime.getDay() === 0 ? 7 : startDateTime.getDay()
+
+    // Fetch both specific date and recurring availability
+    const { data: specificDateAvailability } = await supabase
+      .from('availability_slots')
+      .select('id, day_of_week, specific_date, start_time, end_time, is_recurring, is_blocked, block_reason')
+      .eq('doctor_id', doctorId)
+      .eq('specific_date', dateString)
+
+    const { data: recurringAvailability } = await supabase
+      .from('availability_slots')
+      .select('id, day_of_week, specific_date, start_time, end_time, is_recurring, is_blocked, block_reason')
+      .eq('doctor_id', doctorId)
+      .eq('is_recurring', true)
+      .eq('day_of_week', dayOfWeek)
+
+    const availabilityRecords = [...(specificDateAvailability || []), ...(recurringAvailability || [])]
+    const availableHours = getAvailableHoursForDay(startDateTime, availabilityRecords)
+
+    // Validate the appointment time is allowed
+    const validation = validateAppointmentBooking(startDateTime, availableHours)
+    if (!validation.valid) {
+      return {
+        success: false,
+        error: validation.error || 'This time slot is not available.',
+      }
+    }
+
+    // Get appointment type details
+    const { data: appointmentType, error: typeError } = await supabase
+      .from('appointment_types')
+      .select('id, duration_minutes, display_name, display_name_es')
+      .eq('id', validatedData.appointmentTypeId)
+      .eq('is_active', true)
+      .single()
+
+    if (typeError || !appointmentType) {
+      return {
+        success: false,
+        error: 'Invalid appointment type. Please select a valid appointment type.',
+      }
+    }
+
+    // Calculate end time based on appointment type duration
+    const endDateTime = addMinutes(startDateTime, appointmentType.duration_minutes)
 
     // Check for conflicts with existing appointments
     // Proper overlap detection: existing appointment overlaps if:

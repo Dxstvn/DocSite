@@ -2,7 +2,7 @@
 
 import { z } from 'zod'
 import { createClient } from '@/lib/supabase/server'
-import { validateAppointmentBooking, hasTimeConflict } from '@/lib/appointments/availability'
+import { validateAppointmentBooking, hasTimeConflict, getAvailableHoursForDay } from '@/lib/appointments/availability'
 import { parseISO, format } from 'date-fns'
 import { sendAppointmentReschedule } from '@/lib/email/send'
 
@@ -89,15 +89,6 @@ export async function rescheduleAppointment(
       }
     }
 
-    // Validate the new appointment time is allowed
-    const validation = validateAppointmentBooking(newStartDateTime)
-    if (!validation.valid) {
-      return {
-        success: false,
-        error: validation.error || 'This time slot is not available.',
-      }
-    }
-
     // Create Supabase client (uses auth context for RLS)
     const supabase = await createClient()
 
@@ -153,6 +144,36 @@ export async function rescheduleAppointment(
       return {
         success: false,
         error: 'Appointment not found. It may have been deleted.',
+      }
+    }
+
+    // Fetch availability records to validate new appointment time
+    const dateString = format(newStartDateTime, 'yyyy-MM-dd')
+    const dayOfWeek = newStartDateTime.getDay() === 0 ? 7 : newStartDateTime.getDay()
+
+    // Fetch both specific date and recurring availability
+    const { data: specificDateAvailability } = await supabase
+      .from('availability_slots')
+      .select('id, day_of_week, specific_date, start_time, end_time, is_recurring, is_blocked, block_reason')
+      .eq('doctor_id', currentAppointment.doctor_id)
+      .eq('specific_date', dateString)
+
+    const { data: recurringAvailability } = await supabase
+      .from('availability_slots')
+      .select('id, day_of_week, specific_date, start_time, end_time, is_recurring, is_blocked, block_reason')
+      .eq('doctor_id', currentAppointment.doctor_id)
+      .eq('is_recurring', true)
+      .eq('day_of_week', dayOfWeek)
+
+    const availabilityRecords = [...(specificDateAvailability || []), ...(recurringAvailability || [])]
+    const availableHours = getAvailableHoursForDay(newStartDateTime, availabilityRecords)
+
+    // Validate the new appointment time is allowed
+    const validation = validateAppointmentBooking(newStartDateTime, availableHours)
+    if (!validation.valid) {
+      return {
+        success: false,
+        error: validation.error || 'This time slot is not available.',
       }
     }
 

@@ -32,7 +32,7 @@ describe('Availability Management - Real Database Integration', () => {
 
   it('should create recurring weekly availability slot in real database', async () => {
     const { data, error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 1, // Monday
@@ -65,7 +65,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Verify it's actually in the database by re-querying
     const { data: refetched } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .select()
       .eq('id', data!.id)
       .single()
@@ -76,7 +76,7 @@ describe('Availability Management - Real Database Integration', () => {
   it('should update availability slot times', async () => {
     // Create initial slot
     const { data: created } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 2, // Tuesday
@@ -91,7 +91,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Update to shorter hours
     const { data: updated, error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .update({
         start_time: '10:00:00',
         end_time: '16:00:00',
@@ -113,7 +113,7 @@ describe('Availability Management - Real Database Integration', () => {
   it('should delete availability slot from real database', async () => {
     // Create slot
     const { data: created } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 3,
@@ -127,7 +127,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Delete it
     const { error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .delete()
       .eq('id', slotId)
 
@@ -135,7 +135,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Verify it's actually gone from database
     const { data: deleted } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .select()
       .eq('id', slotId)
       .single()
@@ -147,7 +147,7 @@ describe('Availability Management - Real Database Integration', () => {
     const specificDate = '2025-12-25' // Christmas
 
     const { data, error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: null, // Null for specific dates
@@ -169,7 +169,7 @@ describe('Availability Management - Real Database Integration', () => {
 
   it('should mark slot as blocked (time off)', async () => {
     const { data: created } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 5, // Friday
@@ -183,7 +183,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Block the slot
     const { data: blocked, error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .update({
         is_blocked: true,
         block_reason: 'Vacation',
@@ -207,7 +207,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     for (const slot of slots) {
       const { data } = await supabaseService
-        .from('availability')
+        .from('availability_slots')
         .insert({
           doctor_id: testDoctorId,
           day_of_week: slot.day,
@@ -222,7 +222,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Query Monday slots only
     const { data: mondaySlots, error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .select()
       .eq('doctor_id', testDoctorId)
       .eq('day_of_week', 1)
@@ -237,7 +237,7 @@ describe('Availability Management - Real Database Integration', () => {
   it('should test RLS policy enforcement with anonymous client', async () => {
     // Create availability with service role (bypasses RLS)
     const { data: slot } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 1,
@@ -251,7 +251,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Try to read with anonymous client (subject to RLS)
     const { data: anonData, error: anonError } = await supabaseAnon
-      .from('availability')
+      .from('availability_slots')
       .select()
       .eq('id', slot!.id)
 
@@ -261,7 +261,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Test that anon cannot delete (should fail with RLS error)
     const { error: deleteError } = await supabaseAnon
-      .from('availability')
+      .from('availability_slots')
       .delete()
       .eq('id', slot!.id)
 
@@ -273,7 +273,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Verify slot still exists (delete was blocked)
     const { data: stillExists } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .select()
       .eq('id', slot!.id)
       .single()
@@ -284,7 +284,7 @@ describe('Availability Management - Real Database Integration', () => {
   it('should prevent overlapping availability slots for same doctor and day', async () => {
     // Create first slot: Monday 10am-6pm
     const { data: slot1 } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 1,
@@ -298,7 +298,7 @@ describe('Availability Management - Real Database Integration', () => {
 
     // Attempt overlapping slot: Monday 12pm-4pm (conflicts!)
     const { data: slot2, error } = await supabaseService
-      .from('availability')
+      .from('availability_slots')
       .insert({
         doctor_id: testDoctorId,
         day_of_week: 1,
@@ -317,7 +317,7 @@ describe('Availability Management - Real Database Integration', () => {
 
       // If it succeeded, verify application can detect overlap
       const { data: allSlots } = await supabaseService
-        .from('availability')
+        .from('availability_slots')
         .select()
         .eq('doctor_id', testDoctorId)
         .eq('day_of_week', 1)
