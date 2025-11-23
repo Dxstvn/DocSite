@@ -27,7 +27,6 @@ export default function Footer() {
               <li><Link href="/about" className="text-primary-400 hover:text-white transition-colors">{t('navigation:footer.aboutUs')}</Link></li>
               <li><Link href="/education" className="text-primary-400 hover:text-white transition-colors">{t('navigation:footer.education')}</Link></li>
               <li><Link href="/screening" className="text-primary-400 hover:text-white transition-colors">{t('navigation:footer.screeningTools')}</Link></li>
-              <li><Link href="/contact" className="text-primary-400 hover:text-white transition-colors">{t('navigation:footer.contact')}</Link></li>
             </ul>
           </div>
 
