@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Brain, Heart, Leaf, BookOpen } from 'lucide-react'
 import { StructuredData } from '@/components/StructuredData'
 import { initTranslations } from '@/lib/i18n'
+import { ZocdocBookingButton } from '@/components/appointments/ZocdocBookingButton'
 
 type PageProps = {
   params: Promise<{ locale: string }>
@@ -144,6 +145,13 @@ export default async function HomePage({ params }: PageProps) {
               {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Zocdoc Booking - Primary CTA */}
+              <ZocdocBookingButton
+                locale={locale as 'en' | 'es'}
+                size="lg"
+              />
+
+              {/* Google Calendar Booking - Alternative Primary CTA */}
               <Button asChild size="lg">
                 <a
                   href="https://calendar.app.google/rvUA24diHnUoWTi79"
@@ -153,6 +161,8 @@ export default async function HomePage({ params }: PageProps) {
                   {t('hero.scheduleButton')}
                 </a>
               </Button>
+
+              {/* Screening Tools - Secondary CTA */}
               <Button asChild variant="outline" size="lg">
                 <Link href="/screening">{t('hero.screeningButton')}</Link>
               </Button>
