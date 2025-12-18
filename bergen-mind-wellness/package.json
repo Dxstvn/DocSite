@@ -62,7 +62,7 @@
     "i18next": "^25.6.2",
     "i18next-resources-to-backend": "^1.2.1",
     "lucide-react": "^0.552.0",
-    "next": "16.0.1",
+    "next": "16.0.10",
     "next-i18n-router": "^5.5.5",
     "nodemailer": "^7.0.10",
     "react": "19.2.0",
