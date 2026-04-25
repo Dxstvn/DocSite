@@ -4,7 +4,7 @@ import { Calendar, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
-const GOOGLE_CALENDAR_URL = 'https://calendar.app.google/rvUA24diHnUoWTi79';
+const GOOGLE_CALENDAR_URL = 'https://care.headway.co/providers/rocio-jenkins?utm_source=pem&utm_medium=direct_link&utm_campaign=168819';
 const PHONE_NUMBER = '(201) 690-2182';
 const PHONE_LINK = 'tel:+12016902182';
 
